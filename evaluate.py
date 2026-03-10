@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
 Evaluation Script
+* this is not the same as other evaluate in pipeline dir
 Computes micro and macro F1 scores by comparing gold vs predicted spans.
 
-Usage:
-    python evaluate.py --input <predictions.jsonl> --task <event|time>
+Usage -> python evaluate.py --input <predictions.jsonl> --task <event|time>
 
 Examples:
     python evaluate.py --input outputs/event_test__bert__predictions.jsonl --task event
@@ -19,37 +19,36 @@ from typing import List, Tuple
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Evaluate NER predictions against gold labels")
+    
     parser.add_argument("--input", type=str, required=True,
                         help="Path to predictions JSONL (output of run.py)")
+    
     parser.add_argument("--task", type=str, required=True, choices=["event", "time"],
                         help="Task type: event or time")
+    
     parser.add_argument("--output", type=str, default=None,
                         help="Optional path to save evaluation results as JSON")
+    
     parser.add_argument("--normalize", action="store_true", default=True,
                         help="Lowercase + strip spans before comparing (default: True)")
+    
     return parser.parse_args()
 
-
-# ── Span normalization ────────────────────────────────────────────────────────
 
 def normalize(span: str, do_normalize: bool) -> str:
     if do_normalize:
         return span.lower().strip()
+    
     return span.strip()
-
 
 def normalize_set(spans: List[str], do_normalize: bool) -> set:
     return {normalize(s, do_normalize) for s in spans if s.strip()}
-
-
-# ── Per-row TP / FP / FN ─────────────────────────────────────────────────────
 
 def row_counts(gold: set, pred: set) -> Tuple[int, int, int]:
     tp = len(gold & pred)
     fp = len(pred - gold)
     fn = len(gold - pred)
     return tp, fp, fn
-
 
 def row_f1(tp: int, fp: int, fn: int) -> Tuple[float, float, float]:
     precision = tp / (tp + fp) if (tp + fp) > 0 else 0.0
@@ -58,14 +57,11 @@ def row_f1(tp: int, fp: int, fn: int) -> Tuple[float, float, float]:
                  if (precision + recall) > 0 else 0.0)
     return precision, recall, f1
 
-
-# ── Main evaluation ───────────────────────────────────────────────────────────
-
 def evaluate(rows: List[dict], gold_field: str, pred_field: str, do_normalize: bool) -> dict:
-    # For micro: accumulate TP/FP/FN globally
+    # For micro -> accumulate TP/FP/FN globally
     total_tp, total_fp, total_fn = 0, 0, 0
 
-    # For macro: collect per-row F1
+    # For macro: collect per row F1
     per_row_f1 = []
 
     skipped = 0
@@ -74,7 +70,6 @@ def evaluate(rows: List[dict], gold_field: str, pred_field: str, do_normalize: b
         gold_raw = row.get(gold_field, [])
         pred_raw = row.get(pred_field, [])
 
-        # Skip rows missing either field
         if gold_raw is None or pred_raw is None:
             skipped += 1
             continue
@@ -148,7 +143,6 @@ def main():
         else "post_processed_timex_expressions"
     )
 
-    # Load
     rows = []
     with open(args.input, "r", encoding="utf-8") as f:
         for line in f:
@@ -158,11 +152,9 @@ def main():
 
     print(f"Loaded {len(rows)} rows from {args.input}")
 
-    # Evaluate
     results = evaluate(rows, gold_field, pred_field, do_normalize=args.normalize)
     print_results(results, gold_field, pred_field)
 
-    # Save if requested
     if args.output:
         os.makedirs(os.path.dirname(args.output) if os.path.dirname(args.output) else ".", exist_ok=True)
         with open(args.output, "w") as f:
