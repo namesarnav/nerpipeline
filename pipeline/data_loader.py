@@ -14,3 +14,8 @@ def save_jsonl(rows: List[dict], path: str):
     with open(path, "w", encoding="utf-8") as f:
         for row in rows:
             f.write(json.dumps(row, ensure_ascii=False) + "\n")
+
+def load_conll():
+    pass
+
+    # TODO: implement conlll
