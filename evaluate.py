@@ -7,8 +7,8 @@ Computes micro and macro F1 scores by comparing gold vs predicted spans.
 Usage -> python evaluate.py --input <predictions.jsonl> --task <event|time>
 
 Examples:
-    python evaluate.py --input outputs/event_test__bert__predictions.jsonl --task event
-    python evaluate.py --input outputs/time_test__t5__predictions.jsonl --task time
+    python evaluate.py --input outputs/event_test_bert_predictions.jsonl --task event
+    python evaluate.py --input outputs/time_test_t5_predictions.jsonl --task time
 """
 
 import argparse
@@ -27,7 +27,7 @@ def parse_args():
                         help="Task type: event or time")
     
     parser.add_argument("--output", type=str, default=None,
-                        help="Optional path to save evaluation results as JSON")
+                        help="Optional path to save evaluation results as JSONL")
     
     parser.add_argument("--normalize", action="store_true", default=True,
                         help="Lowercase + strip spans before comparing (default: True)")
@@ -63,12 +63,16 @@ def evaluate(rows: List[dict], gold_field: str, pred_field: str, do_normalize: b
 
     # For macro: collect per row F1
     per_row_f1 = []
+    
+    # Store output rows
+    output_rows = []
 
     skipped = 0
 
     for row in rows:
         gold_raw = row.get(gold_field, [])
         pred_raw = row.get(pred_field, [])
+        text = row.get("text", "")
 
         if gold_raw is None or pred_raw is None:
             skipped += 1
@@ -84,6 +88,14 @@ def evaluate(rows: List[dict], gold_field: str, pred_field: str, do_normalize: b
 
         _, _, f1 = row_f1(tp, fp, fn)
         per_row_f1.append(f1)
+        
+        # Create output row with text, gold, and predictions
+        output_row = {
+            "text": text,
+            gold_field: gold_raw,
+            pred_field: pred_raw
+        }
+        output_rows.append(output_row)
 
     # Micro F1 — global TP/FP/FN
     micro_p = total_tp / (total_tp + total_fp) if (total_tp + total_fp) > 0 else 0.0
@@ -95,39 +107,43 @@ def evaluate(rows: List[dict], gold_field: str, pred_field: str, do_normalize: b
     macro_f1 = sum(per_row_f1) / len(per_row_f1) if per_row_f1 else 0.0
 
     return {
-        "num_rows":      len(rows),
-        "skipped_rows":  skipped,
-        "evaluated_rows": len(per_row_f1),
-        "micro": {
-            "precision": round(micro_p,  4),
-            "recall":    round(micro_r,  4),
-            "f1":        round(micro_f1, 4),
-            "tp": total_tp,
-            "fp": total_fp,
-            "fn": total_fn,
-        },
-        "macro": {
-            "f1": round(macro_f1, 4),
-        },
+        "output_rows": output_rows,
+        "metrics": {
+            "num_rows":      len(rows),
+            "skipped_rows":  skipped,
+            "evaluated_rows": len(per_row_f1),
+            "micro": {
+                "precision": round(micro_p,  4),
+                "recall":    round(micro_r,  4),
+                "f1":        round(micro_f1, 4),
+                "tp": total_tp,
+                "fp": total_fp,
+                "fn": total_fn,
+            },
+            "macro": {
+                "f1": round(macro_f1, 4),
+            },
+        }
     }
 
 
 def print_results(results: dict, gold_field: str, pred_field: str):
+    metrics = results["metrics"]
     print("\n" + "=" * 50)
     print("EVALUATION RESULTS")
     print("=" * 50)
     print(f"  Gold field : {gold_field}")
     print(f"  Pred field : {pred_field}")
-    print(f"  Rows       : {results['evaluated_rows']} evaluated / {results['num_rows']} total")
-    if results["skipped_rows"] > 0:
-        print(f"  Skipped    : {results['skipped_rows']} (missing gold or pred field)")
+    print(f"  Rows       : {metrics['evaluated_rows']} evaluated / {metrics['num_rows']} total")
+    if metrics["skipped_rows"] > 0:
+        print(f"  Skipped    : {metrics['skipped_rows']} (missing gold or pred field)")
     print("-" * 50)
-    m = results["micro"]
+    m = metrics["micro"]
     print(f"  Micro Precision : {m['precision']:.4f}")
     print(f"  Micro Recall    : {m['recall']:.4f}")
     print(f"  Micro F1        : {m['f1']:.4f}   (TP={m['tp']}  FP={m['fp']}  FN={m['fn']})")
     print("-" * 50)
-    print(f"  Macro F1        : {results['macro']['f1']:.4f}")
+    print(f"  Macro F1        : {metrics['macro']['f1']:.4f}")
     print("=" * 50 + "\n")
 
 
@@ -153,13 +169,24 @@ def main():
     print(f"Loaded {len(rows)} rows from {args.input}")
 
     results = evaluate(rows, gold_field, pred_field, do_normalize=args.normalize)
+
     print_results(results, gold_field, pred_field)
 
     if args.output:
         os.makedirs(os.path.dirname(args.output) if os.path.dirname(args.output) else ".", exist_ok=True)
-        with open(args.output, "w") as f:
-            json.dump(results, f, indent=2)
+        
+        # Write output rows (each sample with text, gold, predictions)
+        with open(args.output, "w", encoding="utf-8") as f:
+            for row in results["output_rows"]:
+                f.write(json.dumps(row) + "\n")
+        
+        # Write metrics to separate file
+        metrics_file = args.output.replace(".jsonl", "_metrics.json")
+        with open(metrics_file, "w", encoding="utf-8") as f:
+            json.dump(results["metrics"], f, indent=2)
+        
         print(f"Results saved to: {args.output}")
+        print(f"Metrics saved to: {metrics_file}")
 
 
 if __name__ == "__main__":
