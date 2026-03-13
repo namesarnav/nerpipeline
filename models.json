@@ -1,0 +1,58 @@
+{
+  "models" : {
+    "timex": [
+      "mdg-nlp/RoBERTa-timex-recognition-sentence",
+      "mdg-nlp/T5-timex-recognition-sentence",
+      "mdg-nlp/gpt-2-timex-sentence-recognition",
+      "mdg-nlp/bert-timex"
+    ],
+    "eventx": [
+      "mdg-nlp/RoBERTa-eventx-recognition-sentence",
+      "mdg-nlp/T5-eventx-sentence-recognition",
+      "mdg-nlp/gpt-2-eventx-sentence-recognition"
+    ]
+  },
+
+  "datasets" : {
+    "timex": [
+      "mdg-nlp/timex-recognition-sentence-vocab-substitute",
+      "mdg-nlp/timex-recognition-sentence-vocab-substituted",
+      "mdg-nlp/timex-recognition-sentence-perturbed",
+      "mdg-nlp/domain-timex-clinical-base",
+      "mdg-nlp/domain-timex-clinical",
+      "mdg-nlp/timex-compositional-sentence",
+      "mdg-nlp/domain-timex-recognition-sentence-updated",
+      "mdg-nlp/timex-recognition-sentence-updated",
+      "mdg-nlp/timex-recognition-sentence",
+      "mdg-nlp/timex-recognition-sentence-adversarial",
+      "mdg-nlp/timex-recognition-sentence-original",
+      "mdg-nlp/timex-recognition-document",
+      "mdg-nlp/adv-timex-sentences-bert-attack",
+      "mdg-nlp/adv-timex-sentences",
+      "mdg-nlp/adv-timex-sentences-textfooler",
+      "mdg-nlp/adv-timex-sentences-ner_clare",
+      "mdg-nlp/adv-timex-sentences-morpheus",
+      "mdg-nlp/adv-timex-sentences-deepword",
+      "mdg-nlp/adv-timex-sentences-bae",
+      "mdg-nlp/timex-recognition-sentence-private",
+      "mdg-nlp/timex-recognition"
+    ],
+    "eventx": [
+      "mdg-nlp/eventtx-recognition-sentence-vocab-substitute",
+      "mdg-nlp/eventtx-recognition-perturbed-gpt",
+      "mdg-nlp/domain-eventtx-clinical-base",
+      "mdg-nlp/domain-eventtx-clinical",
+      "mdg-nlp/eventtx-recognition-sentence-vocab-substituted",
+      "mdg-nlp/eventtx-recognition-sentence-updated",
+      "mdg-nlp/eventtx-recognition-document",
+      "mdg-nlp/eventtx-recognition-perturbed",
+      "mdg-nlp/eventtx-recognition-original",
+      "mdg-nlp/eventtx-recognition-sentence-conll",
+      "mdg-nlp/eventtx-recognition-sentence",
+      "mdg-nlp/eventtx-recognition",
+      "mdg-nlp/adv_eventtx_sentences",
+      "mdg-nlp/domain-eventtx-recognition-sentence",
+      "mdg-nlp/domain-eventtx-recognition"
+    ]
+  }
+}

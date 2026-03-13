@@ -4,12 +4,12 @@
 # Run inference for one model on one dataset
 
 # Configuration
-MODEL="mdg-nlp/RoBERTa-timex-recognition-sentence"  # Change this
+MODEL="mdg-nlp/gpt-2-timex-sentence-recognition" # Change this
 DATASET="mdg-nlp/timex-recognition-sentence-original"        # Change this
 TASK="time"               # event or time
-NUM_SAMPLES=400
-BATCH_SIZE=16
-MAX_LENGTH=512
+NUM_SAMPLES=40
+BATCH_SIZE=20
+MAX_LENGTH=5000
 DEVICE="auto"
 
 echo "Running inference..."

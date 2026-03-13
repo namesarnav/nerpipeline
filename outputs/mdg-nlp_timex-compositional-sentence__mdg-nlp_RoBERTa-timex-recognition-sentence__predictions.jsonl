@@ -398,3 +398,4 @@
 {"text": "Daiwa, the country's second-largest broker, said it suffered a net parent company loss of 84.0 billion yen, reversing a net profit of 43.7 billion yen a year earlier. ", "gold_timex_expressions": ["a year earlier"], "post_processed_timex_expressions": ["a year earlier"]}
 {"text": "\"The BoJ may need to confirm first that consumer spending has accelerated before hiking rates,\" said NLI Research Institute senior economist Taro Saito, who is looking at a rate increase either in January or February.\n\n", "gold_timex_expressions": ["January or February"], "post_processed_timex_expressions": ["January or February"]}
 {"text": "Her ambitions is to coach gymnastics in the future.", "gold_timex_expressions": ["the future"], "post_processed_timex_expressions": ["the future"]}
+{"FINAL_METRICS": {"total_rows": 400, "micro_precision": 0.8853, "micro_recall": 0.8871, "micro_f1": 0.8862, "macro_f1": 0.8877, "tp": 440, "fp": 57, "fn": 56}}

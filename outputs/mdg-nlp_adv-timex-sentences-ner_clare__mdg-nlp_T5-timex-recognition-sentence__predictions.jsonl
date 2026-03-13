@@ -1,0 +1,4 @@
+{"text": "The DPRK nuclear test early last month sparked U.N. condemnations and sanctions .", "gold_timex_expressions": ["early last month"], "post_processed_timex_expressions": ["last month"]}
+{"text": "He maintained Tuesday that he was innocent and that he would continue trying to clear his name , although he held out little hope .", "gold_timex_expressions": ["Tuesday"], "post_processed_timex_expressions": ["Tuesday"]}
+{"text": "XIN_ENG_20061128.0468 BOGOTA , Nov. 28 , 2006 ( Xinhua ) Gold mine collapse traps 15 miners in Colombia A gold mine collapse in northern Colombia on Tuesday trapped 15 miners , rescue workers told media .", "gold_timex_expressions": ["Nov. 28 , 2006", "Tuesday"], "post_processed_timex_expressions": ["Nov. 28 , 2006", "Tuesday"]}
+{"FINAL_METRICS": {"total_rows": 3, "micro_precision": 0.75, "micro_recall": 0.75, "micro_f1": 0.75, "macro_f1": 0.6667, "tp": 3, "fp": 1, "fn": 1}}

@@ -150,14 +150,13 @@ def print_results(results: dict, gold_field: str, pred_field: str):
 def main():
     args = parse_args()
 
-    gold_field = (
-        "gold_event_expressions" if args.task == "event"
-        else "gold_timex_expressions"
-    )
-    pred_field = (
-        "post_processed_event_expressions" if args.task == "event"
-        else "post_processed_timex_expressions"
-    )
+    # Handle both 'event' and 'eventx' naming conventions
+    if args.task == "event":
+        gold_field = "gold_eventx_expressions"
+        pred_field = "post_processed_eventx_expressions"
+    else:  # time
+        gold_field = "gold_timex_expressions"
+        pred_field = "post_processed_timex_expressions"
 
     rows = []
     with open(args.input, "r", encoding="utf-8") as f:
@@ -179,13 +178,20 @@ def main():
         with open(args.output, "w", encoding="utf-8") as f:
             for row in results["output_rows"]:
                 f.write(json.dumps(row) + "\n")
+            
+            # APPEND FINAL METRICS AS LAST LINE
+            f.write(json.dumps({
+                "FINAL_METRICS": results["metrics"]
+            }) + "\n")
         
-        # Write metrics to separate file
+        # Also write metrics to separate file
         metrics_file = args.output.replace(".jsonl", "_metrics.json")
         with open(metrics_file, "w", encoding="utf-8") as f:
             json.dump(results["metrics"], f, indent=2)
         
         print(f"Results saved to: {args.output}")
+        print(f"  - Rows 1-{len(results['output_rows'])}: Individual predictions")
+        print(f"  - Row {len(results['output_rows'])+1}: FINAL_METRICS (Micro/Macro F1)")
         print(f"Metrics saved to: {metrics_file}")
 
 

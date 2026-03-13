@@ -1,16 +1,16 @@
 {
-  "num_rows": 390,
+  "num_rows": 400,
   "skipped_rows": 0,
-  "evaluated_rows": 390,
+  "evaluated_rows": 400,
   "micro": {
-    "precision": 0.8615,
-    "recall": 0.9154,
-    "f1": 0.8876,
-    "tp": 541,
-    "fp": 87,
-    "fn": 50
+    "precision": 0.8853,
+    "recall": 0.8871,
+    "f1": 0.8862,
+    "tp": 440,
+    "fp": 57,
+    "fn": 56
   },
   "macro": {
-    "f1": 0.9028
+    "f1": 0.8877
   }
 }

@@ -17,6 +17,7 @@ To run :
 
 import argparse
 import os
+import json
 from pipeline.loader import load_hf_dataset, save_jsonl
 from pipeline.inference import NERInference
 from pipeline.evaluate import evaluate, print_results
@@ -108,16 +109,19 @@ def main():
     output_rows    = []
     
     for row, predicted_spans in zip(rows, all_predicted_spans):
-        # Try to extract gold spans from different possible field names
+        # Extract gold spans from structured fields
+        # Dataset has: time_expressions or event_expressions as list of dicts with "text" field
         gold_spans = []
+        
         if source_gold_field in row and row[source_gold_field]:
-            # If it's a list of dicts with 'text' field
-            if isinstance(row[source_gold_field], list):
-                if row[source_gold_field] and isinstance(row[source_gold_field][0], dict):
-                    gold_spans = [e["text"] for e in row[source_gold_field] if e.get("text")]
+            field_data = row[source_gold_field]
+            if isinstance(field_data, list) and len(field_data) > 0:
+                # If it's a list of dicts with 'text' field (your dataset format)
+                if isinstance(field_data[0], dict):
+                    gold_spans = [item.get("text", "").strip() for item in field_data if item.get("text")]
                 else:
                     # If it's already a list of strings
-                    gold_spans = row[source_gold_field]
+                    gold_spans = [str(s).strip() for s in field_data if s]
         
         gold_spans_all.append(gold_spans)
 
@@ -134,10 +138,43 @@ def main():
     results = evaluate(gold_spans_all, all_predicted_spans)
     print_results(results, logger)
 
-    # Save
+    # Save predictions
     output_path = resolve_output_path(args)
     save_jsonl(output_rows, output_path)
+    
+    # APPEND FINAL METRICS TO THE SAME FILE
+    with open(output_path, "a", encoding="utf-8") as f:
+        f.write(json.dumps({
+            "FINAL_METRICS": {
+                "total_rows": results.get("total_rows", len(output_rows)),
+                "micro_precision": results.get("micro_precision", 0.0),
+                "micro_recall": results.get("micro_recall", 0.0),
+                "micro_f1": results.get("micro_f1", 0.0),
+                "macro_f1": results.get("macro_f1", 0.0),
+                "tp": results.get("tp", 0),
+                "fp": results.get("fp", 0),
+                "fn": results.get("fn", 0),
+            }
+        }) + "\n")
+    
+    # SAVE METRICS TO SEPARATE FILE
+    metrics_file = output_path.replace(".jsonl", "_metrics.json")
+    with open(metrics_file, "w", encoding="utf-8") as f:
+        json.dump({
+            "total_rows": results.get("total_rows", len(output_rows)),
+            "micro_precision": results.get("micro_precision", 0.0),
+            "micro_recall": results.get("micro_recall", 0.0),
+            "micro_f1": results.get("micro_f1", 0.0),
+            "macro_f1": results.get("macro_f1", 0.0),
+            "tp": results.get("tp", 0),
+            "fp": results.get("fp", 0),
+            "fn": results.get("fn", 0),
+        }, f, indent=2)
+    
     logger.info(f"\nOutput saved → {output_path}")
+    logger.info(f"  - Rows 1-{len(output_rows)}: Individual predictions")
+    logger.info(f"  - Row {len(output_rows)+1}: FINAL_METRICS")
+    logger.info(f"Metrics saved → {metrics_file}")
     logger.info("Done.")
 
 
