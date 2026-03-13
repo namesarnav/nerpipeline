@@ -32,29 +32,32 @@ TIMEX_MODELS=(
     "mdg-nlp/gpt-2-timex-sentence-recognition"
 )
 
+
+
 # TIMEX Datasets
 TIMEX_DATASETS=(
-    "mdg-nlp/timex-recognition-sentence-vocab-substitute"
-    "mdg-nlp/timex-recognition-sentence-vocab-substituted"
-    "mdg-nlp/timex-recognition-sentence-perturbed"
-    "mdg-nlp/domain-timex-clinical-base"
-    "mdg-nlp/domain-timex-clinical"
-    "mdg-nlp/timex-compositional-sentence"
-    "mdg-nlp/domain-timex-recognition-sentence-updated"
-    "mdg-nlp/timex-recognition-sentence-updated"
-    "mdg-nlp/timex-recognition-sentence"
     "mdg-nlp/timex-recognition-sentence-adversarial"
-    "mdg-nlp/timex-recognition-sentence-original"
+    "mdg-nlp/timex-grounding"
+    "mdg-nlp/timex-compositional-sentence"
     "mdg-nlp/timex-recognition-document"
-    "mdg-nlp/adv-timex-sentences-bert-attack"
-    "mdg-nlp/adv-timex-sentences"
-    "mdg-nlp/adv-timex-sentences-textfooler"
-    "mdg-nlp/adv-timex-sentences-ner_clare"
+    "mdg-nlp/conll-format-time-expression"
+    "mdg-nlp/domain-timex-recognition-sentence"
+    "mdg-nlp/domain-timex-recognition"
     "mdg-nlp/adv-timex-sentences-morpheus"
+    "mdg-nlp/timex-recognition-sentence-original"
     "mdg-nlp/adv-timex-sentences-deepword"
-    "mdg-nlp/adv-timex-sentences-bae"
-    "mdg-nlp/timex-recognition-sentence-private"
+    "mdg-nlp/adv-timex-sentences-ner_clare"
+    "mdg-nlp/adv-timex-sentences-bert-attack"
+    "mdg-nlp/domain-timex-recognition-sentence-updated"
+    "mdg-nlp/timex-recognition-sentence"
+    "mdg-nlp/timex-recognition-sentence-perturbed"
     "mdg-nlp/timex-recognition"
+    "mdg-nlp/domain-timex-clinical"
+    "mdg-nlp/adv-timex-sentences-textfooler"
+    "mdg-nlp/timex-recognition-sentence-vocab-substituted-updated"
+    "mdg-nlp/domain-timex-clinical-base"
+    "mdg-nlp/timex-recognition-sentence-vocab-substituted"
+    "mdg-nlp/adv-timex-sentences-bae"
 )
 
 TOTAL_RUNS=$((${#TIMEX_MODELS[@]} * ${#TIMEX_DATASETS[@]}))

@@ -1,0 +1,126 @@
+======================================================
+TIMEX INFERENCE PIPELINE
+Started at: Fri Mar 13 15:46:08 CDT 2026
+======================================================
+
+Total combinations: 48
+
+
+======================================================
+RUN [1/48]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/eventx-recognition-original,
+======================================================
+>>> Running inference...
+15:46:11 | ============================================================
+15:46:11 | NER INFERENCE PIPELINE
+15:46:11 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:46:11 |   Dataset     : mdg-nlp/eventx-recognition-original,  (split=test)
+15:46:11 |   Task        : time
+15:46:11 |   Max samples : 400
+15:46:11 |   Gold field  : gold_timex_expressions
+15:46:11 |   Pred field  : post_processed_timex_expressions
+15:46:11 | ============================================================
+15:46:11 | 
+Loading dataset: mdg-nlp/eventx-recognition-original,
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1664, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1534, in dataset_module_factory
+    dataset_readme_path = api.hf_hub_download(
+        repo_id=path,
+    ...<3 lines>...
+        proxies=download_config.proxies,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py", line 160, in validate_repo_id
+    raise HFValidationError(
+    ...<3 lines>...
+    )
+huggingface_hub.errors.HFValidationError: Repo id must use alphanumeric chars, '-', '_' or '.'. The name cannot start or end with '-' or '.' and the maximum length is 96: 'mdg-nlp/eventx-recognition-original,'.
+ ### Inference completed successfully ### 
+Progress: 1 successful, 0 failed
+
+======================================================
+RUN [2/48]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/eventx-recognition-sentence-vocab-substituted-updated,
+======================================================
+>>> Running inference...
+15:46:14 | ============================================================
+15:46:14 | NER INFERENCE PIPELINE
+15:46:14 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:46:14 |   Dataset     : mdg-nlp/eventx-recognition-sentence-vocab-substituted-updated,  (split=test)
+15:46:14 |   Task        : time
+15:46:14 |   Max samples : 400
+15:46:14 |   Gold field  : gold_timex_expressions
+15:46:14 |   Pred field  : post_processed_timex_expressions
+15:46:14 | ============================================================
+15:46:14 | 
+Loading dataset: mdg-nlp/eventx-recognition-sentence-vocab-substituted-updated,
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1664, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1534, in dataset_module_factory
+    dataset_readme_path = api.hf_hub_download(
+        repo_id=path,
+    ...<3 lines>...
+        proxies=download_config.proxies,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py", line 160, in validate_repo_id
+    raise HFValidationError(
+    ...<3 lines>...
+    )
+huggingface_hub.errors.HFValidationError: Repo id must use alphanumeric chars, '-', '_' or '.'. The name cannot start or end with '-' or '.' and the maximum length is 96: 'mdg-nlp/eventx-recognition-sentence-vocab-substituted-updated,'.
+ ### Inference completed successfully ### 
+Progress: 2 successful, 0 failed
+
+======================================================
+RUN [3/48]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/domain-eventx-recognition,
+======================================================
+>>> Running inference...

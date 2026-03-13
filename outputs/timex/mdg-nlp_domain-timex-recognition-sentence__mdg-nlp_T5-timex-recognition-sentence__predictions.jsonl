@@ -1,0 +1,401 @@
+{"text": "Admission Date :\n2012-06-07\nDischarge Date :\n2012-06-09\nService :\nMEDICINE\nHistory of Present Illness :\nMr. Vazquez is a 48 year old man with a history of hepatitis C , bipolar disorder with suicide attempts in the past , recent CMED admit earlier in 4/05 who was found alert approximately one hour after taking an unspecified number of pills .", "gold_timex_expressions": ["2012-06-07", "4/05", "one hour", "2012-06-09"], "post_processed_timex_expressions": ["year", "past", "earlier"]}
+{"text": "Per report , there were empty bottles of Inderal and Klonopin found at bedside , as well as 02-26 full bottles of geodon , gabapentin , Lescol and paroxitine .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The patient was reportedly alert at scene , and then became unresponsive in route to the hospital .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "In the Rita , the patient was intubated and given activated charcoal .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "His initial BP was 60/P with a pulse in the 60 s.\nHe was given 4 amps of calcium gluconate , and started on a Calcium gtt .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "He was also given 5mg of glucagon and started on a glucagon drip with good response .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "His urine and serum tox screens were notable only for benzos , otherwise negative .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "He was seen by cardiology , and toxicology was consulted via telephone .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "He was admitted to the CMED , intubated for airway protection and started on both a calcium and glucagon drip .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "There was evidence of possible aspiration pneumonia on CXR , though he was extubated without incident on the AM of transfer to the medicine floor .", "gold_timex_expressions": ["the AM"], "post_processed_timex_expressions": []}
+{"text": "CMED was made aware , and they are actively involved in his care .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Brief Hospital Course :\nA/P : 48yo man with h/o HCV , bipolar DO , h/o suicide attempts , a/w overdose of Inderal , Klonopin , Geodon , s/T Jackson stay with intubation for airway protection , with question of L retrocardiac infiltrate , now doing well .", "gold_timex_expressions": [], "post_processed_timex_expressions": ["now"]}
+{"text": "Overdose :\n- monitor on tele overnight\n- if HR drops , restart glucagon gtt\n- watch for BZD withdrawal , agitation\nBipolar disorder :\n- appreciate CMED consult ; patient to be discharged to inpatient CMED facility once stable\n- suicide precautions\nActivity : OOB with assist\nFEN : house diet\nPPX : SC heparin , bowel regimen , nicotine patch\nCODE : full\nDISPO : transfer to inpatient CMED likely tomorrow", "gold_timex_expressions": ["overnight", "tomorrow"], "post_processed_timex_expressions": []}
+{"text": "Admission Date :\n2015-07-12\nDischarge Date :\n2015-07-19\nService :\nHISTORY OF PRESENT ILLNESS :\nHISTORY OF PRESENT ILLNESS :\nThe patient is a 48 - year-old woman who was transferred from Shaugnessy-Kaplan Rehab Hospital .", "gold_timex_expressions": ["2015-07-12", "2015-07-19"], "post_processed_timex_expressions": []}
+{"text": "The patient originally presented to her PCP approximately one week prior to admission here with increasing cough , dyspnea and fatigue .", "gold_timex_expressions": ["one week"], "post_processed_timex_expressions": ["week"]}
+{"text": "She was given a Z-Pak for treatment along with albuterol .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Despite this , she continued to worsen and became febrile .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "So , she was admitted to Shaugnessy-Kaplan Rehab Hospital on 2015-07-10 .", "gold_timex_expressions": ["2015-07-10"], "post_processed_timex_expressions": []}
+{"text": "At the hospital , she was started on Rocephin and Levaquin for a right lower lobe pneumonia seen on chest x-ray .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She continued to have increasing respiratory distress with hypoxia .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She was also significantly tachypneic .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "At this time , repeat chest x-ray showed bilateral diffuse infiltrates consistent with ARDS .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The patient was intubated and then transferred to Hahnemann General Hospital CMED .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "SUMMARY OF HOSPITAL COURSE :\nRespiratory :\nOn admission , the patient had what appeared to be acute respiratory distress syndrome secondary to community - acquired pneumonia .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She was maintained on a ventilator and ventilated according to ARDSNet protocol .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "For antibiotic coverage of her pneumonia , she was started on Levaquin , ceftriaxone , and vancomycin .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Over the next two days after admission , the patient 's vent settings were gradually weaned , and she was extubated two days after being transferred to this hospital .", "gold_timex_expressions": ["the next two days", "two days"], "post_processed_timex_expressions": ["next two days", "days"]}
+{"text": "After extubation , the patient was oxygenating well on face mask .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She did continue to have a persistent fairly severe cough ; however , her cough was weak due to abdominal muscle pain from repeated coughing .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The cough was mostly nonproductive .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The patient was breathing comfortably .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "As there was no identified bacterial pathogen on any cultures , the patient was continued on the triple antibiotics for first several days of the hospitalization .", "gold_timex_expressions": ["first several days"], "post_processed_timex_expressions": ["days"]}
+{"text": "She was also on round-the-clock Atrovent and albuterol nebulizers .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Once the patient was transferred out of the ICU and after extubation , the antibiotics were gradually narrowed .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The vancomycin and Levaquin were discontinued after approximately four days in the hospital .", "gold_timex_expressions": ["four days"], "post_processed_timex_expressions": ["days"]}
+{"text": "The ceftriaxone was discontinued after four days in the hospital , and the patient was to continue on Levaquin .", "gold_timex_expressions": ["four days"], "post_processed_timex_expressions": ["days"]}
+{"text": "The patient had gradual improvement in her oxygenation .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Pain control :\nThe patient had fairly significant abdominal pain secondary to persistent cough .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She was started on a regimen of MS Contin with oxycodone for breakthrough pain .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "This helped her somewhat though she has continued to have difficulty coughing due to the pain .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Tylenol and ibuprofen were also added for better control .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Transaminitis :\nThe patient was noted to have mild transaminitis on admission .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "However , this was felt to be due to her significant infection .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "This should continue to be followed as an outpatient to assure that it returns back to normal .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Anemia :\nThe patient 's reticulocyte count showed inadequate production .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Iron studies showed a mixed picture with decreased iron and decreased iron to TIBC ratio suggestive of iron-deficiency anemia , but also normal to high MCV .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "B12 was noted to be low and the patient was given an injection of IM B12 while in the hospital .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She was also started on iron supplementation .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Hypothyroidism :\nThe patient was continued on Synthroid for her chronic hypothyroidism .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "ADMISSION DATE :\n9-2-94\nDISCHARGE DATE :\n9-18-94\nSPECIAL PROCEDURES AND OPERATIONS :\nSeptember 11 , 1994 , coronary artery bypass surgery .", "gold_timex_expressions": ["9-2-94", "9-18-94", "September 11 , 1994"], "post_processed_timex_expressions": ["11", "1994"]}
+{"text": "MEDICATIONS ON DISCHARGE :\nCoumadin 5 mg PO q.day , Digoxin 0.25 mg PO q.day , Metoprolol 25 mg PO b.i.d.", "gold_timex_expressions": ["q.day", "q.day", "b.i.d."], "post_processed_timex_expressions": []}
+{"text": ", Baby aspirin 80 mg PO q.day .", "gold_timex_expressions": ["q.day"], "post_processed_timex_expressions": []}
+{"text": "The patient will be followed by the Anticoagulation Clinic for prothrombin time level evaluations and appropriate Coumadin doses .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "IDENTIFYING DATA :\nThe patient is a 66 year old Portuguese speaking gentleman with a history of hypertension , diabetes mellitus , increasing cholesterol , and history of tobacco use , who is status post myocardial infarction in September of 1993 and February of 1993 , who presented with new onset of left chest pain and arm pain for two days .", "gold_timex_expressions": ["September of 1993", "February of 1993", "two days"], "post_processed_timex_expressions": ["year", "September", "1993", "February", "days"]}
+{"text": "Apparently , patient was in his usual state of health until two days prior to admission when he noted new onset of chest pain and arm pain , confined to his left side .", "gold_timex_expressions": ["two days"], "post_processed_timex_expressions": ["two days"]}
+{"text": "The chest pain was considered mild but persistent with episodes lasting twenty minutes .", "gold_timex_expressions": ["twenty minutes"], "post_processed_timex_expressions": ["minutes"]}
+{"text": "He came to the emergency room with chest pain on July 22 , 1994 , relieved with sublingual nitroglycerin .", "gold_timex_expressions": ["July 22 , 1994"], "post_processed_timex_expressions": ["July 22", "1994"]}
+{"text": "No history of nausea and vomiting or shortness of breath .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Denies fevers , pleuritic chest pain or cough .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The electrocardiogram showed pseudonormalization of T waves in V1 through V6 and Q waves in V1 through V3 .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The patient &apos;s past cardiac history is significant for an anterior myocardial infarction in September of 1993 and a non-Q wave myocardial infarction in February of 1993 .", "gold_timex_expressions": ["September of 1993", "February of 1993"], "post_processed_timex_expressions": ["September", "February", "1993"]}
+{"text": "The patient in September of 1993 had 3-4 millimeter ST segment elevation in V1 through V4 and depression in II , III , and AVF .", "gold_timex_expressions": ["September of 1993"], "post_processed_timex_expressions": ["September"]}
+{"text": "At the time , patient had bright red blood per rectum as well and patient had cardiac catheterization at the time which showed 95% left anterior descending , which was percutaneous transluminal coronary angioplastied and had intra-aortic balloon pump placement .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "He had a CPK of over 5000 with MB fraction of 26.7 .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The echocardiogram showed a 44% ejection fraction with anterior akinesis and septal hypokinesis .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "He had a positive exercise tolerance test with Thallium and repeat cardiac catheterization showed left anterior descending being patent and distal posterior descending artery lesion with circumflex lesion after the obtuse marginal 1 .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "In February of 1993 , patient again presented with chest pain , shortness of breath , ruled in for a non-Q wave myocardial infarction with CPK peak of 219 and MB of 20.9 .", "gold_timex_expressions": ["February of 1993"], "post_processed_timex_expressions": ["February"]}
+{"text": "Repeat cardiac catheterization showed re-stenosis of proximal left anterior descending that had been percutaneous transluminal coronary angioplastied and a lesion in the first obtuse marginal and a moderate to severe left circumflex lesion after the third obtuse marginal .", "gold_timex_expressions": [], "post_processed_timex_expressions": ["first", "third"]}
+{"text": "He also had an akinetic anterolateral and apical ventricle .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "CARDIAC RISK FACTORS :\nAgain , patient &apos;s cardiac risk factors include hypertension , diabetes mellitus , increasing cholesterol and a positive family history and tobacco use .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "In the past , patient had been noted to be non-compliant with cardiac medications and continues to smoke .", "gold_timex_expressions": [], "post_processed_timex_expressions": ["past"]}
+{"text": "HOSPITAL COURSE :\nThe patient was admitted for rule out myocardial infarction .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The patient ruled in for myocardial infarction with CPK maximum on hospital day number one peak of 186 and iso of 23.8 and index of 12.8 on September 2 , 1994 .", "gold_timex_expressions": ["hospital day number one", "September 2 , 1994"], "post_processed_timex_expressions": ["day", "September 2", "1994"]}
+{"text": "The patient was seen in consultation by Dr. Signs for Dr. Churlaunt of Cardiology .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The patient received the appropriate protocol for myocardial infarction , intravenous heparin , aspirin , and beta blockers for rate and blood pressure control .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The patient on the date of September 5 , 1994 had cardiac catheterization which showed normal resting hemodynamics .", "gold_timex_expressions": ["September 5 , 1994"], "post_processed_timex_expressions": ["September"]}
+{"text": "The patient has a small non-dominant right coronary artery , left anterior descending showed severe proximal lesion with more distal lesions of diagonal one .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The left circumflex was dominant with severe disease of obtuse marginal one , with moderate mid-circumflex stenosis and moderate posterior descending artery lesion .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The left ventriculography shows anterior akinesis and apical severe hypokinesis with a moderately depressed ejection fraction , cardiac output of 3.9 , index of 2.0 .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The patient was seen in consultation by Cardiac Surgery for evaluation of coronary artery bypass grafting .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The patient had stable hematocrit of 38% on intravenous heparin .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The carotid noninvasives preoperatively were negative .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Dental consult was negative .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "On the date of September 11 , 1994 , patient underwent a coronary artery bypass grafting with saphenous vein graft to the posterior descending artery , circumflex and diagonal and left internal mammary artery to the left anterior descending .", "gold_timex_expressions": ["September 11 , 1994"], "post_processed_timex_expressions": ["September 11", "1994"]}
+{"text": "The patient had a bypass time of one hour and fifty minutes with good urine output and pre-bypass cardiac output of 4.0 , post-chest closure 5.3 , arrived to the Surgical Intensive Care Unit on Nipride , Lidocaine of 1 and Fentanyl/ Versed of 10 .", "gold_timex_expressions": ["one hour and fifty minutes"], "post_processed_timex_expressions": []}
+{"text": "The postoperative hematocrit was 26% .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The patient had a routine postoperative course in the Surgical Intensive Care Unit with a postoperative BUN and creatinine of 11 and 1.2 with good urine output of over 100 an hour and patient received two units of packed red blood cells , fresh frozen plasma and platelets for increasing chest tube drainage .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The patient on the date of postoperative day number one , September 13 , 1994 , was transferred from the Surgical Intensive Care Unit up to the FIH 18 floor .", "gold_timex_expressions": ["postoperative day number one , September 13 , 1994"], "post_processed_timex_expressions": ["day", "September"]}
+{"text": "The patient &apos;s only post-Surgical Intensive Care Unit course was remarkable for hypertension requiring Nipride and bleeding which was controlled with fresh frozen plasma , platelets .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The patient had a stable hematocrit of 30% with CPK &apos;s postoperatively maximum MB fraction of 78 .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "On postoperative day number three , patient went into atrial fibrillation , which was treated appropriately with metoprolol and digoxin and converted back to sinus rhythm .", "gold_timex_expressions": ["postoperative day number three"], "post_processed_timex_expressions": []}
+{"text": "The patient continued to need diuresis .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The postoperative medications up on FIH were Coumadin , baby aspirin , Isordil 10 PO t.i.d.", "gold_timex_expressions": ["t.i.d."], "post_processed_timex_expressions": []}
+{"text": ", Digoxin .25 q.day , metoprolol 25 PO b.i.d.", "gold_timex_expressions": ["q.day", "b.i.d."], "post_processed_timex_expressions": []}
+{"text": "______________\nChest tubes and wires were all discontinued according to protocol on postoperative day number four .", "gold_timex_expressions": ["postoperative day number four"], "post_processed_timex_expressions": ["day"]}
+{"text": "The Isordil was also discontinued .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The patient &apos;s incisions sternal and right leg were clean and healing well , normal sinus rhythm at 70-80 , with blood pressure 98-110/60 and patient was doing well , recovering , ambulating , tolerating regular diet and last hematocrit prior to discharge was 39% with a BUN and creatinine of 15 and 1.0 , prothrombin time level of 13.8 , chest X-ray prior to discharge showed small bilateral effusions with mild cardiomegaly and subsegmental atelectasis bibasilar and electrocardiogram showed normal sinus rhythm with left atrial enlargement and no acute ischemic changes on electrocardiogram .", "gold_timex_expressions": [], "post_processed_timex_expressions": ["last"]}
+{"text": "Note :\npatient needs anticoagulation for large saphenous vein graft to prevent any possibility of thrombosis .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The patient was discharged home in stable condition and will follow up with his cardiologist and will follow up with Dr. Hemp and Dr. Signs .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "A NECESSARY , M.D.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Admission Date :\n2014-12-03\nDischarge Date :\n2014-12-18\nService :\nMedicine\nHISTORY OF PRESENT ILLNESS :\nThe patient is a 52 - year-old female with no known cardiopulmonary history who presented with a chief complaint of dyspnea on exertion as well as exertional chest tightness which was acute-on-chronic .", "gold_timex_expressions": ["2014-12-03", "2014-12-18"], "post_processed_timex_expressions": []}
+{"text": "The patient stated her symptoms began in 2011 and have increased in intensity and frequency every since then .", "gold_timex_expressions": ["2011"], "post_processed_timex_expressions": ["every"]}
+{"text": "She reports dyspnea on exertion and chest tightness daily which worsened significantly one day prior to admission .", "gold_timex_expressions": ["daily", "one day prior to admission"], "post_processed_timex_expressions": ["day"]}
+{"text": "Says that she could not walk a few yards without developing symptoms .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She describes the chest tightness as substernal and epigastric .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She denied any associated nausea , vomiting , diaphoresis , lightheadedness , or dizziness .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She does have radiation of the pain to her neck and jaw bilaterally .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She also describes a fast heart rate and palpitations .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She stated her symptoms improved with rest , and she denied any symptoms beginning when she was at rest .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The patient reports a previous workup which included a negative exercise treadmill test , a normal MIBI in 2011-04-10 , and a normal echocardiogram in 2012 ( except some borderline mild pulmonary hypertension ) with an ejection fraction of 55% .", "gold_timex_expressions": ["2011-04-10", "2012"], "post_processed_timex_expressions": ["2011", "2012"]}
+{"text": "REVIEW OF SYSTEMS :\nReview of systems was significant for menopausal symptoms ( for which she has attempted hormone replacement therapy , discontinued in 2014 ).", "gold_timex_expressions": ["2014"], "post_processed_timex_expressions": []}
+{"text": "She also reports difficulty sleeping , daytime sleepiness .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She sleeps on elevated pillows secondary to her gastroesophageal reflux disease .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Occasional paroxysmal nocturnal dyspnea in the past but none recently .", "gold_timex_expressions": [], "post_processed_timex_expressions": ["past"]}
+{"text": "Occasional lower extremity edema , left greater than right .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "No abdominal or urinary complaints .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "HOSPITAL COURSE :\nThe patient is a 52 - year-old female with no known history of cardiac disease presenting with dyspnea on exertion and chest tightness , who was admitted for evaluation and management of her symptoms .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "1.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "CARDIOVASCULAR :\nThe patient was admitted for complaints of dyspnea on exertion and chest pressure which could be consistent with angina .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "However , given the long duration of the symptoms and negative workup in the past , it was thought to be unlikely .", "gold_timex_expressions": [], "post_processed_timex_expressions": ["past"]}
+{"text": "However , the patient was started on an aspirin as well as a beta blocker , and a rule out myocardial infarction protocol was initiated .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "A stress thallium was planned for the day following admission .", "gold_timex_expressions": ["the day following admission"], "post_processed_timex_expressions": []}
+{"text": "However , on the night of admission the patient was found lying in her bed diaphoretic and obtunded , and a code was called .", "gold_timex_expressions": ["the night of admission"], "post_processed_timex_expressions": []}
+{"text": "Further examination revealed a strong palpable pulse with a systolic blood pressure in the 130 s and a heart rate in the 80 s.\nOver the course of the next few minutes the patient became increasingly more responsive .", "gold_timex_expressions": ["few minutes"], "post_processed_timex_expressions": ["few minutes"]}
+{"text": "She was treated with a fluid bolus .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The patient quickly responded to a fluid bolus and became interactive .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She reported that she was sitting on the commode urinating and began to feel nauseous and presyncopal .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She was able to get to bed at which point she passed out .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She denied any chest pain or pressure , and no shortness of breath during this event .", "gold_timex_expressions": [], "post_processed_timex_expressions": ["this"]}
+{"text": "A rhythm check obtained during the time of this event demonstrated a pause of six seconds followed by a junctional escape rhythm .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "An electrocardiogram obtained after the code demonstrated no acute changes .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Her acute bradycardic event was felt likely secondary to her new beta blocker in conjunction with a vagal response .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "It was determined to stop the beta blocker , and atropine was placed at the bedside .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "On the following day the patient underwent an echocardiogram which demonstrated dilated right ventricle secondary to chronic dysfunction and a pulmonary artery pressure of greater than 100 .", "gold_timex_expressions": ["the following day"], "post_processed_timex_expressions": ["day"]}
+{"text": "Her stress test was cancelled .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "A CT angiogram was ordered to evaluate for chronic thromboembolic disease as a potential cause of her pulmonary hypertension .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She was ruled out for myocardial infarction with three sets of normal enzymes and continued to be monitored on telemetry .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "A Pulmonary consultation was obtained to evaluate for possible etiology of the patient 's hypotension .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "There was little evidence to suggest any cardiac disease , and given the patient 's Grave's disease an autoimmune process was felt to be possible .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "In addition , consideration was given to sarcoidosis , human immunodeficiency virus , and drug-induced given her history of herbal medication use .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "It was recommended that the patient begin anticoagulation given the severity of her pulmonary hypertension .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "It was also planned to undergo a right heart catheterization with a vasodilation trial by the catheterization laboratory .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "A right heart catheterization was performed on 2014-12-05 .", "gold_timex_expressions": ["2014-12-05"], "post_processed_timex_expressions": []}
+{"text": "A pharmacologic pulmonary vasodilator challenge was performed with a positive response .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "In addition , a CT angiogram of the chest with pulmonary embolism protocol showed no intravascular filling defect but did show a right upper lobe ground-glass and scattered adenopathy .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Therefore , in the end left atrial hypertension was essentially ruled out as a primary cause .", "gold_timex_expressions": [], "post_processed_timex_expressions": ["end left"]}
+{"text": "Chronic pulmonary embolus was less likely given her negative CT angiogram .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Chronic lung disease was unlikely given the patient 's normal pulmonary function tests and DLCO in 2012 as well as a normal CT angiogram .", "gold_timex_expressions": ["2012"], "post_processed_timex_expressions": []}
+{"text": "Collagen vascular disease could not be definitively ruled out ; however , given the patient 's lack of connective tissue disorder stigmata it was thought to be less likely , and the patient 's human immunodeficiency virus test was negative .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Therefore , it was felt that the patient was most likely experiencing a primary pulmonary hypertension .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Consideration was given to treating the patient with a course of calcium channel blocker ; however , given the patient 's poor response to Lopressor , it was determined that this would not be optimal treatment for the patient 's pulmonary hypertension .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Therefore , her insurance company was contacted regarding the potential of Flolan as a treatment .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Plans were made for placement of a Hickman catheter and initiation of Flolan treatment .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "However , on 12-07 , the patient once again experienced an episode of unresponsiveness .", "gold_timex_expressions": ["12-07"], "post_processed_timex_expressions": []}
+{"text": "Upon arrival by the physician the patient was awake , alert , and oriented with a pulse in the 80 s, with pressure in the 80 s, and satting 100% on room air .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She described this episode as an uncomfortable feeling in her chest .", "gold_timex_expressions": [], "post_processed_timex_expressions": ["this"]}
+{"text": "The patient was treated with 2 liters of intravenous fluids with a bump in her systolic blood pressure to the 90 s.\nReview of telemetry revealed an 8 to 9 beat episode of nonsustained ventricular tachycardia followed by an episode of bradycardia to 60 beats per minute .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The etiology of these cardiovascular episodes was unclear , but was felt likely secondary to the patient 's tenuous cardiovascular status given the fact that she had clear pulmonary hypertension , was very preload dependent , and had an intact left ventricular function but with cardiac output limited due to left ventricular compression by a dilated left ventricle .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Given the patient 's persistent hypotensive episodes , and decreased urine output , she was transferred back to the Medical Intensive Care Unit for management prior to initiation of Flolan therapy .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "On 12-08 , the Hickman catheter was placed in preparation of Flolan administration .", "gold_timex_expressions": ["12-08"], "post_processed_timex_expressions": []}
+{"text": "During the Mass.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Mental Health Center Medical Intensive Care Unit stay , the patient was found to exquisitely preload dependent and responded well to aggressive fluids as needed to maintain her blood pressure with a systolic of greater than 90 .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She had no further episodes of bradycardia during her Medical Intensive Care Unit stay .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "In addition , the patient 's urine output improved dramatically with hydration therapy , suggesting her low urine output was secondary to decreased cardiac output secondary to low preload .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The patient continued to be followed by the Electrophysiology Service , who determined that the patient was demonstrating severe vasal sensitivity with bradycardia necessitating pacemaker placement .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "This was to be deferred until after the patient had her Hickman in place .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Because the patient 's pulmonary pressures responded so well to adenosine during right heart catheterization , it was thought that the patient would be a good candidate for Flolan therapy .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Flolan was initiated on 12-08 at 5 nanograms per kilogram per minute .", "gold_timex_expressions": ["12-08"], "post_processed_timex_expressions": []}
+{"text": "The patient was monitored for symptoms of Flolan therapy including nausea , vomiting , first bite jaw claudication , or hypotension .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Over the course of the hospital stay the patient 's Flolan dose was titrated to receive maximum benefit without precipitating symptoms of Flolan overdose .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The patient was felt to be stable on her current Flolan dose and was therefore transferred back to the floor .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "A high resolution CT was requested to further evaluate for possible secondary cause of her primary pulmonary hypertension ; however , the patient refused it at this time .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Plans for placement of a pacemaker were initiated .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "However , on the night prior to the planned surgical date the patient suffered an episode of bleeding from her Hickman catheter site .", "gold_timex_expressions": ["the night prior to the planned surgical date"], "post_processed_timex_expressions": []}
+{"text": "Surgery was notified and pressure was applied ; however , it did not stop oozing .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "A surgicel dressing was placed and prolonged pressure resulted in resolution of the bleeding .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "In addition , an extra stitch was placed in an effort to stop the bleeding .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Following this episode the patient felt like she was \" too stressed \" for pacemaker placement .", "gold_timex_expressions": [], "post_processed_timex_expressions": ["this"]}
+{"text": "Therefore , she was monitored over the next few days for any further bleeding events .", "gold_timex_expressions": ["few days"], "post_processed_timex_expressions": ["next few days"]}
+{"text": "Over the course of the next few days the patient became more accustomed to her Flolan , and Flolan teaching was continued .", "gold_timex_expressions": ["few days"], "post_processed_timex_expressions": ["few days"]}
+{"text": "She continued to have occasional episodes of dizziness , shortness of breath , and hypotension whenever the alarm sounded suggesting that the Flolan bag needed to be changed .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "However , over the course of the hospital stay these decreased both in frequency and severity .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "On 12-15 , the patient went for placement of a pacemaker .", "gold_timex_expressions": ["12-15"], "post_processed_timex_expressions": []}
+{"text": "She had dual-mode , dual-pacing , dual-sensing pacemaker placed with a lower rate at 60 ppm , and upper rate of 120 ppm with a paced AV of 150 msec .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The patient recovered well from her surgery for pacemaker placement .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "At the time of discharge , the patient was tolerating her Flolan therapy well .", "gold_timex_expressions": ["the time of discharge"], "post_processed_timex_expressions": []}
+{"text": "She had received a full course of Flolan teaching and reported that she and her husband felt comfortable with the administration of the medication at home .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She was set up with a primary pulmonary hypertension support group , and home services were arranged to help her in the initiation of Flolan therapy .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Following pacemaker placement the patient had no further episodes of bradycardia on telemetry , and therefore she was discharged in satisfactory condition .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "2.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "INFECTIOUS DISEASE :\nThe patient had no signs or symptoms of infection at the time of admission .", "gold_timex_expressions": ["the time of admission"], "post_processed_timex_expressions": []}
+{"text": "However , she was noted to have a relatively elevated white blood cell count that remained stable over the course of her hospital stay .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "However , near the end of her hospitalization the patient began describing increased urinary frequency which persisted once her Foley catheter was removed .", "gold_timex_expressions": [], "post_processed_timex_expressions": ["end of"]}
+{"text": "A urinalysis was positive and urine culture grew enterococcus which was pan sensitive .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Therefore , the patient was started on levofloxacin therapy to complete a 10 - day course .", "gold_timex_expressions": ["10 - day course"], "post_processed_timex_expressions": []}
+{"text": "Following initiation of the antibiotic the patient 's white blood cell count quickly came down , and she remained afebrile .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "At the time of discharge , the patient still had a mildly elevated white blood cell count but was asymptomatic with a normal temperature .", "gold_timex_expressions": ["the time of discharge"], "post_processed_timex_expressions": []}
+{"text": "She will complete two more days of Levaquin therapy as an outpatient .", "gold_timex_expressions": ["two more days"], "post_processed_timex_expressions": ["days"]}
+{"text": "3.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "RENAL :\nThe patient 's BUN and creatinine were followed over the course of her hospital stay .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "These remained stable and within normal limits .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "It was felt that the decreased urine output was secondary to her preload dependence , and that her urine output increased significantly when she was adequately hydrated in the Medical Intensive Care Unit .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "4.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "GASTROINTESTINAL :\nThe patient has a history of gastroesophageal reflux disease .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She was continued on Protonix over the course of her hospital stay and had no further gastrointestinal issues .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "5.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "HEMATOLOGY :\nThe patient 's hematocrit remained stable over the course of her hospital stay .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Despite bleeding from the Hickman site , she did not require any transfusion therapy .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "6.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "FLUIDS / ELECTROLYTES / NUTRITION :\nThe patient tolerated a regular diet throughout the course of her hospital stay .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Her electrolytes were checked on a daily basis and remained within normal limits , being replaced as needed .", "gold_timex_expressions": ["daily basis"], "post_processed_timex_expressions": []}
+{"text": "She was discharged to home on a regular diet .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "7.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "ENDOCRINE :\nThe patient with a history of hypothyroidism .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She was continued on her regular Synthroid dose .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She will need a TSH and T4 checked as an outpatient .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "8.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "CODE STATUS :\nThe patient is a full code .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "9.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "FLOLAN ADMINISTRATION :\nAt the time of discharge , the patient was tolerating a Flolan dose of 5 nanograms per kilogram per minute .", "gold_timex_expressions": ["the time of discharge"], "post_processed_timex_expressions": []}
+{"text": "A Physical Therapy consultation was obtained to initiate a 6 - minute walk test .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "On room air , the patient 's oxygen saturation was 95% and dropped to 88% following a 6 - minute walk .", "gold_timex_expressions": ["6 - minute"], "post_processed_timex_expressions": []}
+{"text": "The patient was discharged to home with appropriate Flolan teaching and supplies .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She was to follow up with Dr. Savage in the Clinic the following week .", "gold_timex_expressions": ["the following week"], "post_processed_timex_expressions": ["week"]}
+{"text": "Admission Date :\n2009-12-28\nDischarge Date :\n2009-12-31\nService :\nNEUROMEDIC\nHISTORY OF PRESENT ILLNESS :\nMrs. Wisniewski is a 45-year-old woman with multiple familial cavernous hemangiomas .", "gold_timex_expressions": ["2009-12-28", "2009-12-31"], "post_processed_timex_expressions": []}
+{"text": "She is right-handed .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She was in her usual state of health until one and a half weeks prior to admission .", "gold_timex_expressions": ["one and a half weeks"], "post_processed_timex_expressions": ["one", "weeks"]}
+{"text": "She developed an ear ache , for which she saw her primary care physician , Evelyn was prescribed cortisone drops .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "A few days later she complained of dizziness .", "gold_timex_expressions": ["A few days later"], "post_processed_timex_expressions": ["days"]}
+{"text": "This was mostly described as feeling unsteady on her feet .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She stated that she had trouble knowing if her feet were touching the ground .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She was seen again by primary care physician , Roderick since she had complaints of dizziness , as well as a new complaint of decreased hearing and the sensation of static in her ears , meniere 's disease was considered .", "gold_timex_expressions": [], "post_processed_timex_expressions": ["care"]}
+{"text": "She was given an oral prednisone taper .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "This unsteady gait progressed , and then she subsequently started to develop a pins and needle feeling in the face , hands and feet bilaterally .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Her hearing got progressively worse and the sound of static increased .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She was very fatigued .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "At an outside hospital , head CT revealed a 1.5 cm diameter hyperdense mass in the pons , slightly off center to the right .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She was transferred here for further care .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "HOSPITAL COURSE :\nMrs. Wisniewski is a 45 - year-old woman with a strong family history of cavernous angiomas .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She has had several prior bleeding events and presented with a subacute bleed in the mid to lower pons .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "There was relatively central in location , with only a slight right-sided predominance .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Her physical examination remained relatively unchanged , with resolution of the subtle left hand weakness and right facial weakness .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Her gait remained severely ataxic , likely secondary to sensory deafferentation , as well as involvement of crossing pontine cerebellar fibers .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Therefore , it was recommended that she have aggressive Physical Therapy at an Acute Rehabilitation Center .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The case was discussed with Dr. Harold from the Falmouth Hospital .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "He has followed this family in the past and will see her in follow-up .", "gold_timex_expressions": [], "post_processed_timex_expressions": ["past"]}
+{"text": "We will arrange to have a copy of the MRI scans sent to him .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Admission Date :\n2016-03-04\nDischarge Date :\n2016-03-22\nService :\nHISTORY OF PRESENT ILLNESS :\nHISTORY OF PRESENT ILLNESS :\nThis is an 85 year old man initially admitted to the Plastic Surgery Service for evaluation of a left facial mass .", "gold_timex_expressions": ["2016-03-04", "2016-03-22"], "post_processed_timex_expressions": ["year"]}
+{"text": "Subsequently , CMED CCU was consulted and he was transferred to our Service postoperatively .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "HOSPITAL COURSE :\nHe was initially admitted to CMED for resection and repair of this left facial lesion .", "gold_timex_expressions": [], "post_processed_timex_expressions": ["this"]}
+{"text": "He also had consults from Urology for his hematuria as well as Medicine preoperatively and CMED CCU .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "He went to the Operating Room on 2016-03-10 with Urology for hematuria where he had a cystoscopy transurethral resection of prostate placement .", "gold_timex_expressions": ["2016-03-10"], "post_processed_timex_expressions": []}
+{"text": "He then went to the Operating Room on 2016-03-14 where he had resection of the left face squamous cell cancer by Dr. Langhorne and split thickness and full thickness skin grafting of the defects on 2016-03-14 .", "gold_timex_expressions": ["2016-03-14", "2016-03-14"], "post_processed_timex_expressions": []}
+{"text": "He tolerated the procedure well with no complications except postoperatively , his voice was hoarse .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "On scoping him he had significant supraglottic edema .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "He was kept in the Unit for observation of his airway and b.i.d.", "gold_timex_expressions": ["b.i.d."], "post_processed_timex_expressions": []}
+{"text": "laryngoscopy .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "This revealed some supraglottic edema which revealed with time , without further intervention .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "He was followed by Plastic Surgery for his split thickness skin graft and his bolster was discontinued on postoperative day #5 with good take up of his skin graft .", "gold_timex_expressions": ["postoperative day #5"], "post_processed_timex_expressions": ["day"]}
+{"text": "Urology also followed him and kept him on antibiotics until postoperative day #7 at which point antibiotics were discontinued .", "gold_timex_expressions": ["postoperative day #7"], "post_processed_timex_expressions": ["day"]}
+{"text": "His\nFoley was also discontinued .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "He is being discharged to rehabilitation to follow up for XRT given the fact that his pathology revealed squamous cell cancer extending deep to the margin as well as positive level II nodes .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Dr. Navarrete has been e-mailed and his secretary contacted for as soon as possible appointment for XRT follow up .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "He should also follow up with Dr. Rankin and Dr. Langhorne .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "He is being discharged , most likely , to Falmouth Hospital .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Admission Date :\n2016-05-10\nDischarge Date :\n2016-05-16\nService :\nMEDICINE\nHistory of Present Illness :\n30-year-old woman with metastatic squamous cell carcinoma of unknown primary .", "gold_timex_expressions": ["2016-05-10", "2016-05-16"], "post_processed_timex_expressions": []}
+{"text": "At ChelseaWomens ' , about 04-25 , she developed pseudomonal urosepsis and vaginal bleeding from tumor extension/anti-coagulation .", "gold_timex_expressions": ["04-25"], "post_processed_timex_expressions": []}
+{"text": "She was transfered to AttleboroHospital after an arrest .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Her course was complicated by post-hypotensive coma as well as subarachnoid hemorrhages and intraparenchymal bleeds .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Neurologists at RIH felt she had a poor prognosis , but communication between the medical team and family was strained and transfer was arranged to Mediplex Rehab Hospital for a second opinion .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Her outside course in more detail:\nPatient transferred from Women and Infants Hospital to RI Hospital 2016-04-25 with weaknes , vag bleeding x several days , fever 102.5 , hypotension , hypoxic 84% on 4L NC , tachypnic to 30 , with labs significant for lactate 6.3 , wbc <1.0 , plt 9 , hgb 8.9 , and INR greater than lab threshold .", "gold_timex_expressions": ["2016-04-25", "several days"], "post_processed_timex_expressions": ["days"]}
+{"text": "Intubated for airway protection ( ABG 7.39/26.5/73.6 ) and placed on levophed .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": ".", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Placed on Reynolds/vanc/fluc/gentamicin for neutropenic fever and thrush initially .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "IVC filter placed 04-26 .", "gold_timex_expressions": ["04-26"], "post_processed_timex_expressions": []}
+{"text": "CT abdomen consistent with large necrotic pelvic mass - not sampled 02-12 coagulopathy .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "04-27 results from Blood Cx from W+I :\n04-24 PICC Bld Cx : pseudomonas Diaz to zosyn , cipro , cefepime , Tardugno -- staph epi- Gray to vanc\n04-24 Peripheral Bld Cx : pseudomonas as above\n04-24 Urine Cx : pseudomonas as above\nAbx changed to vanc , zosyn , cipro , fluc , azith .", "gold_timex_expressions": ["04-27", "04-24", "04-24", "04-24"], "post_processed_timex_expressions": []}
+{"text": "Pressors weaned off by 04-27 .", "gold_timex_expressions": ["04-27"], "post_processed_timex_expressions": []}
+{"text": "Completed 7 days of vanc/fluc , 13/14 days of cipro/zosyn .", "gold_timex_expressions": ["7 days", "13/14"], "post_processed_timex_expressions": ["days", "days"]}
+{"text": "Continued to have recurrent fevers .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": ".", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Seen by Urology who did not change stents given severe coagulopathy and worsening renal function .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Found to be in DIC and supported with daily blood products .", "gold_timex_expressions": ["daily"], "post_processed_timex_expressions": []}
+{"text": "Seen by heme and GCSF started .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Despite aggressive blood product repletion patient poorly responsive 02-12 alloimmunization .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Plt count 1 on 2016-04-29 .", "gold_timex_expressions": ["2016-04-29"], "post_processed_timex_expressions": []}
+{"text": "Supported on TPN for nutrition then switched to tube feeds .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Developed renal failure with Cr peak of 2.9.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Seen by renal who felt was c/w ATN .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": ".", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Head CT done 05-04 with bilateral SAH and L temporal parenchymal hematoma .", "gold_timex_expressions": ["05-04"], "post_processed_timex_expressions": []}
+{"text": "Also with multiple masses consistent with metastasis .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Placed on Dilantin .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Neurosurgery consulted .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Felt secondary to low platelets with no surgical intervention indicated .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": ".", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Mult family meetings given poor prognosis .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Initially decided not to escilate care and make DNR 05-05 .", "gold_timex_expressions": ["05-05"], "post_processed_timex_expressions": []}
+{"text": "Then progressed to withdrawal of care 05-06 with plan to extubate 05-07 .", "gold_timex_expressions": ["05-06", "05-07"], "post_processed_timex_expressions": []}
+{"text": "However there was dissent among neurologists about patient 's ability to recover from the SAH while awaiting family members and the patient was changed to full code .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Given 48 hours off sedation with out change in mental status ( last morphine was 2016-05-07 ) .", "gold_timex_expressions": ["48 hours", "2016-05-07"], "post_processed_timex_expressions": []}
+{"text": "Transferred to Mediplex Rehab Hospital for further work up .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": ".", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "On arrival to the FICU the patient was intubated and non-sedated .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Brief Hospital Course :\n30 yo F with metastatic squamous cell carcinoma of unknown primary who presented to OSH 04-25 with pseudomonal urosepsis , vaginal bleeding from tumor extension/anti-coagulation .", "gold_timex_expressions": ["04-25"], "post_processed_timex_expressions": []}
+{"text": "Course complicated by sub arachnoid hemorrhages and intraparenchymal bleeds as well as potential hypotensive brain injury with poor prognosis per neurology .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Transferred here for second opinion on poor prognosis .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": ".", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "# Neurologic - The patient was seen by the Neurology consult service and underwent MRI head which revealed lesions suspicious for metastases , possible hemorrhages , and findings consistent with hypoxic brain injury .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "EEG was performed and revealed encephalopathy .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The patient 's neurologic exam ( performed after sedation removed >48 hours ) revealed intact brainstem function without evidence of higher cortical activity .", "gold_timex_expressions": [">48 hours"], "post_processed_timex_expressions": []}
+{"text": "She had some metabolic abnormalities which were corrected ( hypernatremia , hyperphosphatemia ) , but neurologic exam was unchanged .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "A family meeting on 2016-05-13 was held and these findings communicated with the patient 's family .", "gold_timex_expressions": ["2016-05-13"], "post_processed_timex_expressions": []}
+{"text": "Final neurologic assessment was that the patient was unlikely to regain meaningful neurologic functioning .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "At the request of her family , she will be transferred closer to her home in Wyoming , to Women and Infants hospital .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": ".", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "# Respiratory Failure - Pt arrived on pressure support ventilation , which was changed to Assist control to make patient more comfortable .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She was originally intubated for airway protection , and it is felt she could likely be weaned from the ventilator although she would be extremely high risk for aspiration .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Due to family request to move patient to a hospital closer to home , she will remain intubated until transfer , with plan to extubate upon arrival to Women and Infants hospital with initiation of full palliative care and compliance of DNI status .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": ".", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "# Fevers/Infection - Per outside hospital records , the patient grew pseudomonas from blood and urine .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "At OSH , she was treated with 7 days of vancomycin , as well as 13 days ( of 14-day planned course ) of Ciprofloxacin and Zosyn .", "gold_timex_expressions": ["7 days", "13 days", "14-day"], "post_processed_timex_expressions": ["days"]}
+{"text": "She was intially continued on Cipro/Zosyn .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "CXR 05-11 revealed ?", "gold_timex_expressions": ["05-11"], "post_processed_timex_expressions": []}
+{"text": "pneumonia vs atelectasis at the R lung base .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Continues to spike fever .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Could have still seeding of nephrostomy tube .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Urology at OSH against pulling tube because coagulopathy and may not be able to replace .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Fevers also may be from head bleed , cancer , or drug .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She was continued on zosyn and vancomycin to complete a >14 day course .", "gold_timex_expressions": [">14 day"], "post_processed_timex_expressions": []}
+{"text": "She continued to have fevers .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Antibiotics were discontinued on 05-15 .", "gold_timex_expressions": ["05-15"], "post_processed_timex_expressions": []}
+{"text": "No further infectious course was identified and the fevers may have been due to underlying malignant process .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": ".", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "# Squamous Cell Cancer - unknown primary .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The patient was seen by the oncology consult service who contacted her outside hematologist Dr. Pauling .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Upon discussion with him it was noted that the patient had progression of her disease after systemic therapy with topotecan and cisplatin .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She then proceed to XRT with cisplatin which she was unable to tolerate this secondary to thrombocytopenia ( 40-50K ) .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Given this we were unable to offer her additional therapy.", "gold_timex_expressions": [], "post_processed_timex_expressions": ["this"]}
+{"text": "Hematology/Oncology service at Mediplex Rehab Hospital confirmed her grim prognosis and expective survival in terms of weeks to months with no further available treatment .", "gold_timex_expressions": ["weeks to months"], "post_processed_timex_expressions": ["weeks"]}
+{"text": ".", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "# h/o DVT - patient with head bleed which is contraindication to anti-coagulation .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "IVC filter in place .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Patient was on pneumoboots while in hospital .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": ".", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "# Hypernatremia - Improved from OSH .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Total body volume overloaded .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Water Deficit 2.5 L .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She was continued on free H20 boluses and D5 1/2 NS and corrected .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": ".", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "# Acute Renal Failure - stable , likely 02-12 hypotension leading to ATN that is slowly improving .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": ".", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "# Access - R IJ changed sterilly over wire 05-01 .", "gold_timex_expressions": ["05-01"], "post_processed_timex_expressions": []}
+{"text": "# FEN - tube feeds are held in route in anticipation of extubation .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": ".", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": ".", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "# Code Status :\nAfter multiple discussion with family and the doctor accepting the patient at Women and Infants Hospital ( Dr .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Pauling ) at RI .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "She was made DNR/DNI and the plan is that she will be transferred to WIH and extubated there upon arrival with initiation of full palliative care .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "The family understood this; all questions were answered and they wished to proceed .", "gold_timex_expressions": [], "post_processed_timex_expressions": ["this"]}
+{"text": "They understand that there is no ICU at WIH and no further advanced pulmonary support can be offered .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Discharge Medications :\n1.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Acetaminophen 325 mg Tablet Sig : Two ( 2 ) Tablet PO Q4-6H ( every 4 to 6 hours ) as needed for fever or pain .", "gold_timex_expressions": ["Q4-6H ( every 4 to 6 hours )"], "post_processed_timex_expressions": ["every"]}
+{"text": "2.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Albuterol-Ipratropium 103-18 mcg/Actuation Aerosol Sig : 06-17 Puffs Inhalation Q2-4H ( every 2 to 4 hours ) as needed .", "gold_timex_expressions": ["Q2-4H ( every 2 to 4 hours )"], "post_processed_timex_expressions": ["every"]}
+{"text": "3.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Calcium Acetate 667 mg Capsule Sig : Two ( 2 ) Capsule PO TID W/MEALS ( 3 TIMES A DAY WITH MEALS ) .", "gold_timex_expressions": ["TID W/MEALS ( 3 TIMES A DAY"], "post_processed_timex_expressions": []}
+{"text": "4.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Fentanyl Citrate ( PF ) 0.05 mg/mL Solution Sig : 25-100 mcg Injection Q2H ( every 2 hours ) as needed for comfort .", "gold_timex_expressions": ["Q2H ( every 2 hours )"], "post_processed_timex_expressions": ["25", "every", "hours"]}
+{"text": "5.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Insulin Regular Human 100 unit/mL Solution Sig : 2-10 units Injection ASDIR ( AS DIRECTED ) : per sliding scale for blood sugars > 150mg/dl .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "6.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Midazolam 1 mg/mL Solution Sig : 1-2 mg Injection Q2H ( every 2 hours ) as needed for comfort .", "gold_timex_expressions": ["Q2H ( every 2 hours )"], "post_processed_timex_expressions": ["every", "hours"]}
+{"text": "7.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Phenytoin Sodium 50 mg/mL Solution Sig : One 95y ( 150 ) mg Intravenous Q8H ( every 8 hours ) .", "gold_timex_expressions": ["Q8H ( every 8 hours"], "post_processed_timex_expressions": ["every", "hours"]}
+{"text": "8.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Ranitidine HCl 15 mg/mL Syrup Sig : One 95y ( 150 ) mg PO DAILY ( Daily ) .", "gold_timex_expressions": ["PO DAILY ( Daily )"], "post_processed_timex_expressions": []}
+{"text": "9.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Polyvinyl Alcohol-Povidone 1.4-0.6 % Dropperette Sig : 01-12 Drops Ophthalmic QID ( 4 times a day ) .", "gold_timex_expressions": ["QID ( 4 times a day"], "post_processed_timex_expressions": []}
+{"text": "Discharge Disposition :\nExtended Care\nDischarge Diagnosis :\n1.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Hypoxic brain injury\n2.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Cranial hemorrages ( sub arachnoid and parenchemal )\n3.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Pseudomonal sepsis , completed antibiotic course\n4.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Metastatic Squamous cell carcinoma of unknown primary .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "5.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Thrombocytopenia\n6.", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Blood loss anemia\nDischarge Condition :\nIntubated , stable\nDischarge Instructions :\nYou are being transferred to another hospital , intubated , with the plan to extubate upon arrival to Women 's and Infants hosptial and initiation of palliative care .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": ".", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Your antibiotics were stopped 2016-05-15 ( Vancomycin 1000mg q24 and Aztreonam 1000mg q8 ) as your micorbiology data has been negative and your course for pseudomonal sepsis has been completed .", "gold_timex_expressions": ["2016-05-15", "q24", "q8"], "post_processed_timex_expressions": []}
+{"text": "If you continue to have fevers , blood cultures should be repeated .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Followup Instructions :\nAs directed .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Admission Date :\n06/09/1998\nDischarge Date :\n06/12/1998\nHISTORY OF PRESENT ILLNESS :\nThe patient is an 82 year-old right handed gentleman who has a past medical history of hypertension and tobacco use presented to the emergency room with acute change in mental status .", "gold_timex_expressions": ["06/09/1998", "06/12/1998"], "post_processed_timex_expressions": ["year"]}
+{"text": "He was well until the evening prior to presentation to the emergency room when he complained of headache across the forehead .", "gold_timex_expressions": ["the evening"], "post_processed_timex_expressions": ["evening"]}
+{"text": "On the day of presentation , he was then found by his daughter lying on his bed groaning , being relatively unresponsive and unable to speak .", "gold_timex_expressions": ["the day of presentation"], "post_processed_timex_expressions": ["day"]}
+{"text": "The family reported one episode of vomiting at home .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "HOSPITAL COURSE :\nThe patient was admitted to a telemetry bed and started on heparin .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Around 4:00 AM the next day , an acute decompensation in respiratory status was noted .", "gold_timex_expressions": ["4:00 AM the next day"], "post_processed_timex_expressions": ["day"]}
+{"text": "Lung examination at that point showed good air entry , no wheezing , coarse breath sounds throughout .", "gold_timex_expressions": ["that point"], "post_processed_timex_expressions": []}
+{"text": "Neurologically , the patient was not following commands .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"text": "Eyes were closed .", "gold_timex_expressions": [], "post_processed_timex_expressions": []}
+{"FINAL_METRICS": {"total_rows": 400, "micro_precision": 0.0476, "micro_recall": 0.0305, "micro_f1": 0.0372, "macro_f1": 0.0088, "tp": 4, "fp": 80, "fn": 127}}

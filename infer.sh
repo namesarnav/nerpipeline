@@ -4,10 +4,11 @@
 # Run inference for one model on one dataset
 
 # Configuration
-MODEL="mdg-nlp/gpt-2-timex-sentence-recognition" # Change this
-DATASET="mdg-nlp/timex-recognition-sentence-original"        # Change this
+
+MODEL="mdg-nlp/RoBERTa-eventx-recognition-sentence" # Change this
+DATASET="mdg-nlp/eventx-recognition-sentence-vocab-substitute"        # Change this
 TASK="time"               # event or time
-NUM_SAMPLES=40
+NUM_SAMPLES=400
 BATCH_SIZE=20
 MAX_LENGTH=5000
 DEVICE="auto"

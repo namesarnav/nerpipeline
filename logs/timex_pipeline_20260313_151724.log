@@ -1,0 +1,59 @@
+======================================================
+TIMEX INFERENCE PIPELINE
+Started at: Fri Mar 13 15:17:24 CDT 2026
+======================================================
+
+Total combinations: 63
+
+
+======================================================
+RUN [1/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-vocab-substitute
+======================================================
+>>> Running inference...
+15:17:27 | ============================================================
+15:17:27 | NER INFERENCE PIPELINE
+15:17:27 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:17:27 |   Dataset     : mdg-nlp/timex-recognition-sentence-vocab-substitute  (split=test)
+15:17:27 |   Task        : time
+15:17:27 |   Max samples : 400
+15:17:27 |   Gold field  : gold_timex_expressions
+15:17:27 |   Pred field  : post_processed_timex_expressions
+15:17:27 | ============================================================
+15:17:27 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-vocab-substitute
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1652, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1578, in dataset_module_factory
+    raise DatasetNotFoundError(f"Dataset '{path}' doesn't exist on the Hub or cannot be accessed.") from e
+datasets.exceptions.DatasetNotFoundError: Dataset 'mdg-nlp/timex-recognition-sentence-vocab-substitute' doesn't exist on the Hub or cannot be accessed.
+ ### Inference completed successfully ### 
+Progress: 1 successful, 0 failed
+
+======================================================
+RUN [2/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-vocab-substituted
+======================================================
+>>> Running inference...

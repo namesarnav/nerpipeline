@@ -1,0 +1,4086 @@
+======================================================
+TIMEX INFERENCE PIPELINE
+Started at: Fri Mar 13 15:18:31 CDT 2026
+======================================================
+
+Total combinations: 63
+
+
+======================================================
+RUN [1/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-vocab-substituted
+======================================================
+>>> Running inference...
+15:18:33 | ============================================================
+15:18:33 | NER INFERENCE PIPELINE
+15:18:33 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:18:33 |   Dataset     : mdg-nlp/timex-recognition-sentence-vocab-substituted  (split=test)
+15:18:33 |   Task        : time
+15:18:33 |   Max samples : 400
+15:18:33 |   Gold field  : gold_timex_expressions
+15:18:33 |   Pred field  : post_processed_timex_expressions
+15:18:33 | ============================================================
+15:18:33 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-vocab-substituted
+15:18:34 | Dataset only has 390 test samples, processing all instead of 400
+15:18:34 | Processing 390 rows from test split.
+15:18:34 | 
+Loading model: mdg-nlp/RoBERTa-timex-recognition-sentence
+15:18:34 | Using Token Classification (NER pipeline)
+15:18:34 | Loading tokenizer...
+15:18:35 | Loading model with NER pipeline...
+Device set to use mps
+15:18:35 | Ready on mps.
+15:18:35 | 
+Running inference on 390 texts...
+15:18:35 |   Batch 1/20 (20 texts)
+15:18:36 |   Batch 2/20 (20 texts)
+15:18:36 |   Batch 3/20 (20 texts)
+15:18:36 |   Batch 4/20 (20 texts)
+15:18:36 |   Batch 5/20 (20 texts)
+15:18:36 |   Batch 6/20 (20 texts)
+15:18:36 |   Batch 7/20 (20 texts)
+15:18:36 |   Batch 8/20 (20 texts)
+15:18:36 |   Batch 9/20 (20 texts)
+15:18:36 |   Batch 10/20 (20 texts)
+15:18:36 |   Batch 11/20 (20 texts)
+15:18:36 |   Batch 12/20 (20 texts)
+15:18:37 |   Batch 13/20 (20 texts)
+15:18:37 |   Batch 14/20 (20 texts)
+15:18:37 |   Batch 15/20 (20 texts)
+15:18:37 |   Batch 16/20 (20 texts)
+15:18:37 |   Batch 17/20 (20 texts)
+15:18:37 |   Batch 18/20 (20 texts)
+15:18:37 |   Batch 19/20 (20 texts)
+15:18:37 |   Batch 20/20 (10 texts)
+15:18:37 | 
+Evaluating...
+15:18:37 | 
+==================================================
+15:18:37 | EVALUATION RESULTS
+15:18:37 | ==================================================
+15:18:37 |   Rows evaluated : 390
+15:18:37 |   TP / FP / FN   : 541 / 87 / 50
+15:18:37 | --------------------------------------------------
+15:18:37 |   Micro Precision : 0.8615
+15:18:37 |   Micro Recall    : 0.9154
+15:18:37 |   Micro F1        : 0.8876
+15:18:37 | --------------------------------------------------
+15:18:37 |   Macro F1        : 0.9028
+15:18:37 | ==================================================
+15:18:37 | 
+Output saved → outputs/mdg-nlp_timex-recognition-sentence-vocab-substituted__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions.jsonl
+15:18:37 |   - Rows 1-390: Individual predictions
+15:18:37 |   - Row 391: FINAL_METRICS
+15:18:37 | Metrics saved → outputs/mdg-nlp_timex-recognition-sentence-vocab-substituted__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions_metrics.json
+15:18:37 | Done.
+ ### Inference completed successfully ### 
+Progress: 1 successful, 0 failed
+
+======================================================
+RUN [2/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-vocab-substituted
+======================================================
+>>> Running inference...
+15:18:40 | ============================================================
+15:18:40 | NER INFERENCE PIPELINE
+15:18:40 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:18:40 |   Dataset     : mdg-nlp/timex-recognition-sentence-vocab-substituted  (split=test)
+15:18:40 |   Task        : time
+15:18:40 |   Max samples : 400
+15:18:40 |   Gold field  : gold_timex_expressions
+15:18:40 |   Pred field  : post_processed_timex_expressions
+15:18:40 | ============================================================
+15:18:40 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-vocab-substituted
+15:18:41 | Dataset only has 390 test samples, processing all instead of 400
+15:18:41 | Processing 390 rows from test split.
+15:18:41 | 
+Loading model: mdg-nlp/RoBERTa-timex-recognition-sentence
+15:18:41 | Using Token Classification (NER pipeline)
+15:18:41 | Loading tokenizer...
+15:18:42 | Loading model with NER pipeline...
+Device set to use mps
+15:18:42 | Ready on mps.
+15:18:42 | 
+Running inference on 390 texts...
+15:18:42 |   Batch 1/20 (20 texts)
+15:18:42 |   Batch 2/20 (20 texts)
+15:18:42 |   Batch 3/20 (20 texts)
+15:18:42 |   Batch 4/20 (20 texts)
+15:18:42 |   Batch 5/20 (20 texts)
+15:18:42 |   Batch 6/20 (20 texts)
+15:18:42 |   Batch 7/20 (20 texts)
+15:18:43 |   Batch 8/20 (20 texts)
+15:18:43 |   Batch 9/20 (20 texts)
+15:18:43 |   Batch 10/20 (20 texts)
+15:18:43 |   Batch 11/20 (20 texts)
+15:18:43 |   Batch 12/20 (20 texts)
+15:18:43 |   Batch 13/20 (20 texts)
+15:18:43 |   Batch 14/20 (20 texts)
+15:18:43 |   Batch 15/20 (20 texts)
+15:18:43 |   Batch 16/20 (20 texts)
+15:18:43 |   Batch 17/20 (20 texts)
+15:18:44 |   Batch 18/20 (20 texts)
+15:18:44 |   Batch 19/20 (20 texts)
+15:18:44 |   Batch 20/20 (10 texts)
+15:18:44 | 
+Evaluating...
+15:18:44 | 
+==================================================
+15:18:44 | EVALUATION RESULTS
+15:18:44 | ==================================================
+15:18:44 |   Rows evaluated : 390
+15:18:44 |   TP / FP / FN   : 541 / 87 / 50
+15:18:44 | --------------------------------------------------
+15:18:44 |   Micro Precision : 0.8615
+15:18:44 |   Micro Recall    : 0.9154
+15:18:44 |   Micro F1        : 0.8876
+15:18:44 | --------------------------------------------------
+15:18:44 |   Macro F1        : 0.9028
+15:18:44 | ==================================================
+15:18:44 | 
+Output saved → outputs/mdg-nlp_timex-recognition-sentence-vocab-substituted__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions.jsonl
+15:18:44 |   - Rows 1-390: Individual predictions
+15:18:44 |   - Row 391: FINAL_METRICS
+15:18:44 | Metrics saved → outputs/mdg-nlp_timex-recognition-sentence-vocab-substituted__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions_metrics.json
+15:18:44 | Done.
+ ### Inference completed successfully ### 
+Progress: 2 successful, 0 failed
+
+======================================================
+RUN [3/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-perturbed
+======================================================
+>>> Running inference...
+15:18:46 | ============================================================
+15:18:46 | NER INFERENCE PIPELINE
+15:18:46 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:18:46 |   Dataset     : mdg-nlp/timex-recognition-sentence-perturbed  (split=test)
+15:18:46 |   Task        : time
+15:18:46 |   Max samples : 400
+15:18:46 |   Gold field  : gold_timex_expressions
+15:18:46 |   Pred field  : post_processed_timex_expressions
+15:18:46 | ============================================================
+15:18:46 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-perturbed
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1652, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1629, in dataset_module_factory
+    ).get_module()
+      ~~~~~~~~~~^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1025, in get_module
+    module_name, default_builder_kwargs = infer_module_for_data_files(
+                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        data_files=data_files,
+        ^^^^^^^^^^^^^^^^^^^^^^
+        path=self.name,
+        ^^^^^^^^^^^^^^^
+        download_config=self.download_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 602, in infer_module_for_data_files
+    raise DataFilesNotFoundError("No (supported) data files found" + (f" in {path}" if path else ""))
+datasets.exceptions.DataFilesNotFoundError: No (supported) data files found in mdg-nlp/timex-recognition-sentence-perturbed
+ ### Inference completed successfully ### 
+Progress: 3 successful, 0 failed
+
+======================================================
+RUN [4/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/domain-timex-clinical-base
+======================================================
+>>> Running inference...
+15:18:51 | ============================================================
+15:18:51 | NER INFERENCE PIPELINE
+15:18:51 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:18:51 |   Dataset     : mdg-nlp/domain-timex-clinical-base  (split=test)
+15:18:51 |   Task        : time
+15:18:51 |   Max samples : 400
+15:18:51 |   Gold field  : gold_timex_expressions
+15:18:51 |   Pred field  : post_processed_timex_expressions
+15:18:51 | ============================================================
+15:18:51 | 
+Loading dataset: mdg-nlp/domain-timex-clinical-base
+15:18:53 | Dataset only has 390 test samples, processing all instead of 400
+15:18:53 | Processing 390 rows from test split.
+15:18:53 | 
+Loading model: mdg-nlp/RoBERTa-timex-recognition-sentence
+15:18:53 | Using Token Classification (NER pipeline)
+15:18:53 | Loading tokenizer...
+15:18:53 | Loading model with NER pipeline...
+Device set to use mps
+15:18:54 | Ready on mps.
+15:18:54 | 
+Running inference on 390 texts...
+15:18:54 |   Batch 1/20 (20 texts)
+15:18:54 |   Batch 2/20 (20 texts)
+15:18:54 |   Batch 3/20 (20 texts)
+15:18:54 |   Batch 4/20 (20 texts)
+15:18:54 |   Batch 5/20 (20 texts)
+15:18:54 |   Batch 6/20 (20 texts)
+15:18:54 |   Batch 7/20 (20 texts)
+15:18:54 |   Batch 8/20 (20 texts)
+15:18:54 |   Batch 9/20 (20 texts)
+15:18:54 |   Batch 10/20 (20 texts)
+15:18:55 |   Batch 11/20 (20 texts)
+15:18:55 |   Batch 12/20 (20 texts)
+15:18:55 |   Batch 13/20 (20 texts)
+15:18:55 |   Batch 14/20 (20 texts)
+15:18:55 |   Batch 15/20 (20 texts)
+15:18:55 |   Batch 16/20 (20 texts)
+15:18:55 |   Batch 17/20 (20 texts)
+15:18:55 |   Batch 18/20 (20 texts)
+15:18:55 |   Batch 19/20 (20 texts)
+15:18:55 |   Batch 20/20 (10 texts)
+15:18:56 | 
+Evaluating...
+15:18:56 | 
+==================================================
+15:18:56 | EVALUATION RESULTS
+15:18:56 | ==================================================
+15:18:56 |   Rows evaluated : 390
+15:18:56 |   TP / FP / FN   : 541 / 87 / 50
+15:18:56 | --------------------------------------------------
+15:18:56 |   Micro Precision : 0.8615
+15:18:56 |   Micro Recall    : 0.9154
+15:18:56 |   Micro F1        : 0.8876
+15:18:56 | --------------------------------------------------
+15:18:56 |   Macro F1        : 0.9028
+15:18:56 | ==================================================
+15:18:56 | 
+Output saved → outputs/mdg-nlp_domain-timex-clinical-base__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions.jsonl
+15:18:56 |   - Rows 1-390: Individual predictions
+15:18:56 |   - Row 391: FINAL_METRICS
+15:18:56 | Metrics saved → outputs/mdg-nlp_domain-timex-clinical-base__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions_metrics.json
+15:18:56 | Done.
+ ### Inference completed successfully ### 
+Progress: 4 successful, 0 failed
+
+======================================================
+RUN [5/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/domain-timex-clinical
+======================================================
+>>> Running inference...
+15:18:58 | ============================================================
+15:18:58 | NER INFERENCE PIPELINE
+15:18:58 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:18:58 |   Dataset     : mdg-nlp/domain-timex-clinical  (split=test)
+15:18:58 |   Task        : time
+15:18:58 |   Max samples : 400
+15:18:58 |   Gold field  : gold_timex_expressions
+15:18:58 |   Pred field  : post_processed_timex_expressions
+15:18:58 | ============================================================
+15:18:58 | 
+Loading dataset: mdg-nlp/domain-timex-clinical
+15:19:00 | Processing 400 rows from test split.
+15:19:00 | 
+Loading model: mdg-nlp/RoBERTa-timex-recognition-sentence
+15:19:00 | Using Token Classification (NER pipeline)
+15:19:00 | Loading tokenizer...
+15:19:01 | Loading model with NER pipeline...
+Device set to use mps
+15:19:01 | Ready on mps.
+15:19:01 | 
+Running inference on 400 texts...
+15:19:01 |   Batch 1/20 (20 texts)
+15:19:01 |   Batch 2/20 (20 texts)
+15:19:01 |   Batch 3/20 (20 texts)
+15:19:01 |   Batch 4/20 (20 texts)
+15:19:02 |   Batch 5/20 (20 texts)
+15:19:02 |   Batch 6/20 (20 texts)
+15:19:02 |   Batch 7/20 (20 texts)
+15:19:02 |   Batch 8/20 (20 texts)
+15:19:02 |   Batch 9/20 (20 texts)
+15:19:02 |   Batch 10/20 (20 texts)
+15:19:02 |   Batch 11/20 (20 texts)
+15:19:02 |   Batch 12/20 (20 texts)
+15:19:02 |   Batch 13/20 (20 texts)
+15:19:03 |   Batch 14/20 (20 texts)
+15:19:03 |   Batch 15/20 (20 texts)
+15:19:03 |   Batch 16/20 (20 texts)
+15:19:03 |   Batch 17/20 (20 texts)
+15:19:03 |   Batch 18/20 (20 texts)
+15:19:03 |   Batch 19/20 (20 texts)
+15:19:03 |   Batch 20/20 (20 texts)
+15:19:03 | 
+Evaluating...
+15:19:03 | 
+==================================================
+15:19:03 | EVALUATION RESULTS
+15:19:03 | ==================================================
+15:19:03 |   Rows evaluated : 400
+15:19:03 |   TP / FP / FN   : 262 / 140 / 258
+15:19:03 | --------------------------------------------------
+15:19:03 |   Micro Precision : 0.6517
+15:19:03 |   Micro Recall    : 0.5038
+15:19:03 |   Micro F1        : 0.5683
+15:19:03 | --------------------------------------------------
+15:19:03 |   Macro F1        : 0.5035
+15:19:03 | ==================================================
+15:19:03 | 
+Output saved → outputs/mdg-nlp_domain-timex-clinical__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions.jsonl
+15:19:03 |   - Rows 1-400: Individual predictions
+15:19:03 |   - Row 401: FINAL_METRICS
+15:19:03 | Metrics saved → outputs/mdg-nlp_domain-timex-clinical__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions_metrics.json
+15:19:03 | Done.
+ ### Inference completed successfully ### 
+Progress: 5 successful, 0 failed
+
+======================================================
+RUN [6/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/timex-compositional-sentence
+======================================================
+>>> Running inference...
+15:19:07 | ============================================================
+15:19:07 | NER INFERENCE PIPELINE
+15:19:07 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:19:07 |   Dataset     : mdg-nlp/timex-compositional-sentence  (split=test)
+15:19:07 |   Task        : time
+15:19:07 |   Max samples : 400
+15:19:07 |   Gold field  : gold_timex_expressions
+15:19:07 |   Pred field  : post_processed_timex_expressions
+15:19:07 | ============================================================
+15:19:07 | 
+Loading dataset: mdg-nlp/timex-compositional-sentence
+15:19:08 | Processing 400 rows from test split.
+15:19:08 | 
+Loading model: mdg-nlp/RoBERTa-timex-recognition-sentence
+15:19:08 | Using Token Classification (NER pipeline)
+15:19:08 | Loading tokenizer...
+15:19:09 | Loading model with NER pipeline...
+Device set to use mps
+15:19:09 | Ready on mps.
+15:19:09 | 
+Running inference on 400 texts...
+15:19:09 |   Batch 1/20 (20 texts)
+15:19:09 |   Batch 2/20 (20 texts)
+15:19:09 |   Batch 3/20 (20 texts)
+15:19:09 |   Batch 4/20 (20 texts)
+15:19:09 |   Batch 5/20 (20 texts)
+15:19:09 |   Batch 6/20 (20 texts)
+15:19:09 |   Batch 7/20 (20 texts)
+15:19:09 |   Batch 8/20 (20 texts)
+15:19:10 |   Batch 9/20 (20 texts)
+15:19:10 |   Batch 10/20 (20 texts)
+15:19:10 |   Batch 11/20 (20 texts)
+15:19:10 |   Batch 12/20 (20 texts)
+15:19:10 |   Batch 13/20 (20 texts)
+15:19:10 |   Batch 14/20 (20 texts)
+15:19:10 |   Batch 15/20 (20 texts)
+15:19:10 |   Batch 16/20 (20 texts)
+15:19:10 |   Batch 17/20 (20 texts)
+15:19:10 |   Batch 18/20 (20 texts)
+15:19:10 |   Batch 19/20 (20 texts)
+15:19:10 |   Batch 20/20 (20 texts)
+15:19:10 | 
+Evaluating...
+15:19:10 | 
+==================================================
+15:19:10 | EVALUATION RESULTS
+15:19:10 | ==================================================
+15:19:10 |   Rows evaluated : 400
+15:19:10 |   TP / FP / FN   : 440 / 57 / 56
+15:19:10 | --------------------------------------------------
+15:19:10 |   Micro Precision : 0.8853
+15:19:10 |   Micro Recall    : 0.8871
+15:19:10 |   Micro F1        : 0.8862
+15:19:10 | --------------------------------------------------
+15:19:10 |   Macro F1        : 0.8877
+15:19:10 | ==================================================
+15:19:10 | 
+Output saved → outputs/mdg-nlp_timex-compositional-sentence__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions.jsonl
+15:19:10 |   - Rows 1-400: Individual predictions
+15:19:10 |   - Row 401: FINAL_METRICS
+15:19:10 | Metrics saved → outputs/mdg-nlp_timex-compositional-sentence__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions_metrics.json
+15:19:10 | Done.
+ ### Inference completed successfully ### 
+Progress: 6 successful, 0 failed
+
+======================================================
+RUN [7/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/domain-timex-recognition-sentence-updated
+======================================================
+>>> Running inference...
+15:19:13 | ============================================================
+15:19:13 | NER INFERENCE PIPELINE
+15:19:13 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:19:13 |   Dataset     : mdg-nlp/domain-timex-recognition-sentence-updated  (split=test)
+15:19:13 |   Task        : time
+15:19:13 |   Max samples : 400
+15:19:13 |   Gold field  : gold_timex_expressions
+15:19:13 |   Pred field  : post_processed_timex_expressions
+15:19:13 | ============================================================
+15:19:13 | 
+Loading dataset: mdg-nlp/domain-timex-recognition-sentence-updated
+15:19:15 | Processing 400 rows from test split.
+15:19:15 | 
+Loading model: mdg-nlp/RoBERTa-timex-recognition-sentence
+15:19:15 | Using Token Classification (NER pipeline)
+15:19:15 | Loading tokenizer...
+15:19:15 | Loading model with NER pipeline...
+Device set to use mps
+15:19:15 | Ready on mps.
+15:19:15 | 
+Running inference on 400 texts...
+15:19:15 |   Batch 1/20 (20 texts)
+15:19:15 |   Batch 2/20 (20 texts)
+15:19:16 |   Batch 3/20 (20 texts)
+15:19:16 |   Batch 4/20 (20 texts)
+15:19:16 |   Batch 5/20 (20 texts)
+15:19:16 |   Batch 6/20 (20 texts)
+15:19:16 |   Batch 7/20 (20 texts)
+15:19:16 |   Batch 8/20 (20 texts)
+15:19:16 |   Batch 9/20 (20 texts)
+15:19:16 |   Batch 10/20 (20 texts)
+15:19:16 |   Batch 11/20 (20 texts)
+15:19:16 |   Batch 12/20 (20 texts)
+15:19:17 |   Batch 13/20 (20 texts)
+15:19:17 |   Batch 14/20 (20 texts)
+15:19:17 |   Batch 15/20 (20 texts)
+15:19:17 |   Batch 16/20 (20 texts)
+15:19:17 |   Batch 17/20 (20 texts)
+15:19:17 |   Batch 18/20 (20 texts)
+15:19:17 |   Batch 19/20 (20 texts)
+15:19:17 |   Batch 20/20 (20 texts)
+15:19:17 | 
+Evaluating...
+15:19:17 | 
+==================================================
+15:19:17 | EVALUATION RESULTS
+15:19:17 | ==================================================
+15:19:17 |   Rows evaluated : 400
+15:19:17 |   TP / FP / FN   : 262 / 140 / 258
+15:19:17 | --------------------------------------------------
+15:19:17 |   Micro Precision : 0.6517
+15:19:17 |   Micro Recall    : 0.5038
+15:19:17 |   Micro F1        : 0.5683
+15:19:17 | --------------------------------------------------
+15:19:17 |   Macro F1        : 0.5035
+15:19:17 | ==================================================
+15:19:17 | 
+Output saved → outputs/mdg-nlp_domain-timex-recognition-sentence-updated__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions.jsonl
+15:19:17 |   - Rows 1-400: Individual predictions
+15:19:17 |   - Row 401: FINAL_METRICS
+15:19:17 | Metrics saved → outputs/mdg-nlp_domain-timex-recognition-sentence-updated__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions_metrics.json
+15:19:17 | Done.
+ ### Inference completed successfully ### 
+Progress: 7 successful, 0 failed
+
+======================================================
+RUN [8/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-updated
+======================================================
+>>> Running inference...
+15:19:20 | ============================================================
+15:19:20 | NER INFERENCE PIPELINE
+15:19:20 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:19:20 |   Dataset     : mdg-nlp/timex-recognition-sentence-updated  (split=test)
+15:19:20 |   Task        : time
+15:19:20 |   Max samples : 400
+15:19:20 |   Gold field  : gold_timex_expressions
+15:19:20 |   Pred field  : post_processed_timex_expressions
+15:19:20 | ============================================================
+15:19:20 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-updated
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1652, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1578, in dataset_module_factory
+    raise DatasetNotFoundError(f"Dataset '{path}' doesn't exist on the Hub or cannot be accessed.") from e
+datasets.exceptions.DatasetNotFoundError: Dataset 'mdg-nlp/timex-recognition-sentence-updated' doesn't exist on the Hub or cannot be accessed.
+ ### Inference completed successfully ### 
+Progress: 8 successful, 0 failed
+
+======================================================
+RUN [9/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence
+======================================================
+>>> Running inference...
+15:19:23 | ============================================================
+15:19:23 | NER INFERENCE PIPELINE
+15:19:23 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:19:23 |   Dataset     : mdg-nlp/timex-recognition-sentence  (split=test)
+15:19:23 |   Task        : time
+15:19:23 |   Max samples : 400
+15:19:23 |   Gold field  : gold_timex_expressions
+15:19:23 |   Pred field  : post_processed_timex_expressions
+15:19:23 | ============================================================
+15:19:23 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence
+15:19:25 | Processing 400 rows from test split.
+15:19:25 | 
+Loading model: mdg-nlp/RoBERTa-timex-recognition-sentence
+15:19:25 | Using Token Classification (NER pipeline)
+15:19:25 | Loading tokenizer...
+15:19:25 | Loading model with NER pipeline...
+Device set to use mps
+15:19:25 | Ready on mps.
+15:19:25 | 
+Running inference on 400 texts...
+15:19:25 |   Batch 1/20 (20 texts)
+15:19:25 |   Batch 2/20 (20 texts)
+15:19:26 |   Batch 3/20 (20 texts)
+15:19:26 |   Batch 4/20 (20 texts)
+15:19:26 |   Batch 5/20 (20 texts)
+15:19:26 |   Batch 6/20 (20 texts)
+15:19:26 |   Batch 7/20 (20 texts)
+15:19:26 |   Batch 8/20 (20 texts)
+15:19:26 |   Batch 9/20 (20 texts)
+15:19:26 |   Batch 10/20 (20 texts)
+15:19:26 |   Batch 11/20 (20 texts)
+15:19:26 |   Batch 12/20 (20 texts)
+15:19:27 |   Batch 13/20 (20 texts)
+15:19:27 |   Batch 14/20 (20 texts)
+15:19:27 |   Batch 15/20 (20 texts)
+15:19:27 |   Batch 16/20 (20 texts)
+15:19:27 |   Batch 17/20 (20 texts)
+15:19:27 |   Batch 18/20 (20 texts)
+15:19:27 |   Batch 19/20 (20 texts)
+15:19:27 |   Batch 20/20 (20 texts)
+15:19:27 | 
+Evaluating...
+15:19:27 | 
+==================================================
+15:19:27 | EVALUATION RESULTS
+15:19:27 | ==================================================
+15:19:27 |   Rows evaluated : 400
+15:19:27 |   TP / FP / FN   : 214 / 38 / 21
+15:19:27 | --------------------------------------------------
+15:19:27 |   Micro Precision : 0.8492
+15:19:27 |   Micro Recall    : 0.9106
+15:19:27 |   Micro F1        : 0.8789
+15:19:27 | --------------------------------------------------
+15:19:27 |   Macro F1        : 0.3511
+15:19:27 | ==================================================
+15:19:27 | 
+Output saved → outputs/mdg-nlp_timex-recognition-sentence__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions.jsonl
+15:19:27 |   - Rows 1-400: Individual predictions
+15:19:27 |   - Row 401: FINAL_METRICS
+15:19:27 | Metrics saved → outputs/mdg-nlp_timex-recognition-sentence__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions_metrics.json
+15:19:27 | Done.
+ ### Inference completed successfully ### 
+Progress: 9 successful, 0 failed
+
+======================================================
+RUN [10/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-adversarial
+======================================================
+>>> Running inference...
+15:19:30 | ============================================================
+15:19:30 | NER INFERENCE PIPELINE
+15:19:30 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:19:30 |   Dataset     : mdg-nlp/timex-recognition-sentence-adversarial  (split=test)
+15:19:30 |   Task        : time
+15:19:30 |   Max samples : 400
+15:19:30 |   Gold field  : gold_timex_expressions
+15:19:30 |   Pred field  : post_processed_timex_expressions
+15:19:30 | ============================================================
+15:19:30 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-adversarial
+15:19:32 | Dataset only has 390 test samples, processing all instead of 400
+15:19:32 | Processing 390 rows from test split.
+15:19:32 | 
+Loading model: mdg-nlp/RoBERTa-timex-recognition-sentence
+15:19:32 | Using Token Classification (NER pipeline)
+15:19:32 | Loading tokenizer...
+15:19:32 | Loading model with NER pipeline...
+Device set to use mps
+15:19:32 | Ready on mps.
+15:19:32 | 
+Running inference on 390 texts...
+15:19:32 |   Batch 1/20 (20 texts)
+15:19:32 |   Batch 2/20 (20 texts)
+15:19:33 |   Batch 3/20 (20 texts)
+15:19:33 |   Batch 4/20 (20 texts)
+15:19:33 |   Batch 5/20 (20 texts)
+15:19:33 |   Batch 6/20 (20 texts)
+15:19:33 |   Batch 7/20 (20 texts)
+15:19:33 |   Batch 8/20 (20 texts)
+15:19:33 |   Batch 9/20 (20 texts)
+15:19:33 |   Batch 10/20 (20 texts)
+15:19:33 |   Batch 11/20 (20 texts)
+15:19:33 |   Batch 12/20 (20 texts)
+15:19:34 |   Batch 13/20 (20 texts)
+15:19:34 |   Batch 14/20 (20 texts)
+15:19:34 |   Batch 15/20 (20 texts)
+15:19:34 |   Batch 16/20 (20 texts)
+15:19:34 |   Batch 17/20 (20 texts)
+15:19:34 |   Batch 18/20 (20 texts)
+15:19:34 |   Batch 19/20 (20 texts)
+15:19:34 |   Batch 20/20 (10 texts)
+15:19:34 | 
+Evaluating...
+15:19:34 | 
+==================================================
+15:19:34 | EVALUATION RESULTS
+15:19:34 | ==================================================
+15:19:34 |   Rows evaluated : 390
+15:19:34 |   TP / FP / FN   : 532 / 97 / 59
+15:19:34 | --------------------------------------------------
+15:19:34 |   Micro Precision : 0.8458
+15:19:34 |   Micro Recall    : 0.9002
+15:19:34 |   Micro F1        : 0.8721
+15:19:34 | --------------------------------------------------
+15:19:34 |   Macro F1        : 0.8813
+15:19:34 | ==================================================
+15:19:34 | 
+Output saved → outputs/mdg-nlp_timex-recognition-sentence-adversarial__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions.jsonl
+15:19:34 |   - Rows 1-390: Individual predictions
+15:19:34 |   - Row 391: FINAL_METRICS
+15:19:34 | Metrics saved → outputs/mdg-nlp_timex-recognition-sentence-adversarial__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions_metrics.json
+15:19:34 | Done.
+ ### Inference completed successfully ### 
+Progress: 10 successful, 0 failed
+
+======================================================
+RUN [11/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-original
+======================================================
+>>> Running inference...
+15:19:38 | ============================================================
+15:19:38 | NER INFERENCE PIPELINE
+15:19:38 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:19:38 |   Dataset     : mdg-nlp/timex-recognition-sentence-original  (split=test)
+15:19:38 |   Task        : time
+15:19:38 |   Max samples : 400
+15:19:38 |   Gold field  : gold_timex_expressions
+15:19:38 |   Pred field  : post_processed_timex_expressions
+15:19:38 | ============================================================
+15:19:38 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-original
+15:19:40 | Dataset only has 390 test samples, processing all instead of 400
+15:19:40 | Processing 390 rows from test split.
+15:19:40 | 
+Loading model: mdg-nlp/RoBERTa-timex-recognition-sentence
+15:19:40 | Using Token Classification (NER pipeline)
+15:19:40 | Loading tokenizer...
+15:19:40 | Loading model with NER pipeline...
+Device set to use mps
+15:19:40 | Ready on mps.
+15:19:40 | 
+Running inference on 390 texts...
+15:19:40 |   Batch 1/20 (20 texts)
+15:19:40 |   Batch 2/20 (20 texts)
+15:19:40 |   Batch 3/20 (20 texts)
+15:19:40 |   Batch 4/20 (20 texts)
+15:19:41 |   Batch 5/20 (20 texts)
+15:19:41 |   Batch 6/20 (20 texts)
+15:19:41 |   Batch 7/20 (20 texts)
+15:19:41 |   Batch 8/20 (20 texts)
+15:19:41 |   Batch 9/20 (20 texts)
+15:19:41 |   Batch 10/20 (20 texts)
+15:19:41 |   Batch 11/20 (20 texts)
+15:19:41 |   Batch 12/20 (20 texts)
+15:19:41 |   Batch 13/20 (20 texts)
+15:19:42 |   Batch 14/20 (20 texts)
+15:19:42 |   Batch 15/20 (20 texts)
+15:19:42 |   Batch 16/20 (20 texts)
+15:19:42 |   Batch 17/20 (20 texts)
+15:19:42 |   Batch 18/20 (20 texts)
+15:19:42 |   Batch 19/20 (20 texts)
+15:19:42 |   Batch 20/20 (10 texts)
+15:19:42 | 
+Evaluating...
+15:19:42 | 
+==================================================
+15:19:42 | EVALUATION RESULTS
+15:19:42 | ==================================================
+15:19:42 |   Rows evaluated : 390
+15:19:42 |   TP / FP / FN   : 541 / 87 / 50
+15:19:42 | --------------------------------------------------
+15:19:42 |   Micro Precision : 0.8615
+15:19:42 |   Micro Recall    : 0.9154
+15:19:42 |   Micro F1        : 0.8876
+15:19:42 | --------------------------------------------------
+15:19:42 |   Macro F1        : 0.9028
+15:19:42 | ==================================================
+15:19:42 | 
+Output saved → outputs/mdg-nlp_timex-recognition-sentence-original__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions.jsonl
+15:19:42 |   - Rows 1-390: Individual predictions
+15:19:42 |   - Row 391: FINAL_METRICS
+15:19:42 | Metrics saved → outputs/mdg-nlp_timex-recognition-sentence-original__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions_metrics.json
+15:19:42 | Done.
+ ### Inference completed successfully ### 
+Progress: 11 successful, 0 failed
+
+======================================================
+RUN [12/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-document
+======================================================
+>>> Running inference...
+15:19:46 | ============================================================
+15:19:46 | NER INFERENCE PIPELINE
+15:19:46 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:19:46 |   Dataset     : mdg-nlp/timex-recognition-document  (split=test)
+15:19:46 |   Task        : time
+15:19:46 |   Max samples : 400
+15:19:46 |   Gold field  : gold_timex_expressions
+15:19:46 |   Pred field  : post_processed_timex_expressions
+15:19:46 | ============================================================
+15:19:46 | 
+Loading dataset: mdg-nlp/timex-recognition-document
+15:19:47 | Dataset only has 266 test samples, processing all instead of 400
+15:19:47 | Processing 266 rows from test split.
+15:19:47 | 
+Loading model: mdg-nlp/RoBERTa-timex-recognition-sentence
+15:19:47 | Using Token Classification (NER pipeline)
+15:19:47 | Loading tokenizer...
+15:19:47 | Loading model with NER pipeline...
+Device set to use mps
+15:19:48 | Ready on mps.
+15:19:48 | 
+Running inference on 266 texts...
+15:19:48 |   Batch 1/14 (20 texts)
+15:19:48 |   Batch 2/14 (20 texts)
+15:19:49 |   Batch 3/14 (20 texts)
+15:19:50 |   Batch 4/14 (20 texts)
+15:19:50 |   Batch 5/14 (20 texts)
+15:19:51 |   Batch 6/14 (20 texts)
+15:19:51 |   Batch 7/14 (20 texts)
+15:19:52 |   Batch 8/14 (20 texts)
+15:19:53 |   Batch 9/14 (20 texts)
+15:19:53 |   Batch 10/14 (20 texts)
+15:19:54 |   Batch 11/14 (20 texts)
+15:19:54 |   Batch 12/14 (20 texts)
+15:19:55 |   Batch 13/14 (20 texts)
+15:19:56 |   Batch 14/14 (6 texts)
+15:19:56 | 
+Evaluating...
+15:19:56 | 
+==================================================
+15:19:56 | EVALUATION RESULTS
+15:19:56 | ==================================================
+15:19:56 |   Rows evaluated : 266
+15:19:56 |   TP / FP / FN   : 1179 / 272 / 320
+15:19:56 | --------------------------------------------------
+15:19:56 |   Micro Precision : 0.8125
+15:19:56 |   Micro Recall    : 0.7865
+15:19:56 |   Micro F1        : 0.7993
+15:19:56 | --------------------------------------------------
+15:19:56 |   Macro F1        : 0.8422
+15:19:56 | ==================================================
+15:19:56 | 
+Output saved → outputs/mdg-nlp_timex-recognition-document__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions.jsonl
+15:19:56 |   - Rows 1-266: Individual predictions
+15:19:56 |   - Row 267: FINAL_METRICS
+15:19:56 | Metrics saved → outputs/mdg-nlp_timex-recognition-document__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions_metrics.json
+15:19:56 | Done.
+ ### Inference completed successfully ### 
+Progress: 12 successful, 0 failed
+
+======================================================
+RUN [13/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/adv-timex-sentences-bert-attack
+======================================================
+>>> Running inference...
+15:19:59 | ============================================================
+15:19:59 | NER INFERENCE PIPELINE
+15:19:59 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:19:59 |   Dataset     : mdg-nlp/adv-timex-sentences-bert-attack  (split=test)
+15:19:59 |   Task        : time
+15:19:59 |   Max samples : 400
+15:19:59 |   Gold field  : gold_timex_expressions
+15:19:59 |   Pred field  : post_processed_timex_expressions
+15:19:59 | ============================================================
+15:19:59 | 
+Loading dataset: mdg-nlp/adv-timex-sentences-bert-attack
+Generating test split: 0 examples [00:00, ? examples/s]Generating test split: 0 examples [00:00, ? examples/s]
+Traceback (most recent call last):
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1887, in _prepare_split_single
+    num_examples, num_bytes = writer.finalize()
+                              ~~~~~~~~~~~~~~~^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/arrow_writer.py", line 669, in finalize
+    raise SchemaInferenceError("Please pass `features` or at least one example when writing data")
+datasets.arrow_writer.SchemaInferenceError: Please pass `features` or at least one example when writing data
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2084, in load_dataset
+    builder_instance.download_and_prepare(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        download_config=download_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 925, in download_and_prepare
+    self._download_and_prepare(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dl_manager=dl_manager,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **download_and_prepare_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1001, in _download_and_prepare
+    self._prepare_split(split_generator, **prepare_split_kwargs)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1742, in _prepare_split
+    for job_id, done, content in self._prepare_split_single(
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        gen_kwargs=gen_kwargs, job_id=job_id, **_prepare_split_args
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1898, in _prepare_split_single
+    raise DatasetGenerationError("An error occurred while generating the dataset") from e
+datasets.exceptions.DatasetGenerationError: An error occurred while generating the dataset
+ ### Inference completed successfully ### 
+Progress: 13 successful, 0 failed
+
+======================================================
+RUN [14/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/adv-timex-sentences
+======================================================
+>>> Running inference...
+15:20:03 | ============================================================
+15:20:03 | NER INFERENCE PIPELINE
+15:20:03 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:20:03 |   Dataset     : mdg-nlp/adv-timex-sentences  (split=test)
+15:20:03 |   Task        : time
+15:20:03 |   Max samples : 400
+15:20:03 |   Gold field  : gold_timex_expressions
+15:20:03 |   Pred field  : post_processed_timex_expressions
+15:20:03 | ============================================================
+15:20:03 | 
+Loading dataset: mdg-nlp/adv-timex-sentences
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1652, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1578, in dataset_module_factory
+    raise DatasetNotFoundError(f"Dataset '{path}' doesn't exist on the Hub or cannot be accessed.") from e
+datasets.exceptions.DatasetNotFoundError: Dataset 'mdg-nlp/adv-timex-sentences' doesn't exist on the Hub or cannot be accessed.
+ ### Inference completed successfully ### 
+Progress: 14 successful, 0 failed
+
+======================================================
+RUN [15/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/adv-timex-sentences-textfooler
+======================================================
+>>> Running inference...
+15:20:06 | ============================================================
+15:20:06 | NER INFERENCE PIPELINE
+15:20:06 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:20:06 |   Dataset     : mdg-nlp/adv-timex-sentences-textfooler  (split=test)
+15:20:06 |   Task        : time
+15:20:06 |   Max samples : 400
+15:20:06 |   Gold field  : gold_timex_expressions
+15:20:06 |   Pred field  : post_processed_timex_expressions
+15:20:06 | ============================================================
+15:20:06 | 
+Loading dataset: mdg-nlp/adv-timex-sentences-textfooler
+15:20:07 | Dataset only has 1 test samples, processing all instead of 400
+15:20:07 | Processing 1 rows from test split.
+15:20:07 | 
+Loading model: mdg-nlp/RoBERTa-timex-recognition-sentence
+15:20:07 | Using Token Classification (NER pipeline)
+15:20:07 | Loading tokenizer...
+15:20:07 | Loading model with NER pipeline...
+Device set to use mps
+15:20:08 | Ready on mps.
+15:20:08 | 
+Running inference on 1 texts...
+15:20:08 |   Batch 1/1 (1 texts)
+15:20:08 | 
+Evaluating...
+15:20:08 | 
+==================================================
+15:20:08 | EVALUATION RESULTS
+15:20:08 | ==================================================
+15:20:08 |   Rows evaluated : 1
+15:20:08 |   TP / FP / FN   : 2 / 1 / 0
+15:20:08 | --------------------------------------------------
+15:20:08 |   Micro Precision : 0.6667
+15:20:08 |   Micro Recall    : 1.0000
+15:20:08 |   Micro F1        : 0.8000
+15:20:08 | --------------------------------------------------
+15:20:08 |   Macro F1        : 0.8000
+15:20:08 | ==================================================
+15:20:08 | 
+Output saved → outputs/mdg-nlp_adv-timex-sentences-textfooler__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions.jsonl
+15:20:08 |   - Rows 1-1: Individual predictions
+15:20:08 |   - Row 2: FINAL_METRICS
+15:20:08 | Metrics saved → outputs/mdg-nlp_adv-timex-sentences-textfooler__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions_metrics.json
+15:20:08 | Done.
+ ### Inference completed successfully ### 
+Progress: 15 successful, 0 failed
+
+======================================================
+RUN [16/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/adv-timex-sentences-ner_clare
+======================================================
+>>> Running inference...
+15:20:10 | ============================================================
+15:20:10 | NER INFERENCE PIPELINE
+15:20:10 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:20:10 |   Dataset     : mdg-nlp/adv-timex-sentences-ner_clare  (split=test)
+15:20:10 |   Task        : time
+15:20:10 |   Max samples : 400
+15:20:10 |   Gold field  : gold_timex_expressions
+15:20:10 |   Pred field  : post_processed_timex_expressions
+15:20:10 | ============================================================
+15:20:10 | 
+Loading dataset: mdg-nlp/adv-timex-sentences-ner_clare
+15:20:12 | Dataset only has 3 test samples, processing all instead of 400
+15:20:12 | Processing 3 rows from test split.
+15:20:12 | 
+Loading model: mdg-nlp/RoBERTa-timex-recognition-sentence
+15:20:12 | Using Token Classification (NER pipeline)
+15:20:12 | Loading tokenizer...
+15:20:12 | Loading model with NER pipeline...
+Device set to use mps
+15:20:12 | Ready on mps.
+15:20:12 | 
+Running inference on 3 texts...
+15:20:12 |   Batch 1/1 (3 texts)
+15:20:12 | 
+Evaluating...
+15:20:12 | 
+==================================================
+15:20:12 | EVALUATION RESULTS
+15:20:12 | ==================================================
+15:20:12 |   Rows evaluated : 3
+15:20:12 |   TP / FP / FN   : 4 / 0 / 0
+15:20:12 | --------------------------------------------------
+15:20:12 |   Micro Precision : 1.0000
+15:20:12 |   Micro Recall    : 1.0000
+15:20:12 |   Micro F1        : 1.0000
+15:20:12 | --------------------------------------------------
+15:20:12 |   Macro F1        : 1.0000
+15:20:12 | ==================================================
+15:20:12 | 
+Output saved → outputs/mdg-nlp_adv-timex-sentences-ner_clare__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions.jsonl
+15:20:12 |   - Rows 1-3: Individual predictions
+15:20:12 |   - Row 4: FINAL_METRICS
+15:20:12 | Metrics saved → outputs/mdg-nlp_adv-timex-sentences-ner_clare__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions_metrics.json
+15:20:12 | Done.
+ ### Inference completed successfully ### 
+Progress: 16 successful, 0 failed
+
+======================================================
+RUN [17/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/adv-timex-sentences-morpheus
+======================================================
+>>> Running inference...
+15:20:16 | ============================================================
+15:20:16 | NER INFERENCE PIPELINE
+15:20:16 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:20:16 |   Dataset     : mdg-nlp/adv-timex-sentences-morpheus  (split=test)
+15:20:16 |   Task        : time
+15:20:16 |   Max samples : 400
+15:20:16 |   Gold field  : gold_timex_expressions
+15:20:16 |   Pred field  : post_processed_timex_expressions
+15:20:16 | ============================================================
+15:20:16 | 
+Loading dataset: mdg-nlp/adv-timex-sentences-morpheus
+Generating test split: 0 examples [00:00, ? examples/s]Generating test split: 0 examples [00:00, ? examples/s]
+Traceback (most recent call last):
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1887, in _prepare_split_single
+    num_examples, num_bytes = writer.finalize()
+                              ~~~~~~~~~~~~~~~^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/arrow_writer.py", line 669, in finalize
+    raise SchemaInferenceError("Please pass `features` or at least one example when writing data")
+datasets.arrow_writer.SchemaInferenceError: Please pass `features` or at least one example when writing data
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2084, in load_dataset
+    builder_instance.download_and_prepare(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        download_config=download_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 925, in download_and_prepare
+    self._download_and_prepare(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dl_manager=dl_manager,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **download_and_prepare_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1001, in _download_and_prepare
+    self._prepare_split(split_generator, **prepare_split_kwargs)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1742, in _prepare_split
+    for job_id, done, content in self._prepare_split_single(
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        gen_kwargs=gen_kwargs, job_id=job_id, **_prepare_split_args
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1898, in _prepare_split_single
+    raise DatasetGenerationError("An error occurred while generating the dataset") from e
+datasets.exceptions.DatasetGenerationError: An error occurred while generating the dataset
+ ### Inference completed successfully ### 
+Progress: 17 successful, 0 failed
+
+======================================================
+RUN [18/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/adv-timex-sentences-deepword
+======================================================
+>>> Running inference...
+15:20:21 | ============================================================
+15:20:21 | NER INFERENCE PIPELINE
+15:20:21 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:20:21 |   Dataset     : mdg-nlp/adv-timex-sentences-deepword  (split=test)
+15:20:21 |   Task        : time
+15:20:21 |   Max samples : 400
+15:20:21 |   Gold field  : gold_timex_expressions
+15:20:21 |   Pred field  : post_processed_timex_expressions
+15:20:21 | ============================================================
+15:20:21 | 
+Loading dataset: mdg-nlp/adv-timex-sentences-deepword
+Generating test split: 0 examples [00:00, ? examples/s]Generating test split: 0 examples [00:00, ? examples/s]
+Traceback (most recent call last):
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1887, in _prepare_split_single
+    num_examples, num_bytes = writer.finalize()
+                              ~~~~~~~~~~~~~~~^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/arrow_writer.py", line 669, in finalize
+    raise SchemaInferenceError("Please pass `features` or at least one example when writing data")
+datasets.arrow_writer.SchemaInferenceError: Please pass `features` or at least one example when writing data
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2084, in load_dataset
+    builder_instance.download_and_prepare(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        download_config=download_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 925, in download_and_prepare
+    self._download_and_prepare(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dl_manager=dl_manager,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **download_and_prepare_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1001, in _download_and_prepare
+    self._prepare_split(split_generator, **prepare_split_kwargs)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1742, in _prepare_split
+    for job_id, done, content in self._prepare_split_single(
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        gen_kwargs=gen_kwargs, job_id=job_id, **_prepare_split_args
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1898, in _prepare_split_single
+    raise DatasetGenerationError("An error occurred while generating the dataset") from e
+datasets.exceptions.DatasetGenerationError: An error occurred while generating the dataset
+ ### Inference completed successfully ### 
+Progress: 18 successful, 0 failed
+
+======================================================
+RUN [19/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/adv-timex-sentences-bae
+======================================================
+>>> Running inference...
+15:20:26 | ============================================================
+15:20:26 | NER INFERENCE PIPELINE
+15:20:26 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:20:26 |   Dataset     : mdg-nlp/adv-timex-sentences-bae  (split=test)
+15:20:26 |   Task        : time
+15:20:26 |   Max samples : 400
+15:20:26 |   Gold field  : gold_timex_expressions
+15:20:26 |   Pred field  : post_processed_timex_expressions
+15:20:26 | ============================================================
+15:20:26 | 
+Loading dataset: mdg-nlp/adv-timex-sentences-bae
+15:20:27 | Dataset only has 4 test samples, processing all instead of 400
+15:20:27 | Processing 4 rows from test split.
+15:20:27 | 
+Loading model: mdg-nlp/RoBERTa-timex-recognition-sentence
+15:20:27 | Using Token Classification (NER pipeline)
+15:20:27 | Loading tokenizer...
+15:20:28 | Loading model with NER pipeline...
+Device set to use mps
+15:20:28 | Ready on mps.
+15:20:28 | 
+Running inference on 4 texts...
+15:20:28 |   Batch 1/1 (4 texts)
+15:20:28 | 
+Evaluating...
+15:20:28 | 
+==================================================
+15:20:28 | EVALUATION RESULTS
+15:20:28 | ==================================================
+15:20:28 |   Rows evaluated : 4
+15:20:28 |   TP / FP / FN   : 6 / 0 / 0
+15:20:28 | --------------------------------------------------
+15:20:28 |   Micro Precision : 1.0000
+15:20:28 |   Micro Recall    : 1.0000
+15:20:28 |   Micro F1        : 1.0000
+15:20:28 | --------------------------------------------------
+15:20:28 |   Macro F1        : 1.0000
+15:20:28 | ==================================================
+15:20:28 | 
+Output saved → outputs/mdg-nlp_adv-timex-sentences-bae__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions.jsonl
+15:20:28 |   - Rows 1-4: Individual predictions
+15:20:28 |   - Row 5: FINAL_METRICS
+15:20:28 | Metrics saved → outputs/mdg-nlp_adv-timex-sentences-bae__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions_metrics.json
+15:20:28 | Done.
+ ### Inference completed successfully ### 
+Progress: 19 successful, 0 failed
+
+======================================================
+RUN [20/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-private
+======================================================
+>>> Running inference...
+15:20:31 | ============================================================
+15:20:31 | NER INFERENCE PIPELINE
+15:20:31 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:20:31 |   Dataset     : mdg-nlp/timex-recognition-sentence-private  (split=test)
+15:20:31 |   Task        : time
+15:20:31 |   Max samples : 400
+15:20:31 |   Gold field  : gold_timex_expressions
+15:20:31 |   Pred field  : post_processed_timex_expressions
+15:20:31 | ============================================================
+15:20:31 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-private
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1652, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1578, in dataset_module_factory
+    raise DatasetNotFoundError(f"Dataset '{path}' doesn't exist on the Hub or cannot be accessed.") from e
+datasets.exceptions.DatasetNotFoundError: Dataset 'mdg-nlp/timex-recognition-sentence-private' doesn't exist on the Hub or cannot be accessed.
+ ### Inference completed successfully ### 
+Progress: 20 successful, 0 failed
+
+======================================================
+RUN [21/63]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition
+======================================================
+>>> Running inference...
+15:20:34 | ============================================================
+15:20:34 | NER INFERENCE PIPELINE
+15:20:34 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:20:34 |   Dataset     : mdg-nlp/timex-recognition  (split=test)
+15:20:34 |   Task        : time
+15:20:34 |   Max samples : 400
+15:20:34 |   Gold field  : gold_timex_expressions
+15:20:34 |   Pred field  : post_processed_timex_expressions
+15:20:34 | ============================================================
+15:20:34 | 
+Loading dataset: mdg-nlp/timex-recognition
+15:20:36 | Dataset only has 266 test samples, processing all instead of 400
+15:20:36 | Processing 266 rows from test split.
+15:20:36 | 
+Loading model: mdg-nlp/RoBERTa-timex-recognition-sentence
+15:20:36 | Using Token Classification (NER pipeline)
+15:20:36 | Loading tokenizer...
+15:20:36 | Loading model with NER pipeline...
+Device set to use mps
+15:20:37 | Ready on mps.
+15:20:37 | 
+Running inference on 266 texts...
+15:20:37 |   Batch 1/14 (20 texts)
+15:20:37 |   Batch 2/14 (20 texts)
+15:20:38 |   Batch 3/14 (20 texts)
+15:20:38 |   Batch 4/14 (20 texts)
+15:20:39 |   Batch 5/14 (20 texts)
+15:20:40 |   Batch 6/14 (20 texts)
+15:20:40 |   Batch 7/14 (20 texts)
+15:20:41 |   Batch 8/14 (20 texts)
+15:20:41 |   Batch 9/14 (20 texts)
+15:20:42 |   Batch 10/14 (20 texts)
+15:20:43 |   Batch 11/14 (20 texts)
+15:20:43 |   Batch 12/14 (20 texts)
+15:20:44 |   Batch 13/14 (20 texts)
+15:20:45 |   Batch 14/14 (6 texts)
+15:20:45 | 
+Evaluating...
+15:20:45 | 
+==================================================
+15:20:45 | EVALUATION RESULTS
+15:20:45 | ==================================================
+15:20:45 |   Rows evaluated : 266
+15:20:45 |   TP / FP / FN   : 1179 / 272 / 320
+15:20:45 | --------------------------------------------------
+15:20:45 |   Micro Precision : 0.8125
+15:20:45 |   Micro Recall    : 0.7865
+15:20:45 |   Micro F1        : 0.7993
+15:20:45 | --------------------------------------------------
+15:20:45 |   Macro F1        : 0.8422
+15:20:45 | ==================================================
+15:20:45 | 
+Output saved → outputs/mdg-nlp_timex-recognition__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions.jsonl
+15:20:45 |   - Rows 1-266: Individual predictions
+15:20:45 |   - Row 267: FINAL_METRICS
+15:20:45 | Metrics saved → outputs/mdg-nlp_timex-recognition__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions_metrics.json
+15:20:45 | Done.
+ ### Inference completed successfully ### 
+Progress: 21 successful, 0 failed
+
+======================================================
+RUN [22/63]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-vocab-substituted
+======================================================
+>>> Running inference...
+15:20:49 | ============================================================
+15:20:49 | NER INFERENCE PIPELINE
+15:20:49 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+15:20:49 |   Dataset     : mdg-nlp/timex-recognition-sentence-vocab-substituted  (split=test)
+15:20:49 |   Task        : time
+15:20:49 |   Max samples : 400
+15:20:49 |   Gold field  : gold_timex_expressions
+15:20:49 |   Pred field  : post_processed_timex_expressions
+15:20:49 | ============================================================
+15:20:49 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-vocab-substituted
+15:20:50 | Dataset only has 390 test samples, processing all instead of 400
+15:20:50 | Processing 390 rows from test split.
+15:20:50 | 
+Loading model: mdg-nlp/T5-timex-recognition-sentence
+15:20:50 | Using Token Classification (NER pipeline)
+15:20:50 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+15:20:51 | Loading model with NER pipeline...
+Device set to use mps
+15:20:51 | Ready on mps.
+15:20:51 | 
+Running inference on 390 texts...
+15:20:51 |   Batch 1/20 (20 texts)
+15:20:52 |   Batch 2/20 (20 texts)
+15:20:52 |   Batch 3/20 (20 texts)
+15:20:52 |   Batch 4/20 (20 texts)
+15:20:52 |   Batch 5/20 (20 texts)
+15:20:52 |   Batch 6/20 (20 texts)
+15:20:52 |   Batch 7/20 (20 texts)
+15:20:52 |   Batch 8/20 (20 texts)
+15:20:52 |   Batch 9/20 (20 texts)
+15:20:53 |   Batch 10/20 (20 texts)
+15:20:53 |   Batch 11/20 (20 texts)
+15:20:53 |   Batch 12/20 (20 texts)
+15:20:53 |   Batch 13/20 (20 texts)
+15:20:53 |   Batch 14/20 (20 texts)
+15:20:53 |   Batch 15/20 (20 texts)
+15:20:53 |   Batch 16/20 (20 texts)
+15:20:54 |   Batch 17/20 (20 texts)
+15:20:54 |   Batch 18/20 (20 texts)
+15:20:54 |   Batch 19/20 (20 texts)
+15:20:54 |   Batch 20/20 (10 texts)
+15:20:54 | 
+Evaluating...
+15:20:54 | 
+==================================================
+15:20:54 | EVALUATION RESULTS
+15:20:54 | ==================================================
+15:20:54 |   Rows evaluated : 390
+15:20:54 |   TP / FP / FN   : 396 / 243 / 195
+15:20:54 | --------------------------------------------------
+15:20:54 |   Micro Precision : 0.6197
+15:20:54 |   Micro Recall    : 0.6701
+15:20:54 |   Micro F1        : 0.6439
+15:20:54 | --------------------------------------------------
+15:20:54 |   Macro F1        : 0.6357
+15:20:54 | ==================================================
+15:20:54 | 
+Output saved → outputs/mdg-nlp_timex-recognition-sentence-vocab-substituted__mdg-nlp_T5-timex-recognition-sentence__predictions.jsonl
+15:20:54 |   - Rows 1-390: Individual predictions
+15:20:54 |   - Row 391: FINAL_METRICS
+15:20:54 | Metrics saved → outputs/mdg-nlp_timex-recognition-sentence-vocab-substituted__mdg-nlp_T5-timex-recognition-sentence__predictions_metrics.json
+15:20:54 | Done.
+ ### Inference completed successfully ### 
+Progress: 22 successful, 0 failed
+
+======================================================
+RUN [23/63]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-vocab-substituted
+======================================================
+>>> Running inference...
+15:20:58 | ============================================================
+15:20:58 | NER INFERENCE PIPELINE
+15:20:58 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+15:20:58 |   Dataset     : mdg-nlp/timex-recognition-sentence-vocab-substituted  (split=test)
+15:20:58 |   Task        : time
+15:20:58 |   Max samples : 400
+15:20:58 |   Gold field  : gold_timex_expressions
+15:20:58 |   Pred field  : post_processed_timex_expressions
+15:20:58 | ============================================================
+15:20:58 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-vocab-substituted
+15:20:59 | Dataset only has 390 test samples, processing all instead of 400
+15:20:59 | Processing 390 rows from test split.
+15:20:59 | 
+Loading model: mdg-nlp/T5-timex-recognition-sentence
+15:20:59 | Using Token Classification (NER pipeline)
+15:20:59 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+15:20:59 | Loading model with NER pipeline...
+Device set to use mps
+15:21:00 | Ready on mps.
+15:21:00 | 
+Running inference on 390 texts...
+15:21:00 |   Batch 1/20 (20 texts)
+15:21:00 |   Batch 2/20 (20 texts)
+15:21:00 |   Batch 3/20 (20 texts)
+15:21:00 |   Batch 4/20 (20 texts)
+15:21:00 |   Batch 5/20 (20 texts)
+15:21:00 |   Batch 6/20 (20 texts)
+15:21:00 |   Batch 7/20 (20 texts)
+15:21:01 |   Batch 8/20 (20 texts)
+15:21:01 |   Batch 9/20 (20 texts)
+15:21:01 |   Batch 10/20 (20 texts)
+15:21:01 |   Batch 11/20 (20 texts)
+15:21:01 |   Batch 12/20 (20 texts)
+15:21:01 |   Batch 13/20 (20 texts)
+15:21:02 |   Batch 14/20 (20 texts)
+15:21:02 |   Batch 15/20 (20 texts)
+15:21:02 |   Batch 16/20 (20 texts)
+15:21:02 |   Batch 17/20 (20 texts)
+15:21:02 |   Batch 18/20 (20 texts)
+15:21:02 |   Batch 19/20 (20 texts)
+15:21:03 |   Batch 20/20 (10 texts)
+15:21:03 | 
+Evaluating...
+15:21:03 | 
+==================================================
+15:21:03 | EVALUATION RESULTS
+15:21:03 | ==================================================
+15:21:03 |   Rows evaluated : 390
+15:21:03 |   TP / FP / FN   : 396 / 243 / 195
+15:21:03 | --------------------------------------------------
+15:21:03 |   Micro Precision : 0.6197
+15:21:03 |   Micro Recall    : 0.6701
+15:21:03 |   Micro F1        : 0.6439
+15:21:03 | --------------------------------------------------
+15:21:03 |   Macro F1        : 0.6357
+15:21:03 | ==================================================
+15:21:03 | 
+Output saved → outputs/mdg-nlp_timex-recognition-sentence-vocab-substituted__mdg-nlp_T5-timex-recognition-sentence__predictions.jsonl
+15:21:03 |   - Rows 1-390: Individual predictions
+15:21:03 |   - Row 391: FINAL_METRICS
+15:21:03 | Metrics saved → outputs/mdg-nlp_timex-recognition-sentence-vocab-substituted__mdg-nlp_T5-timex-recognition-sentence__predictions_metrics.json
+15:21:03 | Done.
+ ### Inference completed successfully ### 
+Progress: 23 successful, 0 failed
+
+======================================================
+RUN [24/63]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-perturbed
+======================================================
+>>> Running inference...
+15:21:07 | ============================================================
+15:21:07 | NER INFERENCE PIPELINE
+15:21:07 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+15:21:07 |   Dataset     : mdg-nlp/timex-recognition-sentence-perturbed  (split=test)
+15:21:07 |   Task        : time
+15:21:07 |   Max samples : 400
+15:21:07 |   Gold field  : gold_timex_expressions
+15:21:07 |   Pred field  : post_processed_timex_expressions
+15:21:07 | ============================================================
+15:21:07 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-perturbed
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1652, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1629, in dataset_module_factory
+    ).get_module()
+      ~~~~~~~~~~^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1025, in get_module
+    module_name, default_builder_kwargs = infer_module_for_data_files(
+                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        data_files=data_files,
+        ^^^^^^^^^^^^^^^^^^^^^^
+        path=self.name,
+        ^^^^^^^^^^^^^^^
+        download_config=self.download_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 602, in infer_module_for_data_files
+    raise DataFilesNotFoundError("No (supported) data files found" + (f" in {path}" if path else ""))
+datasets.exceptions.DataFilesNotFoundError: No (supported) data files found in mdg-nlp/timex-recognition-sentence-perturbed
+ ### Inference completed successfully ### 
+Progress: 24 successful, 0 failed
+
+======================================================
+RUN [25/63]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/domain-timex-clinical-base
+======================================================
+>>> Running inference...
+15:21:10 | ============================================================
+15:21:10 | NER INFERENCE PIPELINE
+15:21:10 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+15:21:10 |   Dataset     : mdg-nlp/domain-timex-clinical-base  (split=test)
+15:21:10 |   Task        : time
+15:21:10 |   Max samples : 400
+15:21:10 |   Gold field  : gold_timex_expressions
+15:21:10 |   Pred field  : post_processed_timex_expressions
+15:21:10 | ============================================================
+15:21:10 | 
+Loading dataset: mdg-nlp/domain-timex-clinical-base
+15:21:12 | Dataset only has 390 test samples, processing all instead of 400
+15:21:12 | Processing 390 rows from test split.
+15:21:12 | 
+Loading model: mdg-nlp/T5-timex-recognition-sentence
+15:21:12 | Using Token Classification (NER pipeline)
+15:21:12 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+15:21:12 | Loading model with NER pipeline...
+Device set to use mps
+15:21:12 | Ready on mps.
+15:21:12 | 
+Running inference on 390 texts...
+15:21:12 |   Batch 1/20 (20 texts)
+15:21:13 |   Batch 2/20 (20 texts)
+15:21:13 |   Batch 3/20 (20 texts)
+15:21:13 |   Batch 4/20 (20 texts)
+15:21:13 |   Batch 5/20 (20 texts)
+15:21:13 |   Batch 6/20 (20 texts)
+15:21:13 |   Batch 7/20 (20 texts)
+15:21:13 |   Batch 8/20 (20 texts)
+15:21:13 |   Batch 9/20 (20 texts)
+15:21:14 |   Batch 10/20 (20 texts)
+15:21:14 |   Batch 11/20 (20 texts)
+15:21:14 |   Batch 12/20 (20 texts)
+15:21:14 |   Batch 13/20 (20 texts)
+15:21:14 |   Batch 14/20 (20 texts)
+15:21:14 |   Batch 15/20 (20 texts)
+15:21:15 |   Batch 16/20 (20 texts)
+15:21:15 |   Batch 17/20 (20 texts)
+15:21:15 |   Batch 18/20 (20 texts)
+15:21:15 |   Batch 19/20 (20 texts)
+15:21:15 |   Batch 20/20 (10 texts)
+15:21:15 | 
+Evaluating...
+15:21:15 | 
+==================================================
+15:21:15 | EVALUATION RESULTS
+15:21:15 | ==================================================
+15:21:15 |   Rows evaluated : 390
+15:21:15 |   TP / FP / FN   : 396 / 243 / 195
+15:21:15 | --------------------------------------------------
+15:21:15 |   Micro Precision : 0.6197
+15:21:15 |   Micro Recall    : 0.6701
+15:21:15 |   Micro F1        : 0.6439
+15:21:15 | --------------------------------------------------
+15:21:15 |   Macro F1        : 0.6357
+15:21:15 | ==================================================
+15:21:15 | 
+Output saved → outputs/mdg-nlp_domain-timex-clinical-base__mdg-nlp_T5-timex-recognition-sentence__predictions.jsonl
+15:21:15 |   - Rows 1-390: Individual predictions
+15:21:15 |   - Row 391: FINAL_METRICS
+15:21:15 | Metrics saved → outputs/mdg-nlp_domain-timex-clinical-base__mdg-nlp_T5-timex-recognition-sentence__predictions_metrics.json
+15:21:15 | Done.
+ ### Inference completed successfully ### 
+Progress: 25 successful, 0 failed
+
+======================================================
+RUN [26/63]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/domain-timex-clinical
+======================================================
+>>> Running inference...
+15:21:18 | ============================================================
+15:21:18 | NER INFERENCE PIPELINE
+15:21:18 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+15:21:18 |   Dataset     : mdg-nlp/domain-timex-clinical  (split=test)
+15:21:18 |   Task        : time
+15:21:18 |   Max samples : 400
+15:21:18 |   Gold field  : gold_timex_expressions
+15:21:18 |   Pred field  : post_processed_timex_expressions
+15:21:18 | ============================================================
+15:21:18 | 
+Loading dataset: mdg-nlp/domain-timex-clinical
+15:21:19 | Processing 400 rows from test split.
+15:21:19 | 
+Loading model: mdg-nlp/T5-timex-recognition-sentence
+15:21:19 | Using Token Classification (NER pipeline)
+15:21:19 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+15:21:20 | Loading model with NER pipeline...
+Device set to use mps
+15:21:20 | Ready on mps.
+15:21:20 | 
+Running inference on 400 texts...
+15:21:20 |   Batch 1/20 (20 texts)
+15:21:20 |   Batch 2/20 (20 texts)
+15:21:20 |   Batch 3/20 (20 texts)
+15:21:20 |   Batch 4/20 (20 texts)
+15:21:20 |   Batch 5/20 (20 texts)
+15:21:21 |   Batch 6/20 (20 texts)
+15:21:21 |   Batch 7/20 (20 texts)
+15:21:21 |   Batch 8/20 (20 texts)
+15:21:21 |   Batch 9/20 (20 texts)
+15:21:21 |   Batch 10/20 (20 texts)
+15:21:21 |   Batch 11/20 (20 texts)
+15:21:22 |   Batch 12/20 (20 texts)
+15:21:22 |   Batch 13/20 (20 texts)
+15:21:22 |   Batch 14/20 (20 texts)
+15:21:22 |   Batch 15/20 (20 texts)
+15:21:22 |   Batch 16/20 (20 texts)
+15:21:22 |   Batch 17/20 (20 texts)
+15:21:22 |   Batch 18/20 (20 texts)
+15:21:22 |   Batch 19/20 (20 texts)
+15:21:23 |   Batch 20/20 (20 texts)
+15:21:23 | 
+Evaluating...
+15:21:23 | 
+==================================================
+15:21:23 | EVALUATION RESULTS
+15:21:23 | ==================================================
+15:21:23 |   Rows evaluated : 400
+15:21:23 |   TP / FP / FN   : 31 / 210 / 489
+15:21:23 | --------------------------------------------------
+15:21:23 |   Micro Precision : 0.1286
+15:21:23 |   Micro Recall    : 0.0596
+15:21:23 |   Micro F1        : 0.0815
+15:21:23 | --------------------------------------------------
+15:21:23 |   Macro F1        : 0.0624
+15:21:23 | ==================================================
+15:21:23 | 
+Output saved → outputs/mdg-nlp_domain-timex-clinical__mdg-nlp_T5-timex-recognition-sentence__predictions.jsonl
+15:21:23 |   - Rows 1-400: Individual predictions
+15:21:23 |   - Row 401: FINAL_METRICS
+15:21:23 | Metrics saved → outputs/mdg-nlp_domain-timex-clinical__mdg-nlp_T5-timex-recognition-sentence__predictions_metrics.json
+15:21:23 | Done.
+ ### Inference completed successfully ### 
+Progress: 26 successful, 0 failed
+
+======================================================
+RUN [27/63]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/timex-compositional-sentence
+======================================================
+>>> Running inference...
+15:21:26 | ============================================================
+15:21:26 | NER INFERENCE PIPELINE
+15:21:26 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+15:21:26 |   Dataset     : mdg-nlp/timex-compositional-sentence  (split=test)
+15:21:26 |   Task        : time
+15:21:26 |   Max samples : 400
+15:21:26 |   Gold field  : gold_timex_expressions
+15:21:26 |   Pred field  : post_processed_timex_expressions
+15:21:26 | ============================================================
+15:21:26 | 
+Loading dataset: mdg-nlp/timex-compositional-sentence
+15:21:28 | Processing 400 rows from test split.
+15:21:28 | 
+Loading model: mdg-nlp/T5-timex-recognition-sentence
+15:21:28 | Using Token Classification (NER pipeline)
+15:21:28 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+15:21:28 | Loading model with NER pipeline...
+Device set to use mps
+15:21:28 | Ready on mps.
+15:21:28 | 
+Running inference on 400 texts...
+15:21:28 |   Batch 1/20 (20 texts)
+15:21:28 |   Batch 2/20 (20 texts)
+15:21:29 |   Batch 3/20 (20 texts)
+15:21:29 |   Batch 4/20 (20 texts)
+15:21:29 |   Batch 5/20 (20 texts)
+15:21:29 |   Batch 6/20 (20 texts)
+15:21:29 |   Batch 7/20 (20 texts)
+15:21:29 |   Batch 8/20 (20 texts)
+15:21:29 |   Batch 9/20 (20 texts)
+15:21:29 |   Batch 10/20 (20 texts)
+15:21:29 |   Batch 11/20 (20 texts)
+15:21:30 |   Batch 12/20 (20 texts)
+15:21:30 |   Batch 13/20 (20 texts)
+15:21:30 |   Batch 14/20 (20 texts)
+15:21:30 |   Batch 15/20 (20 texts)
+15:21:30 |   Batch 16/20 (20 texts)
+15:21:30 |   Batch 17/20 (20 texts)
+15:21:30 |   Batch 18/20 (20 texts)
+15:21:30 |   Batch 19/20 (20 texts)
+15:21:30 |   Batch 20/20 (20 texts)
+15:21:30 | 
+Evaluating...
+15:21:30 | 
+==================================================
+15:21:30 | EVALUATION RESULTS
+15:21:30 | ==================================================
+15:21:30 |   Rows evaluated : 400
+15:21:30 |   TP / FP / FN   : 299 / 180 / 197
+15:21:30 | --------------------------------------------------
+15:21:30 |   Micro Precision : 0.6242
+15:21:30 |   Micro Recall    : 0.6028
+15:21:30 |   Micro F1        : 0.6133
+15:21:30 | --------------------------------------------------
+15:21:30 |   Macro F1        : 0.6144
+15:21:30 | ==================================================
+15:21:30 | 
+Output saved → outputs/mdg-nlp_timex-compositional-sentence__mdg-nlp_T5-timex-recognition-sentence__predictions.jsonl
+15:21:30 |   - Rows 1-400: Individual predictions
+15:21:30 |   - Row 401: FINAL_METRICS
+15:21:30 | Metrics saved → outputs/mdg-nlp_timex-compositional-sentence__mdg-nlp_T5-timex-recognition-sentence__predictions_metrics.json
+15:21:30 | Done.
+ ### Inference completed successfully ### 
+Progress: 27 successful, 0 failed
+
+======================================================
+RUN [28/63]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/domain-timex-recognition-sentence-updated
+======================================================
+>>> Running inference...
+15:21:33 | ============================================================
+15:21:33 | NER INFERENCE PIPELINE
+15:21:33 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+15:21:33 |   Dataset     : mdg-nlp/domain-timex-recognition-sentence-updated  (split=test)
+15:21:33 |   Task        : time
+15:21:33 |   Max samples : 400
+15:21:33 |   Gold field  : gold_timex_expressions
+15:21:33 |   Pred field  : post_processed_timex_expressions
+15:21:33 | ============================================================
+15:21:33 | 
+Loading dataset: mdg-nlp/domain-timex-recognition-sentence-updated
+15:21:35 | Processing 400 rows from test split.
+15:21:35 | 
+Loading model: mdg-nlp/T5-timex-recognition-sentence
+15:21:35 | Using Token Classification (NER pipeline)
+15:21:35 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+15:21:35 | Loading model with NER pipeline...
+Device set to use mps
+15:21:35 | Ready on mps.
+15:21:35 | 
+Running inference on 400 texts...
+15:21:35 |   Batch 1/20 (20 texts)
+15:21:35 |   Batch 2/20 (20 texts)
+15:21:35 |   Batch 3/20 (20 texts)
+15:21:36 |   Batch 4/20 (20 texts)
+15:21:36 |   Batch 5/20 (20 texts)
+15:21:36 |   Batch 6/20 (20 texts)
+15:21:36 |   Batch 7/20 (20 texts)
+15:21:36 |   Batch 8/20 (20 texts)
+15:21:36 |   Batch 9/20 (20 texts)
+15:21:36 |   Batch 10/20 (20 texts)
+15:21:37 |   Batch 11/20 (20 texts)
+15:21:37 |   Batch 12/20 (20 texts)
+15:21:37 |   Batch 13/20 (20 texts)
+15:21:37 |   Batch 14/20 (20 texts)
+15:21:37 |   Batch 15/20 (20 texts)
+15:21:37 |   Batch 16/20 (20 texts)
+15:21:37 |   Batch 17/20 (20 texts)
+15:21:37 |   Batch 18/20 (20 texts)
+15:21:37 |   Batch 19/20 (20 texts)
+15:21:38 |   Batch 20/20 (20 texts)
+15:21:38 | 
+Evaluating...
+15:21:38 | 
+==================================================
+15:21:38 | EVALUATION RESULTS
+15:21:38 | ==================================================
+15:21:38 |   Rows evaluated : 400
+15:21:38 |   TP / FP / FN   : 31 / 210 / 489
+15:21:38 | --------------------------------------------------
+15:21:38 |   Micro Precision : 0.1286
+15:21:38 |   Micro Recall    : 0.0596
+15:21:38 |   Micro F1        : 0.0815
+15:21:38 | --------------------------------------------------
+15:21:38 |   Macro F1        : 0.0624
+15:21:38 | ==================================================
+15:21:38 | 
+Output saved → outputs/mdg-nlp_domain-timex-recognition-sentence-updated__mdg-nlp_T5-timex-recognition-sentence__predictions.jsonl
+15:21:38 |   - Rows 1-400: Individual predictions
+15:21:38 |   - Row 401: FINAL_METRICS
+15:21:38 | Metrics saved → outputs/mdg-nlp_domain-timex-recognition-sentence-updated__mdg-nlp_T5-timex-recognition-sentence__predictions_metrics.json
+15:21:38 | Done.
+ ### Inference completed successfully ### 
+Progress: 28 successful, 0 failed
+
+======================================================
+RUN [29/63]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-updated
+======================================================
+>>> Running inference...
+15:21:40 | ============================================================
+15:21:40 | NER INFERENCE PIPELINE
+15:21:40 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+15:21:40 |   Dataset     : mdg-nlp/timex-recognition-sentence-updated  (split=test)
+15:21:40 |   Task        : time
+15:21:40 |   Max samples : 400
+15:21:40 |   Gold field  : gold_timex_expressions
+15:21:40 |   Pred field  : post_processed_timex_expressions
+15:21:40 | ============================================================
+15:21:40 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-updated
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1652, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1578, in dataset_module_factory
+    raise DatasetNotFoundError(f"Dataset '{path}' doesn't exist on the Hub or cannot be accessed.") from e
+datasets.exceptions.DatasetNotFoundError: Dataset 'mdg-nlp/timex-recognition-sentence-updated' doesn't exist on the Hub or cannot be accessed.
+ ### Inference completed successfully ### 
+Progress: 29 successful, 0 failed
+
+======================================================
+RUN [30/63]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence
+======================================================
+>>> Running inference...
+15:21:43 | ============================================================
+15:21:43 | NER INFERENCE PIPELINE
+15:21:43 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+15:21:43 |   Dataset     : mdg-nlp/timex-recognition-sentence  (split=test)
+15:21:43 |   Task        : time
+15:21:43 |   Max samples : 400
+15:21:43 |   Gold field  : gold_timex_expressions
+15:21:43 |   Pred field  : post_processed_timex_expressions
+15:21:43 | ============================================================
+15:21:43 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence
+15:21:44 | Processing 400 rows from test split.
+15:21:45 | 
+Loading model: mdg-nlp/T5-timex-recognition-sentence
+15:21:45 | Using Token Classification (NER pipeline)
+15:21:45 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+15:21:45 | Loading model with NER pipeline...
+Device set to use mps
+15:21:45 | Ready on mps.
+15:21:45 | 
+Running inference on 400 texts...
+15:21:45 |   Batch 1/20 (20 texts)
+15:21:45 |   Batch 2/20 (20 texts)
+15:21:45 |   Batch 3/20 (20 texts)
+15:21:45 |   Batch 4/20 (20 texts)
+15:21:46 |   Batch 5/20 (20 texts)
+15:21:46 |   Batch 6/20 (20 texts)
+15:21:46 |   Batch 7/20 (20 texts)
+15:21:46 |   Batch 8/20 (20 texts)
+15:21:46 |   Batch 9/20 (20 texts)
+15:21:46 |   Batch 10/20 (20 texts)
+15:21:46 |   Batch 11/20 (20 texts)
+15:21:47 |   Batch 12/20 (20 texts)
+15:21:47 |   Batch 13/20 (20 texts)
+15:21:47 |   Batch 14/20 (20 texts)
+15:21:47 |   Batch 15/20 (20 texts)
+15:21:47 |   Batch 16/20 (20 texts)
+15:21:47 |   Batch 17/20 (20 texts)
+15:21:47 |   Batch 18/20 (20 texts)
+15:21:47 |   Batch 19/20 (20 texts)
+15:21:48 |   Batch 20/20 (20 texts)
+15:21:48 | 
+Evaluating...
+15:21:48 | 
+==================================================
+15:21:48 | EVALUATION RESULTS
+15:21:48 | ==================================================
+15:21:48 |   Rows evaluated : 400
+15:21:48 |   TP / FP / FN   : 159 / 95 / 76
+15:21:48 | --------------------------------------------------
+15:21:48 |   Micro Precision : 0.6260
+15:21:48 |   Micro Recall    : 0.6766
+15:21:48 |   Micro F1        : 0.6503
+15:21:48 | --------------------------------------------------
+15:21:48 |   Macro F1        : 0.2557
+15:21:48 | ==================================================
+15:21:48 | 
+Output saved → outputs/mdg-nlp_timex-recognition-sentence__mdg-nlp_T5-timex-recognition-sentence__predictions.jsonl
+15:21:48 |   - Rows 1-400: Individual predictions
+15:21:48 |   - Row 401: FINAL_METRICS
+15:21:48 | Metrics saved → outputs/mdg-nlp_timex-recognition-sentence__mdg-nlp_T5-timex-recognition-sentence__predictions_metrics.json
+15:21:48 | Done.
+ ### Inference completed successfully ### 
+Progress: 30 successful, 0 failed
+
+======================================================
+RUN [31/63]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-adversarial
+======================================================
+>>> Running inference...
+15:21:51 | ============================================================
+15:21:51 | NER INFERENCE PIPELINE
+15:21:51 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+15:21:51 |   Dataset     : mdg-nlp/timex-recognition-sentence-adversarial  (split=test)
+15:21:51 |   Task        : time
+15:21:51 |   Max samples : 400
+15:21:51 |   Gold field  : gold_timex_expressions
+15:21:51 |   Pred field  : post_processed_timex_expressions
+15:21:51 | ============================================================
+15:21:51 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-adversarial
+15:21:52 | Dataset only has 390 test samples, processing all instead of 400
+15:21:52 | Processing 390 rows from test split.
+15:21:52 | 
+Loading model: mdg-nlp/T5-timex-recognition-sentence
+15:21:52 | Using Token Classification (NER pipeline)
+15:21:52 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+15:21:53 | Loading model with NER pipeline...
+Device set to use mps
+15:21:53 | Ready on mps.
+15:21:53 | 
+Running inference on 390 texts...
+15:21:53 |   Batch 1/20 (20 texts)
+15:21:53 |   Batch 2/20 (20 texts)
+15:21:53 |   Batch 3/20 (20 texts)
+15:21:53 |   Batch 4/20 (20 texts)
+15:21:53 |   Batch 5/20 (20 texts)
+15:21:54 |   Batch 6/20 (20 texts)
+15:21:54 |   Batch 7/20 (20 texts)
+15:21:54 |   Batch 8/20 (20 texts)
+15:21:54 |   Batch 9/20 (20 texts)
+15:21:54 |   Batch 10/20 (20 texts)
+15:21:55 |   Batch 11/20 (20 texts)
+15:21:55 |   Batch 12/20 (20 texts)
+15:21:55 |   Batch 13/20 (20 texts)
+15:21:55 |   Batch 14/20 (20 texts)
+15:21:55 |   Batch 15/20 (20 texts)
+15:21:55 |   Batch 16/20 (20 texts)
+15:21:55 |   Batch 17/20 (20 texts)
+15:21:56 |   Batch 18/20 (20 texts)
+15:21:56 |   Batch 19/20 (20 texts)
+15:21:56 |   Batch 20/20 (10 texts)
+15:21:56 | 
+Evaluating...
+15:21:56 | 
+==================================================
+15:21:56 | EVALUATION RESULTS
+15:21:56 | ==================================================
+15:21:56 |   Rows evaluated : 390
+15:21:56 |   TP / FP / FN   : 394 / 255 / 197
+15:21:56 | --------------------------------------------------
+15:21:56 |   Micro Precision : 0.6071
+15:21:56 |   Micro Recall    : 0.6667
+15:21:56 |   Micro F1        : 0.6355
+15:21:56 | --------------------------------------------------
+15:21:56 |   Macro F1        : 0.6337
+15:21:56 | ==================================================
+15:21:56 | 
+Output saved → outputs/mdg-nlp_timex-recognition-sentence-adversarial__mdg-nlp_T5-timex-recognition-sentence__predictions.jsonl
+15:21:56 |   - Rows 1-390: Individual predictions
+15:21:56 |   - Row 391: FINAL_METRICS
+15:21:56 | Metrics saved → outputs/mdg-nlp_timex-recognition-sentence-adversarial__mdg-nlp_T5-timex-recognition-sentence__predictions_metrics.json
+15:21:56 | Done.
+ ### Inference completed successfully ### 
+Progress: 31 successful, 0 failed
+
+======================================================
+RUN [32/63]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-original
+======================================================
+>>> Running inference...
+15:22:00 | ============================================================
+15:22:00 | NER INFERENCE PIPELINE
+15:22:00 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+15:22:00 |   Dataset     : mdg-nlp/timex-recognition-sentence-original  (split=test)
+15:22:00 |   Task        : time
+15:22:00 |   Max samples : 400
+15:22:00 |   Gold field  : gold_timex_expressions
+15:22:00 |   Pred field  : post_processed_timex_expressions
+15:22:00 | ============================================================
+15:22:00 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-original
+15:22:01 | Dataset only has 390 test samples, processing all instead of 400
+15:22:01 | Processing 390 rows from test split.
+15:22:01 | 
+Loading model: mdg-nlp/T5-timex-recognition-sentence
+15:22:01 | Using Token Classification (NER pipeline)
+15:22:01 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+15:22:02 | Loading model with NER pipeline...
+Device set to use mps
+15:22:02 | Ready on mps.
+15:22:02 | 
+Running inference on 390 texts...
+15:22:02 |   Batch 1/20 (20 texts)
+15:22:02 |   Batch 2/20 (20 texts)
+15:22:02 |   Batch 3/20 (20 texts)
+15:22:02 |   Batch 4/20 (20 texts)
+15:22:03 |   Batch 5/20 (20 texts)
+15:22:03 |   Batch 6/20 (20 texts)
+15:22:03 |   Batch 7/20 (20 texts)
+15:22:03 |   Batch 8/20 (20 texts)
+15:22:03 |   Batch 9/20 (20 texts)
+15:22:03 |   Batch 10/20 (20 texts)
+15:22:04 |   Batch 11/20 (20 texts)
+15:22:04 |   Batch 12/20 (20 texts)
+15:22:04 |   Batch 13/20 (20 texts)
+15:22:04 |   Batch 14/20 (20 texts)
+15:22:04 |   Batch 15/20 (20 texts)
+15:22:04 |   Batch 16/20 (20 texts)
+15:22:05 |   Batch 17/20 (20 texts)
+15:22:05 |   Batch 18/20 (20 texts)
+15:22:05 |   Batch 19/20 (20 texts)
+15:22:05 |   Batch 20/20 (10 texts)
+15:22:05 | 
+Evaluating...
+15:22:05 | 
+==================================================
+15:22:05 | EVALUATION RESULTS
+15:22:05 | ==================================================
+15:22:05 |   Rows evaluated : 390
+15:22:05 |   TP / FP / FN   : 396 / 243 / 195
+15:22:05 | --------------------------------------------------
+15:22:05 |   Micro Precision : 0.6197
+15:22:05 |   Micro Recall    : 0.6701
+15:22:05 |   Micro F1        : 0.6439
+15:22:05 | --------------------------------------------------
+15:22:05 |   Macro F1        : 0.6357
+15:22:05 | ==================================================
+15:22:05 | 
+Output saved → outputs/mdg-nlp_timex-recognition-sentence-original__mdg-nlp_T5-timex-recognition-sentence__predictions.jsonl
+15:22:05 |   - Rows 1-390: Individual predictions
+15:22:05 |   - Row 391: FINAL_METRICS
+15:22:05 | Metrics saved → outputs/mdg-nlp_timex-recognition-sentence-original__mdg-nlp_T5-timex-recognition-sentence__predictions_metrics.json
+15:22:05 | Done.
+ ### Inference completed successfully ### 
+Progress: 32 successful, 0 failed
+
+======================================================
+RUN [33/63]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-document
+======================================================
+>>> Running inference...
+15:22:10 | ============================================================
+15:22:10 | NER INFERENCE PIPELINE
+15:22:10 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+15:22:10 |   Dataset     : mdg-nlp/timex-recognition-document  (split=test)
+15:22:10 |   Task        : time
+15:22:10 |   Max samples : 400
+15:22:10 |   Gold field  : gold_timex_expressions
+15:22:10 |   Pred field  : post_processed_timex_expressions
+15:22:10 | ============================================================
+15:22:10 | 
+Loading dataset: mdg-nlp/timex-recognition-document
+15:22:11 | Dataset only has 266 test samples, processing all instead of 400
+15:22:11 | Processing 266 rows from test split.
+15:22:11 | 
+Loading model: mdg-nlp/T5-timex-recognition-sentence
+15:22:11 | Using Token Classification (NER pipeline)
+15:22:11 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+15:22:11 | Loading model with NER pipeline...
+Device set to use mps
+15:22:12 | Ready on mps.
+15:22:12 | 
+Running inference on 266 texts...
+15:22:12 |   Batch 1/14 (20 texts)
+15:22:13 |   Batch 2/14 (20 texts)
+15:22:14 |   Batch 3/14 (20 texts)
+15:22:14 |   Batch 4/14 (20 texts)
+15:22:15 |   Batch 5/14 (20 texts)
+15:22:16 |   Batch 6/14 (20 texts)
+15:22:17 |   Batch 7/14 (20 texts)
+15:22:17 |   Batch 8/14 (20 texts)
+15:22:18 |   Batch 9/14 (20 texts)
+15:22:19 |   Batch 10/14 (20 texts)
+15:22:20 |   Batch 11/14 (20 texts)
+15:22:20 |   Batch 12/14 (20 texts)
+15:22:21 |   Batch 13/14 (20 texts)
+15:22:22 |   Batch 14/14 (6 texts)
+15:22:22 | 
+Evaluating...
+15:22:22 | 
+==================================================
+15:22:22 | EVALUATION RESULTS
+15:22:22 | ==================================================
+15:22:22 |   Rows evaluated : 266
+15:22:22 |   TP / FP / FN   : 840 / 492 / 659
+15:22:22 | --------------------------------------------------
+15:22:22 |   Micro Precision : 0.6306
+15:22:22 |   Micro Recall    : 0.5604
+15:22:22 |   Micro F1        : 0.5934
+15:22:22 | --------------------------------------------------
+15:22:22 |   Macro F1        : 0.6444
+15:22:22 | ==================================================
+15:22:22 | 
+Output saved → outputs/mdg-nlp_timex-recognition-document__mdg-nlp_T5-timex-recognition-sentence__predictions.jsonl
+15:22:22 |   - Rows 1-266: Individual predictions
+15:22:22 |   - Row 267: FINAL_METRICS
+15:22:22 | Metrics saved → outputs/mdg-nlp_timex-recognition-document__mdg-nlp_T5-timex-recognition-sentence__predictions_metrics.json
+15:22:22 | Done.
+ ### Inference completed successfully ### 
+Progress: 33 successful, 0 failed
+
+======================================================
+RUN [34/63]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/adv-timex-sentences-bert-attack
+======================================================
+>>> Running inference...
+15:22:27 | ============================================================
+15:22:27 | NER INFERENCE PIPELINE
+15:22:27 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+15:22:27 |   Dataset     : mdg-nlp/adv-timex-sentences-bert-attack  (split=test)
+15:22:27 |   Task        : time
+15:22:27 |   Max samples : 400
+15:22:27 |   Gold field  : gold_timex_expressions
+15:22:27 |   Pred field  : post_processed_timex_expressions
+15:22:27 | ============================================================
+15:22:27 | 
+Loading dataset: mdg-nlp/adv-timex-sentences-bert-attack
+Generating test split: 0 examples [00:00, ? examples/s]Generating test split: 0 examples [00:00, ? examples/s]
+Traceback (most recent call last):
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1887, in _prepare_split_single
+    num_examples, num_bytes = writer.finalize()
+                              ~~~~~~~~~~~~~~~^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/arrow_writer.py", line 669, in finalize
+    raise SchemaInferenceError("Please pass `features` or at least one example when writing data")
+datasets.arrow_writer.SchemaInferenceError: Please pass `features` or at least one example when writing data
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2084, in load_dataset
+    builder_instance.download_and_prepare(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        download_config=download_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 925, in download_and_prepare
+    self._download_and_prepare(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dl_manager=dl_manager,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **download_and_prepare_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1001, in _download_and_prepare
+    self._prepare_split(split_generator, **prepare_split_kwargs)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1742, in _prepare_split
+    for job_id, done, content in self._prepare_split_single(
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        gen_kwargs=gen_kwargs, job_id=job_id, **_prepare_split_args
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1898, in _prepare_split_single
+    raise DatasetGenerationError("An error occurred while generating the dataset") from e
+datasets.exceptions.DatasetGenerationError: An error occurred while generating the dataset
+ ### Inference completed successfully ### 
+Progress: 34 successful, 0 failed
+
+======================================================
+RUN [35/63]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/adv-timex-sentences
+======================================================
+>>> Running inference...
+15:22:32 | ============================================================
+15:22:32 | NER INFERENCE PIPELINE
+15:22:32 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+15:22:32 |   Dataset     : mdg-nlp/adv-timex-sentences  (split=test)
+15:22:32 |   Task        : time
+15:22:32 |   Max samples : 400
+15:22:32 |   Gold field  : gold_timex_expressions
+15:22:32 |   Pred field  : post_processed_timex_expressions
+15:22:32 | ============================================================
+15:22:32 | 
+Loading dataset: mdg-nlp/adv-timex-sentences
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1652, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1578, in dataset_module_factory
+    raise DatasetNotFoundError(f"Dataset '{path}' doesn't exist on the Hub or cannot be accessed.") from e
+datasets.exceptions.DatasetNotFoundError: Dataset 'mdg-nlp/adv-timex-sentences' doesn't exist on the Hub or cannot be accessed.
+ ### Inference completed successfully ### 
+Progress: 35 successful, 0 failed
+
+======================================================
+RUN [36/63]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/adv-timex-sentences-textfooler
+======================================================
+>>> Running inference...
+15:22:35 | ============================================================
+15:22:35 | NER INFERENCE PIPELINE
+15:22:35 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+15:22:35 |   Dataset     : mdg-nlp/adv-timex-sentences-textfooler  (split=test)
+15:22:35 |   Task        : time
+15:22:35 |   Max samples : 400
+15:22:35 |   Gold field  : gold_timex_expressions
+15:22:35 |   Pred field  : post_processed_timex_expressions
+15:22:35 | ============================================================
+15:22:35 | 
+Loading dataset: mdg-nlp/adv-timex-sentences-textfooler
+15:22:36 | Dataset only has 1 test samples, processing all instead of 400
+15:22:36 | Processing 1 rows from test split.
+15:22:36 | 
+Loading model: mdg-nlp/T5-timex-recognition-sentence
+15:22:36 | Using Token Classification (NER pipeline)
+15:22:36 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+15:22:36 | Loading model with NER pipeline...
+Device set to use mps
+15:22:37 | Ready on mps.
+15:22:37 | 
+Running inference on 1 texts...
+15:22:37 |   Batch 1/1 (1 texts)
+15:22:37 | 
+Evaluating...
+15:22:37 | 
+==================================================
+15:22:37 | EVALUATION RESULTS
+15:22:37 | ==================================================
+15:22:37 |   Rows evaluated : 1
+15:22:37 |   TP / FP / FN   : 2 / 1 / 0
+15:22:37 | --------------------------------------------------
+15:22:37 |   Micro Precision : 0.6667
+15:22:37 |   Micro Recall    : 1.0000
+15:22:37 |   Micro F1        : 0.8000
+15:22:37 | --------------------------------------------------
+15:22:37 |   Macro F1        : 0.8000
+15:22:37 | ==================================================
+15:22:37 | 
+Output saved → outputs/mdg-nlp_adv-timex-sentences-textfooler__mdg-nlp_T5-timex-recognition-sentence__predictions.jsonl
+15:22:37 |   - Rows 1-1: Individual predictions
+15:22:37 |   - Row 2: FINAL_METRICS
+15:22:37 | Metrics saved → outputs/mdg-nlp_adv-timex-sentences-textfooler__mdg-nlp_T5-timex-recognition-sentence__predictions_metrics.json
+15:22:37 | Done.
+ ### Inference completed successfully ### 
+Progress: 36 successful, 0 failed
+
+======================================================
+RUN [37/63]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/adv-timex-sentences-ner_clare
+======================================================
+>>> Running inference...
+15:22:41 | ============================================================
+15:22:41 | NER INFERENCE PIPELINE
+15:22:41 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+15:22:41 |   Dataset     : mdg-nlp/adv-timex-sentences-ner_clare  (split=test)
+15:22:41 |   Task        : time
+15:22:41 |   Max samples : 400
+15:22:41 |   Gold field  : gold_timex_expressions
+15:22:41 |   Pred field  : post_processed_timex_expressions
+15:22:41 | ============================================================
+15:22:41 | 
+Loading dataset: mdg-nlp/adv-timex-sentences-ner_clare
+15:22:42 | Dataset only has 3 test samples, processing all instead of 400
+15:22:42 | Processing 3 rows from test split.
+15:22:42 | 
+Loading model: mdg-nlp/T5-timex-recognition-sentence
+15:22:42 | Using Token Classification (NER pipeline)
+15:22:42 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+15:22:42 | Loading model with NER pipeline...
+Device set to use mps
+15:22:43 | Ready on mps.
+15:22:43 | 
+Running inference on 3 texts...
+15:22:43 |   Batch 1/1 (3 texts)
+15:22:43 | 
+Evaluating...
+15:22:43 | 
+==================================================
+15:22:43 | EVALUATION RESULTS
+15:22:43 | ==================================================
+15:22:43 |   Rows evaluated : 3
+15:22:43 |   TP / FP / FN   : 3 / 1 / 1
+15:22:43 | --------------------------------------------------
+15:22:43 |   Micro Precision : 0.7500
+15:22:43 |   Micro Recall    : 0.7500
+15:22:43 |   Micro F1        : 0.7500
+15:22:43 | --------------------------------------------------
+15:22:43 |   Macro F1        : 0.6667
+15:22:43 | ==================================================
+15:22:43 | 
+Output saved → outputs/mdg-nlp_adv-timex-sentences-ner_clare__mdg-nlp_T5-timex-recognition-sentence__predictions.jsonl
+15:22:43 |   - Rows 1-3: Individual predictions
+15:22:43 |   - Row 4: FINAL_METRICS
+15:22:43 | Metrics saved → outputs/mdg-nlp_adv-timex-sentences-ner_clare__mdg-nlp_T5-timex-recognition-sentence__predictions_metrics.json
+15:22:43 | Done.
+ ### Inference completed successfully ### 
+Progress: 37 successful, 0 failed
+
+======================================================
+RUN [38/63]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/adv-timex-sentences-morpheus
+======================================================
+>>> Running inference...
+15:22:47 | ============================================================
+15:22:47 | NER INFERENCE PIPELINE
+15:22:47 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+15:22:47 |   Dataset     : mdg-nlp/adv-timex-sentences-morpheus  (split=test)
+15:22:47 |   Task        : time
+15:22:47 |   Max samples : 400
+15:22:47 |   Gold field  : gold_timex_expressions
+15:22:47 |   Pred field  : post_processed_timex_expressions
+15:22:47 | ============================================================
+15:22:47 | 
+Loading dataset: mdg-nlp/adv-timex-sentences-morpheus
+Generating test split: 0 examples [00:00, ? examples/s]Generating test split: 0 examples [00:00, ? examples/s]
+Traceback (most recent call last):
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1887, in _prepare_split_single
+    num_examples, num_bytes = writer.finalize()
+                              ~~~~~~~~~~~~~~~^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/arrow_writer.py", line 669, in finalize
+    raise SchemaInferenceError("Please pass `features` or at least one example when writing data")
+datasets.arrow_writer.SchemaInferenceError: Please pass `features` or at least one example when writing data
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2084, in load_dataset
+    builder_instance.download_and_prepare(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        download_config=download_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 925, in download_and_prepare
+    self._download_and_prepare(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dl_manager=dl_manager,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **download_and_prepare_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1001, in _download_and_prepare
+    self._prepare_split(split_generator, **prepare_split_kwargs)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1742, in _prepare_split
+    for job_id, done, content in self._prepare_split_single(
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        gen_kwargs=gen_kwargs, job_id=job_id, **_prepare_split_args
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1898, in _prepare_split_single
+    raise DatasetGenerationError("An error occurred while generating the dataset") from e
+datasets.exceptions.DatasetGenerationError: An error occurred while generating the dataset
+ ### Inference completed successfully ### 
+Progress: 38 successful, 0 failed
+
+======================================================
+RUN [39/63]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/adv-timex-sentences-deepword
+======================================================
+>>> Running inference...
+15:22:51 | ============================================================
+15:22:51 | NER INFERENCE PIPELINE
+15:22:51 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+15:22:51 |   Dataset     : mdg-nlp/adv-timex-sentences-deepword  (split=test)
+15:22:51 |   Task        : time
+15:22:51 |   Max samples : 400
+15:22:51 |   Gold field  : gold_timex_expressions
+15:22:51 |   Pred field  : post_processed_timex_expressions
+15:22:51 | ============================================================
+15:22:51 | 
+Loading dataset: mdg-nlp/adv-timex-sentences-deepword
+Generating test split: 0 examples [00:00, ? examples/s]Generating test split: 0 examples [00:00, ? examples/s]
+Traceback (most recent call last):
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1887, in _prepare_split_single
+    num_examples, num_bytes = writer.finalize()
+                              ~~~~~~~~~~~~~~~^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/arrow_writer.py", line 669, in finalize
+    raise SchemaInferenceError("Please pass `features` or at least one example when writing data")
+datasets.arrow_writer.SchemaInferenceError: Please pass `features` or at least one example when writing data
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2084, in load_dataset
+    builder_instance.download_and_prepare(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        download_config=download_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 925, in download_and_prepare
+    self._download_and_prepare(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dl_manager=dl_manager,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **download_and_prepare_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1001, in _download_and_prepare
+    self._prepare_split(split_generator, **prepare_split_kwargs)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1742, in _prepare_split
+    for job_id, done, content in self._prepare_split_single(
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        gen_kwargs=gen_kwargs, job_id=job_id, **_prepare_split_args
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1898, in _prepare_split_single
+    raise DatasetGenerationError("An error occurred while generating the dataset") from e
+datasets.exceptions.DatasetGenerationError: An error occurred while generating the dataset
+ ### Inference completed successfully ### 
+Progress: 39 successful, 0 failed
+
+======================================================
+RUN [40/63]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/adv-timex-sentences-bae
+======================================================
+>>> Running inference...
+15:22:56 | ============================================================
+15:22:56 | NER INFERENCE PIPELINE
+15:22:56 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+15:22:56 |   Dataset     : mdg-nlp/adv-timex-sentences-bae  (split=test)
+15:22:56 |   Task        : time
+15:22:56 |   Max samples : 400
+15:22:56 |   Gold field  : gold_timex_expressions
+15:22:56 |   Pred field  : post_processed_timex_expressions
+15:22:56 | ============================================================
+15:22:56 | 
+Loading dataset: mdg-nlp/adv-timex-sentences-bae
+15:22:57 | Dataset only has 4 test samples, processing all instead of 400
+15:22:57 | Processing 4 rows from test split.
+15:22:57 | 
+Loading model: mdg-nlp/T5-timex-recognition-sentence
+15:22:57 | Using Token Classification (NER pipeline)
+15:22:57 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+15:22:58 | Loading model with NER pipeline...
+Device set to use mps
+15:22:58 | Ready on mps.
+15:22:58 | 
+Running inference on 4 texts...
+15:22:58 |   Batch 1/1 (4 texts)
+15:22:58 | 
+Evaluating...
+15:22:58 | 
+==================================================
+15:22:58 | EVALUATION RESULTS
+15:22:58 | ==================================================
+15:22:58 |   Rows evaluated : 4
+15:22:58 |   TP / FP / FN   : 4 / 1 / 2
+15:22:58 | --------------------------------------------------
+15:22:58 |   Micro Precision : 0.8000
+15:22:58 |   Micro Recall    : 0.6667
+15:22:58 |   Micro F1        : 0.7273
+15:22:58 | --------------------------------------------------
+15:22:58 |   Macro F1        : 0.6250
+15:22:58 | ==================================================
+15:22:58 | 
+Output saved → outputs/mdg-nlp_adv-timex-sentences-bae__mdg-nlp_T5-timex-recognition-sentence__predictions.jsonl
+15:22:58 |   - Rows 1-4: Individual predictions
+15:22:58 |   - Row 5: FINAL_METRICS
+15:22:58 | Metrics saved → outputs/mdg-nlp_adv-timex-sentences-bae__mdg-nlp_T5-timex-recognition-sentence__predictions_metrics.json
+15:22:58 | Done.
+ ### Inference completed successfully ### 
+Progress: 40 successful, 0 failed
+
+======================================================
+RUN [41/63]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-private
+======================================================
+>>> Running inference...
+15:23:01 | ============================================================
+15:23:01 | NER INFERENCE PIPELINE
+15:23:01 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+15:23:01 |   Dataset     : mdg-nlp/timex-recognition-sentence-private  (split=test)
+15:23:01 |   Task        : time
+15:23:01 |   Max samples : 400
+15:23:01 |   Gold field  : gold_timex_expressions
+15:23:01 |   Pred field  : post_processed_timex_expressions
+15:23:01 | ============================================================
+15:23:01 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-private
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1652, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1578, in dataset_module_factory
+    raise DatasetNotFoundError(f"Dataset '{path}' doesn't exist on the Hub or cannot be accessed.") from e
+datasets.exceptions.DatasetNotFoundError: Dataset 'mdg-nlp/timex-recognition-sentence-private' doesn't exist on the Hub or cannot be accessed.
+ ### Inference completed successfully ### 
+Progress: 41 successful, 0 failed
+
+======================================================
+RUN [42/63]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition
+======================================================
+>>> Running inference...
+15:23:03 | ============================================================
+15:23:03 | NER INFERENCE PIPELINE
+15:23:03 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+15:23:03 |   Dataset     : mdg-nlp/timex-recognition  (split=test)
+15:23:03 |   Task        : time
+15:23:03 |   Max samples : 400
+15:23:03 |   Gold field  : gold_timex_expressions
+15:23:03 |   Pred field  : post_processed_timex_expressions
+15:23:03 | ============================================================
+15:23:03 | 
+Loading dataset: mdg-nlp/timex-recognition
+15:23:06 | Dataset only has 266 test samples, processing all instead of 400
+15:23:06 | Processing 266 rows from test split.
+15:23:06 | 
+Loading model: mdg-nlp/T5-timex-recognition-sentence
+15:23:06 | Using Token Classification (NER pipeline)
+15:23:06 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+15:23:06 | Loading model with NER pipeline...
+Device set to use mps
+15:23:06 | Ready on mps.
+15:23:06 | 
+Running inference on 266 texts...
+15:23:06 |   Batch 1/14 (20 texts)
+15:23:07 |   Batch 2/14 (20 texts)
+15:23:08 |   Batch 3/14 (20 texts)
+15:23:09 |   Batch 4/14 (20 texts)
+15:23:09 |   Batch 5/14 (20 texts)
+15:23:10 |   Batch 6/14 (20 texts)
+15:23:11 |   Batch 7/14 (20 texts)
+15:23:12 |   Batch 8/14 (20 texts)
+15:23:12 |   Batch 9/14 (20 texts)
+15:23:13 |   Batch 10/14 (20 texts)
+15:23:14 |   Batch 11/14 (20 texts)
+15:23:14 |   Batch 12/14 (20 texts)
+15:23:15 |   Batch 13/14 (20 texts)
+15:23:16 |   Batch 14/14 (6 texts)
+15:23:16 | 
+Evaluating...
+15:23:16 | 
+==================================================
+15:23:16 | EVALUATION RESULTS
+15:23:16 | ==================================================
+15:23:16 |   Rows evaluated : 266
+15:23:16 |   TP / FP / FN   : 840 / 492 / 659
+15:23:16 | --------------------------------------------------
+15:23:16 |   Micro Precision : 0.6306
+15:23:16 |   Micro Recall    : 0.5604
+15:23:16 |   Micro F1        : 0.5934
+15:23:16 | --------------------------------------------------
+15:23:16 |   Macro F1        : 0.6444
+15:23:16 | ==================================================
+15:23:16 | 
+Output saved → outputs/mdg-nlp_timex-recognition__mdg-nlp_T5-timex-recognition-sentence__predictions.jsonl
+15:23:16 |   - Rows 1-266: Individual predictions
+15:23:16 |   - Row 267: FINAL_METRICS
+15:23:16 | Metrics saved → outputs/mdg-nlp_timex-recognition__mdg-nlp_T5-timex-recognition-sentence__predictions_metrics.json
+15:23:16 | Done.
+ ### Inference completed successfully ### 
+Progress: 42 successful, 0 failed
+
+======================================================
+RUN [43/63]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/timex-recognition-sentence-vocab-substituted
+======================================================
+>>> Running inference...
+15:23:19 | ============================================================
+15:23:19 | NER INFERENCE PIPELINE
+15:23:19 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+15:23:19 |   Dataset     : mdg-nlp/timex-recognition-sentence-vocab-substituted  (split=test)
+15:23:19 |   Task        : time
+15:23:19 |   Max samples : 400
+15:23:19 |   Gold field  : gold_timex_expressions
+15:23:19 |   Pred field  : post_processed_timex_expressions
+15:23:19 | ============================================================
+15:23:19 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-vocab-substituted
+15:23:20 | Dataset only has 390 test samples, processing all instead of 400
+15:23:20 | Processing 390 rows from test split.
+15:23:20 | 
+Loading model: mdg-nlp/gpt-2-timex-sentence-recognition
+15:23:20 | Using Token Classification (NER pipeline)
+15:23:20 | Loading tokenizer...
+15:23:21 | Loading model with NER pipeline...
+Device set to use mps
+15:23:21 | Ready on mps.
+15:23:21 | 
+Running inference on 390 texts...
+15:23:21 |   Batch 1/20 (20 texts)
+15:23:21 |   Batch 2/20 (20 texts)
+15:23:21 |   Batch 3/20 (20 texts)
+15:23:21 |   Batch 4/20 (20 texts)
+15:23:21 |   Batch 5/20 (20 texts)
+15:23:22 |   Batch 6/20 (20 texts)
+15:23:22 |   Batch 7/20 (20 texts)
+15:23:22 |   Batch 8/20 (20 texts)
+15:23:22 |   Batch 9/20 (20 texts)
+15:23:22 |   Batch 10/20 (20 texts)
+15:23:22 |   Batch 11/20 (20 texts)
+15:23:22 |   Batch 12/20 (20 texts)
+15:23:22 |   Batch 13/20 (20 texts)
+15:23:22 |   Batch 14/20 (20 texts)
+15:23:23 |   Batch 15/20 (20 texts)
+15:23:23 |   Batch 16/20 (20 texts)
+15:23:23 |   Batch 17/20 (20 texts)
+15:23:23 |   Batch 18/20 (20 texts)
+15:23:23 |   Batch 19/20 (20 texts)
+15:23:23 |   Batch 20/20 (10 texts)
+15:23:23 | 
+Evaluating...
+15:23:23 | 
+==================================================
+15:23:23 | EVALUATION RESULTS
+15:23:23 | ==================================================
+15:23:23 |   Rows evaluated : 390
+15:23:23 |   TP / FP / FN   : 479 / 152 / 112
+15:23:23 | --------------------------------------------------
+15:23:23 |   Micro Precision : 0.7591
+15:23:23 |   Micro Recall    : 0.8105
+15:23:23 |   Micro F1        : 0.7840
+15:23:23 | --------------------------------------------------
+15:23:23 |   Macro F1        : 0.7873
+15:23:23 | ==================================================
+15:23:23 | 
+Output saved → outputs/mdg-nlp_timex-recognition-sentence-vocab-substituted__mdg-nlp_gpt-2-timex-sentence-recognition__predictions.jsonl
+15:23:23 |   - Rows 1-390: Individual predictions
+15:23:23 |   - Row 391: FINAL_METRICS
+15:23:23 | Metrics saved → outputs/mdg-nlp_timex-recognition-sentence-vocab-substituted__mdg-nlp_gpt-2-timex-sentence-recognition__predictions_metrics.json
+15:23:23 | Done.
+ ### Inference completed successfully ### 
+Progress: 43 successful, 0 failed
+
+======================================================
+RUN [44/63]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/timex-recognition-sentence-vocab-substituted
+======================================================
+>>> Running inference...
+15:23:26 | ============================================================
+15:23:26 | NER INFERENCE PIPELINE
+15:23:26 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+15:23:26 |   Dataset     : mdg-nlp/timex-recognition-sentence-vocab-substituted  (split=test)
+15:23:26 |   Task        : time
+15:23:26 |   Max samples : 400
+15:23:26 |   Gold field  : gold_timex_expressions
+15:23:26 |   Pred field  : post_processed_timex_expressions
+15:23:26 | ============================================================
+15:23:26 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-vocab-substituted
+15:23:27 | Dataset only has 390 test samples, processing all instead of 400
+15:23:27 | Processing 390 rows from test split.
+15:23:27 | 
+Loading model: mdg-nlp/gpt-2-timex-sentence-recognition
+15:23:27 | Using Token Classification (NER pipeline)
+15:23:27 | Loading tokenizer...
+15:23:28 | Loading model with NER pipeline...
+Device set to use mps
+15:23:28 | Ready on mps.
+15:23:28 | 
+Running inference on 390 texts...
+15:23:28 |   Batch 1/20 (20 texts)
+15:23:28 |   Batch 2/20 (20 texts)
+15:23:28 |   Batch 3/20 (20 texts)
+15:23:28 |   Batch 4/20 (20 texts)
+15:23:28 |   Batch 5/20 (20 texts)
+15:23:28 |   Batch 6/20 (20 texts)
+15:23:28 |   Batch 7/20 (20 texts)
+15:23:29 |   Batch 8/20 (20 texts)
+15:23:29 |   Batch 9/20 (20 texts)
+15:23:29 |   Batch 10/20 (20 texts)
+15:23:29 |   Batch 11/20 (20 texts)
+15:23:29 |   Batch 12/20 (20 texts)
+15:23:29 |   Batch 13/20 (20 texts)
+15:23:29 |   Batch 14/20 (20 texts)
+15:23:29 |   Batch 15/20 (20 texts)
+15:23:29 |   Batch 16/20 (20 texts)
+15:23:30 |   Batch 17/20 (20 texts)
+15:23:30 |   Batch 18/20 (20 texts)
+15:23:30 |   Batch 19/20 (20 texts)
+15:23:30 |   Batch 20/20 (10 texts)
+15:23:30 | 
+Evaluating...
+15:23:30 | 
+==================================================
+15:23:30 | EVALUATION RESULTS
+15:23:30 | ==================================================
+15:23:30 |   Rows evaluated : 390
+15:23:30 |   TP / FP / FN   : 479 / 152 / 112
+15:23:30 | --------------------------------------------------
+15:23:30 |   Micro Precision : 0.7591
+15:23:30 |   Micro Recall    : 0.8105
+15:23:30 |   Micro F1        : 0.7840
+15:23:30 | --------------------------------------------------
+15:23:30 |   Macro F1        : 0.7873
+15:23:30 | ==================================================
+15:23:30 | 
+Output saved → outputs/mdg-nlp_timex-recognition-sentence-vocab-substituted__mdg-nlp_gpt-2-timex-sentence-recognition__predictions.jsonl
+15:23:30 |   - Rows 1-390: Individual predictions
+15:23:30 |   - Row 391: FINAL_METRICS
+15:23:30 | Metrics saved → outputs/mdg-nlp_timex-recognition-sentence-vocab-substituted__mdg-nlp_gpt-2-timex-sentence-recognition__predictions_metrics.json
+15:23:30 | Done.
+ ### Inference completed successfully ### 
+Progress: 44 successful, 0 failed
+
+======================================================
+RUN [45/63]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/timex-recognition-sentence-perturbed
+======================================================
+>>> Running inference...
+15:23:33 | ============================================================
+15:23:33 | NER INFERENCE PIPELINE
+15:23:33 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+15:23:33 |   Dataset     : mdg-nlp/timex-recognition-sentence-perturbed  (split=test)
+15:23:33 |   Task        : time
+15:23:33 |   Max samples : 400
+15:23:33 |   Gold field  : gold_timex_expressions
+15:23:33 |   Pred field  : post_processed_timex_expressions
+15:23:33 | ============================================================
+15:23:33 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-perturbed
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1652, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1629, in dataset_module_factory
+    ).get_module()
+      ~~~~~~~~~~^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1025, in get_module
+    module_name, default_builder_kwargs = infer_module_for_data_files(
+                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        data_files=data_files,
+        ^^^^^^^^^^^^^^^^^^^^^^
+        path=self.name,
+        ^^^^^^^^^^^^^^^
+        download_config=self.download_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 602, in infer_module_for_data_files
+    raise DataFilesNotFoundError("No (supported) data files found" + (f" in {path}" if path else ""))
+datasets.exceptions.DataFilesNotFoundError: No (supported) data files found in mdg-nlp/timex-recognition-sentence-perturbed
+ ### Inference completed successfully ### 
+Progress: 45 successful, 0 failed
+
+======================================================
+RUN [46/63]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/domain-timex-clinical-base
+======================================================
+>>> Running inference...
+15:23:36 | ============================================================
+15:23:36 | NER INFERENCE PIPELINE
+15:23:36 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+15:23:36 |   Dataset     : mdg-nlp/domain-timex-clinical-base  (split=test)
+15:23:36 |   Task        : time
+15:23:36 |   Max samples : 400
+15:23:36 |   Gold field  : gold_timex_expressions
+15:23:36 |   Pred field  : post_processed_timex_expressions
+15:23:36 | ============================================================
+15:23:36 | 
+Loading dataset: mdg-nlp/domain-timex-clinical-base
+15:23:38 | Dataset only has 390 test samples, processing all instead of 400
+15:23:38 | Processing 390 rows from test split.
+15:23:38 | 
+Loading model: mdg-nlp/gpt-2-timex-sentence-recognition
+15:23:38 | Using Token Classification (NER pipeline)
+15:23:38 | Loading tokenizer...
+15:23:38 | Loading model with NER pipeline...
+Device set to use mps
+15:23:38 | Ready on mps.
+15:23:38 | 
+Running inference on 390 texts...
+15:23:38 |   Batch 1/20 (20 texts)
+15:23:39 |   Batch 2/20 (20 texts)
+15:23:39 |   Batch 3/20 (20 texts)
+15:23:39 |   Batch 4/20 (20 texts)
+15:23:39 |   Batch 5/20 (20 texts)
+15:23:39 |   Batch 6/20 (20 texts)
+15:23:39 |   Batch 7/20 (20 texts)
+15:23:39 |   Batch 8/20 (20 texts)
+15:23:39 |   Batch 9/20 (20 texts)
+15:23:39 |   Batch 10/20 (20 texts)
+15:23:40 |   Batch 11/20 (20 texts)
+15:23:40 |   Batch 12/20 (20 texts)
+15:23:40 |   Batch 13/20 (20 texts)
+15:23:40 |   Batch 14/20 (20 texts)
+15:23:40 |   Batch 15/20 (20 texts)
+15:23:40 |   Batch 16/20 (20 texts)
+15:23:40 |   Batch 17/20 (20 texts)
+15:23:40 |   Batch 18/20 (20 texts)
+15:23:40 |   Batch 19/20 (20 texts)
+15:23:41 |   Batch 20/20 (10 texts)
+15:23:41 | 
+Evaluating...
+15:23:41 | 
+==================================================
+15:23:41 | EVALUATION RESULTS
+15:23:41 | ==================================================
+15:23:41 |   Rows evaluated : 390
+15:23:41 |   TP / FP / FN   : 479 / 152 / 112
+15:23:41 | --------------------------------------------------
+15:23:41 |   Micro Precision : 0.7591
+15:23:41 |   Micro Recall    : 0.8105
+15:23:41 |   Micro F1        : 0.7840
+15:23:41 | --------------------------------------------------
+15:23:41 |   Macro F1        : 0.7873
+15:23:41 | ==================================================
+15:23:41 | 
+Output saved → outputs/mdg-nlp_domain-timex-clinical-base__mdg-nlp_gpt-2-timex-sentence-recognition__predictions.jsonl
+15:23:41 |   - Rows 1-390: Individual predictions
+15:23:41 |   - Row 391: FINAL_METRICS
+15:23:41 | Metrics saved → outputs/mdg-nlp_domain-timex-clinical-base__mdg-nlp_gpt-2-timex-sentence-recognition__predictions_metrics.json
+15:23:41 | Done.
+ ### Inference completed successfully ### 
+Progress: 46 successful, 0 failed
+
+======================================================
+RUN [47/63]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/domain-timex-clinical
+======================================================
+>>> Running inference...
+15:23:43 | ============================================================
+15:23:43 | NER INFERENCE PIPELINE
+15:23:43 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+15:23:43 |   Dataset     : mdg-nlp/domain-timex-clinical  (split=test)
+15:23:43 |   Task        : time
+15:23:43 |   Max samples : 400
+15:23:43 |   Gold field  : gold_timex_expressions
+15:23:43 |   Pred field  : post_processed_timex_expressions
+15:23:43 | ============================================================
+15:23:43 | 
+Loading dataset: mdg-nlp/domain-timex-clinical
+15:23:45 | Processing 400 rows from test split.
+15:23:45 | 
+Loading model: mdg-nlp/gpt-2-timex-sentence-recognition
+15:23:45 | Using Token Classification (NER pipeline)
+15:23:45 | Loading tokenizer...
+15:23:45 | Loading model with NER pipeline...
+Device set to use mps
+15:23:45 | Ready on mps.
+15:23:45 | 
+Running inference on 400 texts...
+15:23:45 |   Batch 1/20 (20 texts)
+15:23:45 |   Batch 2/20 (20 texts)
+15:23:46 |   Batch 3/20 (20 texts)
+15:23:46 |   Batch 4/20 (20 texts)
+15:23:46 |   Batch 5/20 (20 texts)
+15:23:46 |   Batch 6/20 (20 texts)
+15:23:46 |   Batch 7/20 (20 texts)
+15:23:46 |   Batch 8/20 (20 texts)
+15:23:46 |   Batch 9/20 (20 texts)
+15:23:46 |   Batch 10/20 (20 texts)
+15:23:47 |   Batch 11/20 (20 texts)
+15:23:47 |   Batch 12/20 (20 texts)
+15:23:47 |   Batch 13/20 (20 texts)
+15:23:47 |   Batch 14/20 (20 texts)
+15:23:47 |   Batch 15/20 (20 texts)
+15:23:47 |   Batch 16/20 (20 texts)
+15:23:47 |   Batch 17/20 (20 texts)
+15:23:47 |   Batch 18/20 (20 texts)
+15:23:47 |   Batch 19/20 (20 texts)
+15:23:48 |   Batch 20/20 (20 texts)
+15:23:48 | 
+Evaluating...
+15:23:48 | 
+==================================================
+15:23:48 | EVALUATION RESULTS
+15:23:48 | ==================================================
+15:23:48 |   Rows evaluated : 400
+15:23:48 |   TP / FP / FN   : 113 / 329 / 407
+15:23:48 | --------------------------------------------------
+15:23:48 |   Micro Precision : 0.2557
+15:23:48 |   Micro Recall    : 0.2173
+15:23:48 |   Micro F1        : 0.2349
+15:23:48 | --------------------------------------------------
+15:23:48 |   Macro F1        : 0.2332
+15:23:48 | ==================================================
+15:23:48 | 
+Output saved → outputs/mdg-nlp_domain-timex-clinical__mdg-nlp_gpt-2-timex-sentence-recognition__predictions.jsonl
+15:23:48 |   - Rows 1-400: Individual predictions
+15:23:48 |   - Row 401: FINAL_METRICS
+15:23:48 | Metrics saved → outputs/mdg-nlp_domain-timex-clinical__mdg-nlp_gpt-2-timex-sentence-recognition__predictions_metrics.json
+15:23:48 | Done.
+ ### Inference completed successfully ### 
+Progress: 47 successful, 0 failed
+
+======================================================
+RUN [48/63]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/timex-compositional-sentence
+======================================================
+>>> Running inference...
+15:23:50 | ============================================================
+15:23:50 | NER INFERENCE PIPELINE
+15:23:50 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+15:23:50 |   Dataset     : mdg-nlp/timex-compositional-sentence  (split=test)
+15:23:50 |   Task        : time
+15:23:50 |   Max samples : 400
+15:23:50 |   Gold field  : gold_timex_expressions
+15:23:50 |   Pred field  : post_processed_timex_expressions
+15:23:50 | ============================================================
+15:23:50 | 
+Loading dataset: mdg-nlp/timex-compositional-sentence
+15:23:52 | Processing 400 rows from test split.
+15:23:52 | 
+Loading model: mdg-nlp/gpt-2-timex-sentence-recognition
+15:23:52 | Using Token Classification (NER pipeline)
+15:23:52 | Loading tokenizer...
+15:23:52 | Loading model with NER pipeline...
+Device set to use mps
+15:23:52 | Ready on mps.
+15:23:52 | 
+Running inference on 400 texts...
+15:23:52 |   Batch 1/20 (20 texts)
+15:23:52 |   Batch 2/20 (20 texts)
+15:23:53 |   Batch 3/20 (20 texts)
+15:23:53 |   Batch 4/20 (20 texts)
+15:23:53 |   Batch 5/20 (20 texts)
+15:23:53 |   Batch 6/20 (20 texts)
+15:23:53 |   Batch 7/20 (20 texts)
+15:23:53 |   Batch 8/20 (20 texts)
+15:23:53 |   Batch 9/20 (20 texts)
+15:23:53 |   Batch 10/20 (20 texts)
+15:23:53 |   Batch 11/20 (20 texts)
+15:23:53 |   Batch 12/20 (20 texts)
+15:23:54 |   Batch 13/20 (20 texts)
+15:23:54 |   Batch 14/20 (20 texts)
+15:23:54 |   Batch 15/20 (20 texts)
+15:23:54 |   Batch 16/20 (20 texts)
+15:23:54 |   Batch 17/20 (20 texts)
+15:23:54 |   Batch 18/20 (20 texts)
+15:23:54 |   Batch 19/20 (20 texts)
+15:23:54 |   Batch 20/20 (20 texts)
+15:23:54 | 
+Evaluating...
+15:23:54 | 
+==================================================
+15:23:54 | EVALUATION RESULTS
+15:23:54 | ==================================================
+15:23:54 |   Rows evaluated : 400
+15:23:54 |   TP / FP / FN   : 402 / 111 / 94
+15:23:54 | --------------------------------------------------
+15:23:54 |   Micro Precision : 0.7836
+15:23:54 |   Micro Recall    : 0.8105
+15:23:54 |   Micro F1        : 0.7968
+15:23:54 | --------------------------------------------------
+15:23:54 |   Macro F1        : 0.7996
+15:23:54 | ==================================================
+15:23:54 | 
+Output saved → outputs/mdg-nlp_timex-compositional-sentence__mdg-nlp_gpt-2-timex-sentence-recognition__predictions.jsonl
+15:23:54 |   - Rows 1-400: Individual predictions
+15:23:54 |   - Row 401: FINAL_METRICS
+15:23:54 | Metrics saved → outputs/mdg-nlp_timex-compositional-sentence__mdg-nlp_gpt-2-timex-sentence-recognition__predictions_metrics.json
+15:23:54 | Done.
+ ### Inference completed successfully ### 
+Progress: 48 successful, 0 failed
+
+======================================================
+RUN [49/63]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/domain-timex-recognition-sentence-updated
+======================================================
+>>> Running inference...
+15:23:57 | ============================================================
+15:23:57 | NER INFERENCE PIPELINE
+15:23:57 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+15:23:57 |   Dataset     : mdg-nlp/domain-timex-recognition-sentence-updated  (split=test)
+15:23:57 |   Task        : time
+15:23:57 |   Max samples : 400
+15:23:57 |   Gold field  : gold_timex_expressions
+15:23:57 |   Pred field  : post_processed_timex_expressions
+15:23:57 | ============================================================
+15:23:57 | 
+Loading dataset: mdg-nlp/domain-timex-recognition-sentence-updated
+15:23:58 | Processing 400 rows from test split.
+15:23:58 | 
+Loading model: mdg-nlp/gpt-2-timex-sentence-recognition
+15:23:58 | Using Token Classification (NER pipeline)
+15:23:58 | Loading tokenizer...
+15:23:59 | Loading model with NER pipeline...
+Device set to use mps
+15:23:59 | Ready on mps.
+15:23:59 | 
+Running inference on 400 texts...
+15:23:59 |   Batch 1/20 (20 texts)
+15:23:59 |   Batch 2/20 (20 texts)
+15:23:59 |   Batch 3/20 (20 texts)
+15:23:59 |   Batch 4/20 (20 texts)
+15:23:59 |   Batch 5/20 (20 texts)
+15:24:00 |   Batch 6/20 (20 texts)
+15:24:00 |   Batch 7/20 (20 texts)
+15:24:00 |   Batch 8/20 (20 texts)
+15:24:00 |   Batch 9/20 (20 texts)
+15:24:00 |   Batch 10/20 (20 texts)
+15:24:00 |   Batch 11/20 (20 texts)
+15:24:00 |   Batch 12/20 (20 texts)
+15:24:00 |   Batch 13/20 (20 texts)
+15:24:00 |   Batch 14/20 (20 texts)
+15:24:01 |   Batch 15/20 (20 texts)
+15:24:01 |   Batch 16/20 (20 texts)
+15:24:01 |   Batch 17/20 (20 texts)
+15:24:01 |   Batch 18/20 (20 texts)
+15:24:01 |   Batch 19/20 (20 texts)
+15:24:01 |   Batch 20/20 (20 texts)
+15:24:01 | 
+Evaluating...
+15:24:01 | 
+==================================================
+15:24:01 | EVALUATION RESULTS
+15:24:01 | ==================================================
+15:24:01 |   Rows evaluated : 400
+15:24:01 |   TP / FP / FN   : 113 / 329 / 407
+15:24:01 | --------------------------------------------------
+15:24:01 |   Micro Precision : 0.2557
+15:24:01 |   Micro Recall    : 0.2173
+15:24:01 |   Micro F1        : 0.2349
+15:24:01 | --------------------------------------------------
+15:24:01 |   Macro F1        : 0.2332
+15:24:01 | ==================================================
+15:24:01 | 
+Output saved → outputs/mdg-nlp_domain-timex-recognition-sentence-updated__mdg-nlp_gpt-2-timex-sentence-recognition__predictions.jsonl
+15:24:01 |   - Rows 1-400: Individual predictions
+15:24:01 |   - Row 401: FINAL_METRICS
+15:24:01 | Metrics saved → outputs/mdg-nlp_domain-timex-recognition-sentence-updated__mdg-nlp_gpt-2-timex-sentence-recognition__predictions_metrics.json
+15:24:01 | Done.
+ ### Inference completed successfully ### 
+Progress: 49 successful, 0 failed
+
+======================================================
+RUN [50/63]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/timex-recognition-sentence-updated
+======================================================
+>>> Running inference...
+15:24:04 | ============================================================
+15:24:04 | NER INFERENCE PIPELINE
+15:24:04 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+15:24:04 |   Dataset     : mdg-nlp/timex-recognition-sentence-updated  (split=test)
+15:24:04 |   Task        : time
+15:24:04 |   Max samples : 400
+15:24:04 |   Gold field  : gold_timex_expressions
+15:24:04 |   Pred field  : post_processed_timex_expressions
+15:24:04 | ============================================================
+15:24:04 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-updated
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1652, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1578, in dataset_module_factory
+    raise DatasetNotFoundError(f"Dataset '{path}' doesn't exist on the Hub or cannot be accessed.") from e
+datasets.exceptions.DatasetNotFoundError: Dataset 'mdg-nlp/timex-recognition-sentence-updated' doesn't exist on the Hub or cannot be accessed.
+ ### Inference completed successfully ### 
+Progress: 50 successful, 0 failed
+
+======================================================
+RUN [51/63]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/timex-recognition-sentence
+======================================================
+>>> Running inference...
+15:24:07 | ============================================================
+15:24:07 | NER INFERENCE PIPELINE
+15:24:07 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+15:24:07 |   Dataset     : mdg-nlp/timex-recognition-sentence  (split=test)
+15:24:07 |   Task        : time
+15:24:07 |   Max samples : 400
+15:24:07 |   Gold field  : gold_timex_expressions
+15:24:07 |   Pred field  : post_processed_timex_expressions
+15:24:07 | ============================================================
+15:24:07 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence
+15:24:08 | Processing 400 rows from test split.
+15:24:08 | 
+Loading model: mdg-nlp/gpt-2-timex-sentence-recognition
+15:24:08 | Using Token Classification (NER pipeline)
+15:24:08 | Loading tokenizer...
+15:24:09 | Loading model with NER pipeline...
+Device set to use mps
+15:24:09 | Ready on mps.
+15:24:09 | 
+Running inference on 400 texts...
+15:24:09 |   Batch 1/20 (20 texts)
+15:24:09 |   Batch 2/20 (20 texts)
+15:24:09 |   Batch 3/20 (20 texts)
+15:24:09 |   Batch 4/20 (20 texts)
+15:24:09 |   Batch 5/20 (20 texts)
+15:24:09 |   Batch 6/20 (20 texts)
+15:24:09 |   Batch 7/20 (20 texts)
+15:24:10 |   Batch 8/20 (20 texts)
+15:24:10 |   Batch 9/20 (20 texts)
+15:24:10 |   Batch 10/20 (20 texts)
+15:24:10 |   Batch 11/20 (20 texts)
+15:24:10 |   Batch 12/20 (20 texts)
+15:24:10 |   Batch 13/20 (20 texts)
+15:24:11 |   Batch 14/20 (20 texts)
+15:24:11 |   Batch 15/20 (20 texts)
+15:24:11 |   Batch 16/20 (20 texts)
+15:24:11 |   Batch 17/20 (20 texts)
+15:24:11 |   Batch 18/20 (20 texts)
+15:24:11 |   Batch 19/20 (20 texts)
+15:24:11 |   Batch 20/20 (20 texts)
+15:24:11 | 
+Evaluating...
+15:24:11 | 
+==================================================
+15:24:11 | EVALUATION RESULTS
+15:24:11 | ==================================================
+15:24:11 |   Rows evaluated : 400
+15:24:11 |   TP / FP / FN   : 194 / 73 / 41
+15:24:11 | --------------------------------------------------
+15:24:11 |   Micro Precision : 0.7266
+15:24:11 |   Micro Recall    : 0.8255
+15:24:11 |   Micro F1        : 0.7729
+15:24:11 | --------------------------------------------------
+15:24:11 |   Macro F1        : 0.3118
+15:24:11 | ==================================================
+15:24:11 | 
+Output saved → outputs/mdg-nlp_timex-recognition-sentence__mdg-nlp_gpt-2-timex-sentence-recognition__predictions.jsonl
+15:24:11 |   - Rows 1-400: Individual predictions
+15:24:11 |   - Row 401: FINAL_METRICS
+15:24:11 | Metrics saved → outputs/mdg-nlp_timex-recognition-sentence__mdg-nlp_gpt-2-timex-sentence-recognition__predictions_metrics.json
+15:24:11 | Done.
+ ### Inference completed successfully ### 
+Progress: 51 successful, 0 failed
+
+======================================================
+RUN [52/63]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/timex-recognition-sentence-adversarial
+======================================================
+>>> Running inference...
+15:24:14 | ============================================================
+15:24:14 | NER INFERENCE PIPELINE
+15:24:14 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+15:24:14 |   Dataset     : mdg-nlp/timex-recognition-sentence-adversarial  (split=test)
+15:24:14 |   Task        : time
+15:24:14 |   Max samples : 400
+15:24:14 |   Gold field  : gold_timex_expressions
+15:24:14 |   Pred field  : post_processed_timex_expressions
+15:24:14 | ============================================================
+15:24:14 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-adversarial
+15:24:16 | Dataset only has 390 test samples, processing all instead of 400
+15:24:16 | Processing 390 rows from test split.
+15:24:16 | 
+Loading model: mdg-nlp/gpt-2-timex-sentence-recognition
+15:24:16 | Using Token Classification (NER pipeline)
+15:24:16 | Loading tokenizer...
+15:24:16 | Loading model with NER pipeline...
+Device set to use mps
+15:24:16 | Ready on mps.
+15:24:16 | 
+Running inference on 390 texts...
+15:24:16 |   Batch 1/20 (20 texts)
+15:24:16 |   Batch 2/20 (20 texts)
+15:24:17 |   Batch 3/20 (20 texts)
+15:24:17 |   Batch 4/20 (20 texts)
+15:24:17 |   Batch 5/20 (20 texts)
+15:24:17 |   Batch 6/20 (20 texts)
+15:24:17 |   Batch 7/20 (20 texts)
+15:24:17 |   Batch 8/20 (20 texts)
+15:24:17 |   Batch 9/20 (20 texts)
+15:24:18 |   Batch 10/20 (20 texts)
+15:24:18 |   Batch 11/20 (20 texts)
+15:24:18 |   Batch 12/20 (20 texts)
+15:24:18 |   Batch 13/20 (20 texts)
+15:24:18 |   Batch 14/20 (20 texts)
+15:24:18 |   Batch 15/20 (20 texts)
+15:24:18 |   Batch 16/20 (20 texts)
+15:24:18 |   Batch 17/20 (20 texts)
+15:24:18 |   Batch 18/20 (20 texts)
+15:24:19 |   Batch 19/20 (20 texts)
+15:24:19 |   Batch 20/20 (10 texts)
+15:24:19 | 
+Evaluating...
+15:24:19 | 
+==================================================
+15:24:19 | EVALUATION RESULTS
+15:24:19 | ==================================================
+15:24:19 |   Rows evaluated : 390
+15:24:19 |   TP / FP / FN   : 443 / 193 / 148
+15:24:19 | --------------------------------------------------
+15:24:19 |   Micro Precision : 0.6965
+15:24:19 |   Micro Recall    : 0.7496
+15:24:19 |   Micro F1        : 0.7221
+15:24:19 | --------------------------------------------------
+15:24:19 |   Macro F1        : 0.7150
+15:24:19 | ==================================================
+15:24:19 | 
+Output saved → outputs/mdg-nlp_timex-recognition-sentence-adversarial__mdg-nlp_gpt-2-timex-sentence-recognition__predictions.jsonl
+15:24:19 |   - Rows 1-390: Individual predictions
+15:24:19 |   - Row 391: FINAL_METRICS
+15:24:19 | Metrics saved → outputs/mdg-nlp_timex-recognition-sentence-adversarial__mdg-nlp_gpt-2-timex-sentence-recognition__predictions_metrics.json
+15:24:19 | Done.
+ ### Inference completed successfully ### 
+Progress: 52 successful, 0 failed
+
+======================================================
+RUN [53/63]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/timex-recognition-sentence-original
+======================================================
+>>> Running inference...
+15:24:23 | ============================================================
+15:24:23 | NER INFERENCE PIPELINE
+15:24:23 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+15:24:23 |   Dataset     : mdg-nlp/timex-recognition-sentence-original  (split=test)
+15:24:23 |   Task        : time
+15:24:23 |   Max samples : 400
+15:24:23 |   Gold field  : gold_timex_expressions
+15:24:23 |   Pred field  : post_processed_timex_expressions
+15:24:23 | ============================================================
+15:24:23 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-original
+15:24:24 | Dataset only has 390 test samples, processing all instead of 400
+15:24:24 | Processing 390 rows from test split.
+15:24:24 | 
+Loading model: mdg-nlp/gpt-2-timex-sentence-recognition
+15:24:24 | Using Token Classification (NER pipeline)
+15:24:24 | Loading tokenizer...
+15:24:24 | Loading model with NER pipeline...
+Device set to use mps
+15:24:25 | Ready on mps.
+15:24:25 | 
+Running inference on 390 texts...
+15:24:25 |   Batch 1/20 (20 texts)
+15:24:25 |   Batch 2/20 (20 texts)
+15:24:25 |   Batch 3/20 (20 texts)
+15:24:25 |   Batch 4/20 (20 texts)
+15:24:25 |   Batch 5/20 (20 texts)
+15:24:25 |   Batch 6/20 (20 texts)
+15:24:25 |   Batch 7/20 (20 texts)
+15:24:25 |   Batch 8/20 (20 texts)
+15:24:25 |   Batch 9/20 (20 texts)
+15:24:26 |   Batch 10/20 (20 texts)
+15:24:26 |   Batch 11/20 (20 texts)
+15:24:26 |   Batch 12/20 (20 texts)
+15:24:26 |   Batch 13/20 (20 texts)
+15:24:26 |   Batch 14/20 (20 texts)
+15:24:26 |   Batch 15/20 (20 texts)
+15:24:26 |   Batch 16/20 (20 texts)
+15:24:27 |   Batch 17/20 (20 texts)
+15:24:27 |   Batch 18/20 (20 texts)
+15:24:27 |   Batch 19/20 (20 texts)
+15:24:27 |   Batch 20/20 (10 texts)
+15:24:27 | 
+Evaluating...
+15:24:27 | 
+==================================================
+15:24:27 | EVALUATION RESULTS
+15:24:27 | ==================================================
+15:24:27 |   Rows evaluated : 390
+15:24:27 |   TP / FP / FN   : 479 / 152 / 112
+15:24:27 | --------------------------------------------------
+15:24:27 |   Micro Precision : 0.7591
+15:24:27 |   Micro Recall    : 0.8105
+15:24:27 |   Micro F1        : 0.7840
+15:24:27 | --------------------------------------------------
+15:24:27 |   Macro F1        : 0.7873
+15:24:27 | ==================================================
+15:24:27 | 
+Output saved → outputs/mdg-nlp_timex-recognition-sentence-original__mdg-nlp_gpt-2-timex-sentence-recognition__predictions.jsonl
+15:24:27 |   - Rows 1-390: Individual predictions
+15:24:27 |   - Row 391: FINAL_METRICS
+15:24:27 | Metrics saved → outputs/mdg-nlp_timex-recognition-sentence-original__mdg-nlp_gpt-2-timex-sentence-recognition__predictions_metrics.json
+15:24:27 | Done.
+ ### Inference completed successfully ### 
+Progress: 53 successful, 0 failed
+
+======================================================
+RUN [54/63]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/timex-recognition-document
+======================================================
+>>> Running inference...
+15:24:31 | ============================================================
+15:24:31 | NER INFERENCE PIPELINE
+15:24:31 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+15:24:31 |   Dataset     : mdg-nlp/timex-recognition-document  (split=test)
+15:24:31 |   Task        : time
+15:24:31 |   Max samples : 400
+15:24:31 |   Gold field  : gold_timex_expressions
+15:24:31 |   Pred field  : post_processed_timex_expressions
+15:24:31 | ============================================================
+15:24:31 | 
+Loading dataset: mdg-nlp/timex-recognition-document
+15:24:32 | Dataset only has 266 test samples, processing all instead of 400
+15:24:32 | Processing 266 rows from test split.
+15:24:32 | 
+Loading model: mdg-nlp/gpt-2-timex-sentence-recognition
+15:24:32 | Using Token Classification (NER pipeline)
+15:24:32 | Loading tokenizer...
+15:24:32 | Loading model with NER pipeline...
+Device set to use mps
+15:24:33 | Ready on mps.
+15:24:33 | 
+Running inference on 266 texts...
+15:24:33 |   Batch 1/14 (20 texts)
+15:24:35 |   Batch 2/14 (20 texts)
+15:24:36 |   Batch 3/14 (20 texts)
+15:24:38 |   Batch 4/14 (20 texts)
+15:24:40 |   Batch 5/14 (20 texts)
+15:24:41 |   Batch 6/14 (20 texts)
+15:24:43 |   Batch 7/14 (20 texts)
+15:24:45 |   Batch 8/14 (20 texts)
+15:24:47 |   Batch 9/14 (20 texts)
+15:24:48 |   Batch 10/14 (20 texts)
+15:24:49 |   Batch 11/14 (20 texts)
+15:24:51 |   Batch 12/14 (20 texts)
+15:24:53 |   Batch 13/14 (20 texts)
+15:24:55 |   Batch 14/14 (6 texts)
+15:24:55 | 
+Evaluating...
+15:24:55 | 
+==================================================
+15:24:55 | EVALUATION RESULTS
+15:24:55 | ==================================================
+15:24:55 |   Rows evaluated : 266
+15:24:55 |   TP / FP / FN   : 1138 / 534 / 361
+15:24:55 | --------------------------------------------------
+15:24:55 |   Micro Precision : 0.6806
+15:24:55 |   Micro Recall    : 0.7592
+15:24:55 |   Micro F1        : 0.7178
+15:24:55 | --------------------------------------------------
+15:24:55 |   Macro F1        : 0.7495
+15:24:55 | ==================================================
+15:24:55 | 
+Output saved → outputs/mdg-nlp_timex-recognition-document__mdg-nlp_gpt-2-timex-sentence-recognition__predictions.jsonl
+15:24:55 |   - Rows 1-266: Individual predictions
+15:24:55 |   - Row 267: FINAL_METRICS
+15:24:55 | Metrics saved → outputs/mdg-nlp_timex-recognition-document__mdg-nlp_gpt-2-timex-sentence-recognition__predictions_metrics.json
+15:24:55 | Done.
+ ### Inference completed successfully ### 
+Progress: 54 successful, 0 failed
+
+======================================================
+RUN [55/63]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/adv-timex-sentences-bert-attack
+======================================================
+>>> Running inference...
+15:25:03 | ============================================================
+15:25:03 | NER INFERENCE PIPELINE
+15:25:03 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+15:25:03 |   Dataset     : mdg-nlp/adv-timex-sentences-bert-attack  (split=test)
+15:25:03 |   Task        : time
+15:25:03 |   Max samples : 400
+15:25:03 |   Gold field  : gold_timex_expressions
+15:25:03 |   Pred field  : post_processed_timex_expressions
+15:25:03 | ============================================================
+15:25:03 | 
+Loading dataset: mdg-nlp/adv-timex-sentences-bert-attack
+Generating test split: 0 examples [00:00, ? examples/s]Generating test split: 0 examples [00:00, ? examples/s]
+Traceback (most recent call last):
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1887, in _prepare_split_single
+    num_examples, num_bytes = writer.finalize()
+                              ~~~~~~~~~~~~~~~^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/arrow_writer.py", line 669, in finalize
+    raise SchemaInferenceError("Please pass `features` or at least one example when writing data")
+datasets.arrow_writer.SchemaInferenceError: Please pass `features` or at least one example when writing data
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2084, in load_dataset
+    builder_instance.download_and_prepare(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        download_config=download_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 925, in download_and_prepare
+    self._download_and_prepare(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dl_manager=dl_manager,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **download_and_prepare_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1001, in _download_and_prepare
+    self._prepare_split(split_generator, **prepare_split_kwargs)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1742, in _prepare_split
+    for job_id, done, content in self._prepare_split_single(
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        gen_kwargs=gen_kwargs, job_id=job_id, **_prepare_split_args
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1898, in _prepare_split_single
+    raise DatasetGenerationError("An error occurred while generating the dataset") from e
+datasets.exceptions.DatasetGenerationError: An error occurred while generating the dataset
+ ### Inference completed successfully ### 
+Progress: 55 successful, 0 failed
+
+======================================================
+RUN [56/63]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/adv-timex-sentences
+======================================================
+>>> Running inference...
+15:25:07 | ============================================================
+15:25:07 | NER INFERENCE PIPELINE
+15:25:07 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+15:25:07 |   Dataset     : mdg-nlp/adv-timex-sentences  (split=test)
+15:25:07 |   Task        : time
+15:25:07 |   Max samples : 400
+15:25:07 |   Gold field  : gold_timex_expressions
+15:25:07 |   Pred field  : post_processed_timex_expressions
+15:25:07 | ============================================================
+15:25:07 | 
+Loading dataset: mdg-nlp/adv-timex-sentences
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1652, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1578, in dataset_module_factory
+    raise DatasetNotFoundError(f"Dataset '{path}' doesn't exist on the Hub or cannot be accessed.") from e
+datasets.exceptions.DatasetNotFoundError: Dataset 'mdg-nlp/adv-timex-sentences' doesn't exist on the Hub or cannot be accessed.
+ ### Inference completed successfully ### 
+Progress: 56 successful, 0 failed
+
+======================================================
+RUN [57/63]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/adv-timex-sentences-textfooler
+======================================================
+>>> Running inference...
+15:25:10 | ============================================================
+15:25:10 | NER INFERENCE PIPELINE
+15:25:10 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+15:25:10 |   Dataset     : mdg-nlp/adv-timex-sentences-textfooler  (split=test)
+15:25:10 |   Task        : time
+15:25:10 |   Max samples : 400
+15:25:10 |   Gold field  : gold_timex_expressions
+15:25:10 |   Pred field  : post_processed_timex_expressions
+15:25:10 | ============================================================
+15:25:10 | 
+Loading dataset: mdg-nlp/adv-timex-sentences-textfooler
+15:25:11 | Dataset only has 1 test samples, processing all instead of 400
+15:25:11 | Processing 1 rows from test split.
+15:25:11 | 
+Loading model: mdg-nlp/gpt-2-timex-sentence-recognition
+15:25:11 | Using Token Classification (NER pipeline)
+15:25:11 | Loading tokenizer...
+15:25:12 | Loading model with NER pipeline...
+Device set to use mps
+15:25:12 | Ready on mps.
+15:25:12 | 
+Running inference on 1 texts...
+15:25:12 |   Batch 1/1 (1 texts)
+15:25:12 | 
+Evaluating...
+15:25:12 | 
+==================================================
+15:25:12 | EVALUATION RESULTS
+15:25:12 | ==================================================
+15:25:12 |   Rows evaluated : 1
+15:25:12 |   TP / FP / FN   : 2 / 1 / 0
+15:25:12 | --------------------------------------------------
+15:25:12 |   Micro Precision : 0.6667
+15:25:12 |   Micro Recall    : 1.0000
+15:25:12 |   Micro F1        : 0.8000
+15:25:12 | --------------------------------------------------
+15:25:12 |   Macro F1        : 0.8000
+15:25:12 | ==================================================
+15:25:12 | 
+Output saved → outputs/mdg-nlp_adv-timex-sentences-textfooler__mdg-nlp_gpt-2-timex-sentence-recognition__predictions.jsonl
+15:25:12 |   - Rows 1-1: Individual predictions
+15:25:12 |   - Row 2: FINAL_METRICS
+15:25:12 | Metrics saved → outputs/mdg-nlp_adv-timex-sentences-textfooler__mdg-nlp_gpt-2-timex-sentence-recognition__predictions_metrics.json
+15:25:12 | Done.
+ ### Inference completed successfully ### 
+Progress: 57 successful, 0 failed
+
+======================================================
+RUN [58/63]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/adv-timex-sentences-ner_clare
+======================================================
+>>> Running inference...
+15:25:15 | ============================================================
+15:25:15 | NER INFERENCE PIPELINE
+15:25:15 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+15:25:15 |   Dataset     : mdg-nlp/adv-timex-sentences-ner_clare  (split=test)
+15:25:15 |   Task        : time
+15:25:15 |   Max samples : 400
+15:25:15 |   Gold field  : gold_timex_expressions
+15:25:15 |   Pred field  : post_processed_timex_expressions
+15:25:15 | ============================================================
+15:25:15 | 
+Loading dataset: mdg-nlp/adv-timex-sentences-ner_clare
+15:25:16 | Dataset only has 3 test samples, processing all instead of 400
+15:25:16 | Processing 3 rows from test split.
+15:25:16 | 
+Loading model: mdg-nlp/gpt-2-timex-sentence-recognition
+15:25:16 | Using Token Classification (NER pipeline)
+15:25:16 | Loading tokenizer...
+15:25:16 | Loading model with NER pipeline...
+Device set to use mps
+15:25:17 | Ready on mps.
+15:25:17 | 
+Running inference on 3 texts...
+15:25:17 |   Batch 1/1 (3 texts)
+15:25:17 | 
+Evaluating...
+15:25:17 | 
+==================================================
+15:25:17 | EVALUATION RESULTS
+15:25:17 | ==================================================
+15:25:17 |   Rows evaluated : 3
+15:25:17 |   TP / FP / FN   : 4 / 0 / 0
+15:25:17 | --------------------------------------------------
+15:25:17 |   Micro Precision : 1.0000
+15:25:17 |   Micro Recall    : 1.0000
+15:25:17 |   Micro F1        : 1.0000
+15:25:17 | --------------------------------------------------
+15:25:17 |   Macro F1        : 1.0000
+15:25:17 | ==================================================
+15:25:17 | 
+Output saved → outputs/mdg-nlp_adv-timex-sentences-ner_clare__mdg-nlp_gpt-2-timex-sentence-recognition__predictions.jsonl
+15:25:17 |   - Rows 1-3: Individual predictions
+15:25:17 |   - Row 4: FINAL_METRICS
+15:25:17 | Metrics saved → outputs/mdg-nlp_adv-timex-sentences-ner_clare__mdg-nlp_gpt-2-timex-sentence-recognition__predictions_metrics.json
+15:25:17 | Done.
+ ### Inference completed successfully ### 
+Progress: 58 successful, 0 failed
+
+======================================================
+RUN [59/63]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/adv-timex-sentences-morpheus
+======================================================
+>>> Running inference...
+15:25:20 | ============================================================
+15:25:20 | NER INFERENCE PIPELINE
+15:25:20 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+15:25:20 |   Dataset     : mdg-nlp/adv-timex-sentences-morpheus  (split=test)
+15:25:20 |   Task        : time
+15:25:20 |   Max samples : 400
+15:25:20 |   Gold field  : gold_timex_expressions
+15:25:20 |   Pred field  : post_processed_timex_expressions
+15:25:20 | ============================================================
+15:25:20 | 
+Loading dataset: mdg-nlp/adv-timex-sentences-morpheus
+Generating test split: 0 examples [00:00, ? examples/s]Generating test split: 0 examples [00:00, ? examples/s]
+Traceback (most recent call last):
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1887, in _prepare_split_single
+    num_examples, num_bytes = writer.finalize()
+                              ~~~~~~~~~~~~~~~^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/arrow_writer.py", line 669, in finalize
+    raise SchemaInferenceError("Please pass `features` or at least one example when writing data")
+datasets.arrow_writer.SchemaInferenceError: Please pass `features` or at least one example when writing data
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2084, in load_dataset
+    builder_instance.download_and_prepare(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        download_config=download_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 925, in download_and_prepare
+    self._download_and_prepare(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dl_manager=dl_manager,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **download_and_prepare_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1001, in _download_and_prepare
+    self._prepare_split(split_generator, **prepare_split_kwargs)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1742, in _prepare_split
+    for job_id, done, content in self._prepare_split_single(
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        gen_kwargs=gen_kwargs, job_id=job_id, **_prepare_split_args
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1898, in _prepare_split_single
+    raise DatasetGenerationError("An error occurred while generating the dataset") from e
+datasets.exceptions.DatasetGenerationError: An error occurred while generating the dataset
+ ### Inference completed successfully ### 
+Progress: 59 successful, 0 failed
+
+======================================================
+RUN [60/63]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/adv-timex-sentences-deepword
+======================================================
+>>> Running inference...
+15:25:23 | ============================================================
+15:25:23 | NER INFERENCE PIPELINE
+15:25:23 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+15:25:23 |   Dataset     : mdg-nlp/adv-timex-sentences-deepword  (split=test)
+15:25:23 |   Task        : time
+15:25:23 |   Max samples : 400
+15:25:23 |   Gold field  : gold_timex_expressions
+15:25:23 |   Pred field  : post_processed_timex_expressions
+15:25:23 | ============================================================
+15:25:23 | 
+Loading dataset: mdg-nlp/adv-timex-sentences-deepword
+Generating test split: 0 examples [00:00, ? examples/s]Generating test split: 0 examples [00:00, ? examples/s]
+Traceback (most recent call last):
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1887, in _prepare_split_single
+    num_examples, num_bytes = writer.finalize()
+                              ~~~~~~~~~~~~~~~^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/arrow_writer.py", line 669, in finalize
+    raise SchemaInferenceError("Please pass `features` or at least one example when writing data")
+datasets.arrow_writer.SchemaInferenceError: Please pass `features` or at least one example when writing data
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2084, in load_dataset
+    builder_instance.download_and_prepare(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        download_config=download_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 925, in download_and_prepare
+    self._download_and_prepare(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dl_manager=dl_manager,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **download_and_prepare_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1001, in _download_and_prepare
+    self._prepare_split(split_generator, **prepare_split_kwargs)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1742, in _prepare_split
+    for job_id, done, content in self._prepare_split_single(
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        gen_kwargs=gen_kwargs, job_id=job_id, **_prepare_split_args
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/builder.py", line 1898, in _prepare_split_single
+    raise DatasetGenerationError("An error occurred while generating the dataset") from e
+datasets.exceptions.DatasetGenerationError: An error occurred while generating the dataset
+ ### Inference completed successfully ### 
+Progress: 60 successful, 0 failed
+
+======================================================
+RUN [61/63]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/adv-timex-sentences-bae
+======================================================
+>>> Running inference...
+15:25:27 | ============================================================
+15:25:27 | NER INFERENCE PIPELINE
+15:25:27 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+15:25:27 |   Dataset     : mdg-nlp/adv-timex-sentences-bae  (split=test)
+15:25:27 |   Task        : time
+15:25:27 |   Max samples : 400
+15:25:27 |   Gold field  : gold_timex_expressions
+15:25:27 |   Pred field  : post_processed_timex_expressions
+15:25:27 | ============================================================
+15:25:27 | 
+Loading dataset: mdg-nlp/adv-timex-sentences-bae
+15:25:29 | Dataset only has 4 test samples, processing all instead of 400
+15:25:29 | Processing 4 rows from test split.
+15:25:29 | 
+Loading model: mdg-nlp/gpt-2-timex-sentence-recognition
+15:25:29 | Using Token Classification (NER pipeline)
+15:25:29 | Loading tokenizer...
+15:25:29 | Loading model with NER pipeline...
+Device set to use mps
+15:25:29 | Ready on mps.
+15:25:29 | 
+Running inference on 4 texts...
+15:25:29 |   Batch 1/1 (4 texts)
+15:25:29 | 
+Evaluating...
+15:25:29 | 
+==================================================
+15:25:29 | EVALUATION RESULTS
+15:25:29 | ==================================================
+15:25:29 |   Rows evaluated : 4
+15:25:29 |   TP / FP / FN   : 6 / 0 / 0
+15:25:29 | --------------------------------------------------
+15:25:29 |   Micro Precision : 1.0000
+15:25:29 |   Micro Recall    : 1.0000
+15:25:29 |   Micro F1        : 1.0000
+15:25:29 | --------------------------------------------------
+15:25:29 |   Macro F1        : 1.0000
+15:25:29 | ==================================================
+15:25:29 | 
+Output saved → outputs/mdg-nlp_adv-timex-sentences-bae__mdg-nlp_gpt-2-timex-sentence-recognition__predictions.jsonl
+15:25:29 |   - Rows 1-4: Individual predictions
+15:25:29 |   - Row 5: FINAL_METRICS
+15:25:29 | Metrics saved → outputs/mdg-nlp_adv-timex-sentences-bae__mdg-nlp_gpt-2-timex-sentence-recognition__predictions_metrics.json
+15:25:29 | Done.
+ ### Inference completed successfully ### 
+Progress: 61 successful, 0 failed
+
+======================================================
+RUN [62/63]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/timex-recognition-sentence-private
+======================================================
+>>> Running inference...
+15:25:32 | ============================================================
+15:25:32 | NER INFERENCE PIPELINE
+15:25:32 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+15:25:32 |   Dataset     : mdg-nlp/timex-recognition-sentence-private  (split=test)
+15:25:32 |   Task        : time
+15:25:32 |   Max samples : 400
+15:25:32 |   Gold field  : gold_timex_expressions
+15:25:32 |   Pred field  : post_processed_timex_expressions
+15:25:32 | ============================================================
+15:25:32 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-private
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1652, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1578, in dataset_module_factory
+    raise DatasetNotFoundError(f"Dataset '{path}' doesn't exist on the Hub or cannot be accessed.") from e
+datasets.exceptions.DatasetNotFoundError: Dataset 'mdg-nlp/timex-recognition-sentence-private' doesn't exist on the Hub or cannot be accessed.
+ ### Inference completed successfully ### 
+Progress: 62 successful, 0 failed
+
+======================================================
+RUN [63/63]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/timex-recognition
+======================================================
+>>> Running inference...
+15:25:35 | ============================================================
+15:25:35 | NER INFERENCE PIPELINE
+15:25:35 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+15:25:35 |   Dataset     : mdg-nlp/timex-recognition  (split=test)
+15:25:35 |   Task        : time
+15:25:35 |   Max samples : 400
+15:25:35 |   Gold field  : gold_timex_expressions
+15:25:35 |   Pred field  : post_processed_timex_expressions
+15:25:35 | ============================================================
+15:25:35 | 
+Loading dataset: mdg-nlp/timex-recognition
+15:25:37 | Dataset only has 266 test samples, processing all instead of 400
+15:25:37 | Processing 266 rows from test split.
+15:25:37 | 
+Loading model: mdg-nlp/gpt-2-timex-sentence-recognition
+15:25:37 | Using Token Classification (NER pipeline)
+15:25:37 | Loading tokenizer...
+15:25:37 | Loading model with NER pipeline...
+Device set to use mps
+15:25:37 | Ready on mps.
+15:25:37 | 
+Running inference on 266 texts...
+15:25:37 |   Batch 1/14 (20 texts)
+15:25:38 |   Batch 2/14 (20 texts)
+15:25:40 |   Batch 3/14 (20 texts)
+15:25:42 |   Batch 4/14 (20 texts)
+15:25:43 |   Batch 5/14 (20 texts)
+15:25:44 |   Batch 6/14 (20 texts)
+15:25:45 |   Batch 7/14 (20 texts)
+15:25:47 |   Batch 8/14 (20 texts)
+15:25:49 |   Batch 9/14 (20 texts)
+15:25:50 |   Batch 10/14 (20 texts)
+15:25:51 |   Batch 11/14 (20 texts)
+15:25:53 |   Batch 12/14 (20 texts)
+15:25:54 |   Batch 13/14 (20 texts)
+15:25:56 |   Batch 14/14 (6 texts)
+15:25:56 | 
+Evaluating...
+15:25:56 | 
+==================================================
+15:25:56 | EVALUATION RESULTS
+15:25:56 | ==================================================
+15:25:56 |   Rows evaluated : 266
+15:25:56 |   TP / FP / FN   : 1138 / 534 / 361
+15:25:56 | --------------------------------------------------
+15:25:56 |   Micro Precision : 0.6806
+15:25:56 |   Micro Recall    : 0.7592
+15:25:56 |   Micro F1        : 0.7178
+15:25:56 | --------------------------------------------------
+15:25:56 |   Macro F1        : 0.7495
+15:25:56 | ==================================================
+15:25:56 | 
+Output saved → outputs/mdg-nlp_timex-recognition__mdg-nlp_gpt-2-timex-sentence-recognition__predictions.jsonl
+15:25:56 |   - Rows 1-266: Individual predictions
+15:25:56 |   - Row 267: FINAL_METRICS
+15:25:56 | Metrics saved → outputs/mdg-nlp_timex-recognition__mdg-nlp_gpt-2-timex-sentence-recognition__predictions_metrics.json
+15:25:56 | Done.
+ ### Inference completed successfully ### 
+Progress: 63 successful, 0 failed
+
+======================================================
+TIMEX PIPELINE COMPLETE
+======================================================
+Finished at: Fri Mar 13 15:25:57 CDT 2026
+
+SUMMARY:
+  Total runs: 63
+  Successful: 63
+  Failed: 0
+  Success rate: %   Success rate: %
+
+Outputs: outputs/
+Results: results/
+Log: logs/timex_pipeline_20260313_151831.log
+======================================================

@@ -1,0 +1,202 @@
+======================================================
+TIMEX INFERENCE PIPELINE
+Started at: Fri Mar 13 15:46:45 CDT 2026
+======================================================
+
+Total combinations: 48
+
+
+======================================================
+RUN [1/48]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/eventx-recognition-original
+======================================================
+>>> Running inference...
+15:46:48 | ============================================================
+15:46:48 | NER INFERENCE PIPELINE
+15:46:48 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:46:48 |   Dataset     : mdg-nlp/eventx-recognition-original  (split=test)
+15:46:48 |   Task        : time
+15:46:48 |   Max samples : 400
+15:46:48 |   Gold field  : gold_timex_expressions
+15:46:48 |   Pred field  : post_processed_timex_expressions
+15:46:48 | ============================================================
+15:46:48 | 
+Loading dataset: mdg-nlp/eventx-recognition-original
+15:46:50 | Processing 400 rows from test split.
+15:46:50 | 
+Loading model: mdg-nlp/RoBERTa-timex-recognition-sentence
+15:46:50 | Using Token Classification (NER pipeline)
+15:46:50 | Loading tokenizer...
+15:46:50 | Loading model with NER pipeline...
+Device set to use mps
+15:46:50 | Ready on mps.
+15:46:50 | 
+Running inference on 400 texts...
+15:46:50 |   Batch 1/20 (20 texts)
+15:46:51 |   Batch 2/20 (20 texts)
+15:46:51 |   Batch 3/20 (20 texts)
+15:46:51 |   Batch 4/20 (20 texts)
+15:46:51 |   Batch 5/20 (20 texts)
+15:46:51 |   Batch 6/20 (20 texts)
+15:46:51 |   Batch 7/20 (20 texts)
+15:46:51 |   Batch 8/20 (20 texts)
+15:46:51 |   Batch 9/20 (20 texts)
+15:46:51 |   Batch 10/20 (20 texts)
+15:46:51 |   Batch 11/20 (20 texts)
+15:46:52 |   Batch 12/20 (20 texts)
+15:46:52 |   Batch 13/20 (20 texts)
+15:46:52 |   Batch 14/20 (20 texts)
+15:46:52 |   Batch 15/20 (20 texts)
+15:46:52 |   Batch 16/20 (20 texts)
+15:46:52 |   Batch 17/20 (20 texts)
+15:46:52 |   Batch 18/20 (20 texts)
+15:46:52 |   Batch 19/20 (20 texts)
+15:46:52 |   Batch 20/20 (20 texts)
+15:46:52 | 
+Evaluating...
+15:46:52 | 
+==================================================
+15:46:52 | EVALUATION RESULTS
+15:46:52 | ==================================================
+15:46:52 |   Rows evaluated : 400
+15:46:52 |   TP / FP / FN   : 0 / 237 / 0
+15:46:52 | --------------------------------------------------
+15:46:52 |   Micro Precision : 0.0000
+15:46:52 |   Micro Recall    : 0.0000
+15:46:52 |   Micro F1        : 0.0000
+15:46:52 | --------------------------------------------------
+15:46:52 |   Macro F1        : 0.0000
+15:46:52 | ==================================================
+15:46:52 | 
+Output saved → outputs/mdg-nlp_eventx-recognition-original__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions.jsonl
+15:46:52 |   - Rows 1-400: Individual predictions
+15:46:52 |   - Row 401: FINAL_METRICS
+15:46:52 | Metrics saved → outputs/mdg-nlp_eventx-recognition-original__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions_metrics.json
+15:46:52 | Done.
+ ### Inference completed successfully ### 
+Progress: 1 successful, 0 failed
+
+======================================================
+RUN [2/48]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/eventx-recognition-sentence-conll
+======================================================
+>>> Running inference...
+15:46:55 | ============================================================
+15:46:55 | NER INFERENCE PIPELINE
+15:46:55 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:46:55 |   Dataset     : mdg-nlp/eventx-recognition-sentence-conll  (split=test)
+15:46:55 |   Task        : time
+15:46:55 |   Max samples : 400
+15:46:55 |   Gold field  : gold_timex_expressions
+15:46:55 |   Pred field  : post_processed_timex_expressions
+15:46:55 | ============================================================
+15:46:55 | 
+Loading dataset: mdg-nlp/eventx-recognition-sentence-conll
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1652, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1629, in dataset_module_factory
+    ).get_module()
+      ~~~~~~~~~~^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1025, in get_module
+    module_name, default_builder_kwargs = infer_module_for_data_files(
+                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        data_files=data_files,
+        ^^^^^^^^^^^^^^^^^^^^^^
+        path=self.name,
+        ^^^^^^^^^^^^^^^
+        download_config=self.download_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 602, in infer_module_for_data_files
+    raise DataFilesNotFoundError("No (supported) data files found" + (f" in {path}" if path else ""))
+datasets.exceptions.DataFilesNotFoundError: No (supported) data files found in mdg-nlp/eventx-recognition-sentence-conll
+ ### Inference completed successfully ### 
+Progress: 2 successful, 0 failed
+
+======================================================
+RUN [3/48]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/domain-eventx-recognition
+======================================================
+>>> Running inference...
+15:46:58 | ============================================================
+15:46:58 | NER INFERENCE PIPELINE
+15:46:58 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+15:46:58 |   Dataset     : mdg-nlp/domain-eventx-recognition  (split=test)
+15:46:58 |   Task        : time
+15:46:58 |   Max samples : 400
+15:46:58 |   Gold field  : gold_timex_expressions
+15:46:58 |   Pred field  : post_processed_timex_expressions
+15:46:58 | ============================================================
+15:46:58 | 
+Loading dataset: mdg-nlp/domain-eventx-recognition
+15:47:00 | Dataset only has 120 test samples, processing all instead of 400
+15:47:00 | Processing 120 rows from test split.
+15:47:00 | 
+Loading model: mdg-nlp/RoBERTa-timex-recognition-sentence
+15:47:00 | Using Token Classification (NER pipeline)
+15:47:00 | Loading tokenizer...
+15:47:00 | Loading model with NER pipeline...
+Device set to use mps
+15:47:00 | Ready on mps.
+15:47:00 | 
+Running inference on 120 texts...
+15:47:00 |   Batch 1/6 (20 texts)
+15:47:01 |   Batch 2/6 (20 texts)
+15:47:02 |   Batch 3/6 (20 texts)
+15:47:02 |   Batch 4/6 (20 texts)
+15:47:03 |   Batch 5/6 (20 texts)
+15:47:04 |   Batch 6/6 (20 texts)
+15:47:04 | 
+Evaluating...
+15:47:04 | 
+==================================================
+15:47:04 | EVALUATION RESULTS
+15:47:04 | ==================================================
+15:47:04 |   Rows evaluated : 120
+15:47:04 |   TP / FP / FN   : 0 / 812 / 0
+15:47:04 | --------------------------------------------------
+15:47:04 |   Micro Precision : 0.0000
+15:47:04 |   Micro Recall    : 0.0000
+15:47:04 |   Micro F1        : 0.0000
+15:47:04 | --------------------------------------------------
+15:47:04 |   Macro F1        : 0.0000
+15:47:04 | ==================================================
+15:47:04 | 
+Output saved → outputs/mdg-nlp_domain-eventx-recognition__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions.jsonl
+15:47:04 |   - Rows 1-120: Individual predictions
+15:47:04 |   - Row 121: FINAL_METRICS
+15:47:04 | Metrics saved → outputs/mdg-nlp_domain-eventx-recognition__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions_metrics.json
+15:47:04 | Done.
+ ### Inference completed successfully ### 
+Progress: 3 successful, 0 failed
+
+======================================================
+RUN [4/48]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/eventx-recognition-sentence-vocab-substituted
+======================================================
+>>> Running inference...
