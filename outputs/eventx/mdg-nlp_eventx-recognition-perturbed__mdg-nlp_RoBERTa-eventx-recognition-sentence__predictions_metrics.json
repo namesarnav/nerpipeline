@@ -1,0 +1,10 @@
+{
+  "total_rows": 400,
+  "micro_precision": 0.8143,
+  "micro_recall": 0.8422,
+  "micro_f1": 0.828,
+  "macro_f1": 0.8168,
+  "tp": 1302,
+  "fp": 297,
+  "fn": 244
+}

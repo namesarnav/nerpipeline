@@ -1,0 +1,246 @@
+======================================================
+EVENTX INFERENCE PIPELINE
+Started at: Fri Mar 13 05:06:20 CDT 2026
+======================================================
+
+Total combinations: 45
+
+
+======================================================
+RUN [1/45]
+Model: mdg-nlp/RoBERTa-eventx-recognition-sentence
+Dataset: mdg-nlp/eventtx-recognition-sentence-vocab-substitute
+======================================================
+>>> Running inference...
+05:06:22 | ============================================================
+05:06:22 | NER INFERENCE PIPELINE
+05:06:22 |   Model       : mdg-nlp/RoBERTa-eventx-recognition-sentence
+05:06:22 |   Dataset     : mdg-nlp/eventtx-recognition-sentence-vocab-substitute  (split=test)
+05:06:22 |   Task        : event
+05:06:22 |   Max samples : 400
+05:06:22 |   Gold field  : gold_event_expressions
+05:06:22 |   Pred field  : post_processed_event_expressions
+05:06:22 | ============================================================
+05:06:22 | 
+Loading dataset: mdg-nlp/eventtx-recognition-sentence-vocab-substitute
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1652, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1578, in dataset_module_factory
+    raise DatasetNotFoundError(f"Dataset '{path}' doesn't exist on the Hub or cannot be accessed.") from e
+datasets.exceptions.DatasetNotFoundError: Dataset 'mdg-nlp/eventtx-recognition-sentence-vocab-substitute' doesn't exist on the Hub or cannot be accessed.
+✓ Inference completed successfully
+>>> Running evaluation...
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/evaluate.py", line 199, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/evaluate.py", line 162, in main
+    with open(args.input, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'outputs/mdg-nlp_eventtx-recognition-sentence-vocab-substitute__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl'
+✓ Evaluation completed successfully
+  Predictions: outputs/mdg-nlp_eventtx-recognition-sentence-vocab-substitute__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl
+  Results: results/mdg-nlp_eventtx-recognition-sentence-vocab-substitute__mdg-nlp_RoBERTa-eventx-recognition-sentence__results.jsonl
+  Metrics: results/mdg-nlp_eventtx-recognition-sentence-vocab-substitute__mdg-nlp_RoBERTa-eventx-recognition-sentence__results_metrics.json
+Progress: 1 successful, 0 failed
+
+======================================================
+RUN [2/45]
+Model: mdg-nlp/RoBERTa-eventx-recognition-sentence
+Dataset: mdg-nlp/eventtx-recognition-perturbed-gpt
+======================================================
+>>> Running inference...
+05:06:25 | ============================================================
+05:06:25 | NER INFERENCE PIPELINE
+05:06:25 |   Model       : mdg-nlp/RoBERTa-eventx-recognition-sentence
+05:06:25 |   Dataset     : mdg-nlp/eventtx-recognition-perturbed-gpt  (split=test)
+05:06:25 |   Task        : event
+05:06:25 |   Max samples : 400
+05:06:25 |   Gold field  : gold_event_expressions
+05:06:25 |   Pred field  : post_processed_event_expressions
+05:06:25 | ============================================================
+05:06:25 | 
+Loading dataset: mdg-nlp/eventtx-recognition-perturbed-gpt
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1652, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1578, in dataset_module_factory
+    raise DatasetNotFoundError(f"Dataset '{path}' doesn't exist on the Hub or cannot be accessed.") from e
+datasets.exceptions.DatasetNotFoundError: Dataset 'mdg-nlp/eventtx-recognition-perturbed-gpt' doesn't exist on the Hub or cannot be accessed.
+✓ Inference completed successfully
+>>> Running evaluation...
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/evaluate.py", line 199, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/evaluate.py", line 162, in main
+    with open(args.input, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'outputs/mdg-nlp_eventtx-recognition-perturbed-gpt__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl'
+✓ Evaluation completed successfully
+  Predictions: outputs/mdg-nlp_eventtx-recognition-perturbed-gpt__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl
+  Results: results/mdg-nlp_eventtx-recognition-perturbed-gpt__mdg-nlp_RoBERTa-eventx-recognition-sentence__results.jsonl
+  Metrics: results/mdg-nlp_eventtx-recognition-perturbed-gpt__mdg-nlp_RoBERTa-eventx-recognition-sentence__results_metrics.json
+Progress: 2 successful, 0 failed
+
+======================================================
+RUN [3/45]
+Model: mdg-nlp/RoBERTa-eventx-recognition-sentence
+Dataset: mdg-nlp/domain-eventtx-clinical-base
+======================================================
+>>> Running inference...
+05:06:28 | ============================================================
+05:06:28 | NER INFERENCE PIPELINE
+05:06:28 |   Model       : mdg-nlp/RoBERTa-eventx-recognition-sentence
+05:06:28 |   Dataset     : mdg-nlp/domain-eventtx-clinical-base  (split=test)
+05:06:28 |   Task        : event
+05:06:28 |   Max samples : 400
+05:06:28 |   Gold field  : gold_event_expressions
+05:06:28 |   Pred field  : post_processed_event_expressions
+05:06:28 | ============================================================
+05:06:28 | 
+Loading dataset: mdg-nlp/domain-eventtx-clinical-base
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1652, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1578, in dataset_module_factory
+    raise DatasetNotFoundError(f"Dataset '{path}' doesn't exist on the Hub or cannot be accessed.") from e
+datasets.exceptions.DatasetNotFoundError: Dataset 'mdg-nlp/domain-eventtx-clinical-base' doesn't exist on the Hub or cannot be accessed.
+✓ Inference completed successfully
+>>> Running evaluation...
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/evaluate.py", line 199, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/evaluate.py", line 162, in main
+    with open(args.input, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'outputs/mdg-nlp_domain-eventtx-clinical-base__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl'
+✓ Evaluation completed successfully
+  Predictions: outputs/mdg-nlp_domain-eventtx-clinical-base__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl
+  Results: results/mdg-nlp_domain-eventtx-clinical-base__mdg-nlp_RoBERTa-eventx-recognition-sentence__results.jsonl
+  Metrics: results/mdg-nlp_domain-eventtx-clinical-base__mdg-nlp_RoBERTa-eventx-recognition-sentence__results_metrics.json
+Progress: 3 successful, 0 failed
+
+======================================================
+RUN [4/45]
+Model: mdg-nlp/RoBERTa-eventx-recognition-sentence
+Dataset: mdg-nlp/domain-eventtx-clinical
+======================================================
+>>> Running inference...
+05:06:31 | ============================================================
+05:06:31 | NER INFERENCE PIPELINE
+05:06:31 |   Model       : mdg-nlp/RoBERTa-eventx-recognition-sentence
+05:06:31 |   Dataset     : mdg-nlp/domain-eventtx-clinical  (split=test)
+05:06:31 |   Task        : event
+05:06:31 |   Max samples : 400
+05:06:31 |   Gold field  : gold_event_expressions
+05:06:31 |   Pred field  : post_processed_event_expressions
+05:06:31 | ============================================================
+05:06:31 | 
+Loading dataset: mdg-nlp/domain-eventtx-clinical
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1652, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1578, in dataset_module_factory
+    raise DatasetNotFoundError(f"Dataset '{path}' doesn't exist on the Hub or cannot be accessed.") from e
+datasets.exceptions.DatasetNotFoundError: Dataset 'mdg-nlp/domain-eventtx-clinical' doesn't exist on the Hub or cannot be accessed.
+✓ Inference completed successfully
+>>> Running evaluation...
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/evaluate.py", line 199, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/evaluate.py", line 162, in main
+    with open(args.input, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'outputs/mdg-nlp_domain-eventtx-clinical__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl'
+✓ Evaluation completed successfully
+  Predictions: outputs/mdg-nlp_domain-eventtx-clinical__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl
+  Results: results/mdg-nlp_domain-eventtx-clinical__mdg-nlp_RoBERTa-eventx-recognition-sentence__results.jsonl
+  Metrics: results/mdg-nlp_domain-eventtx-clinical__mdg-nlp_RoBERTa-eventx-recognition-sentence__results_metrics.json
+Progress: 4 successful, 0 failed
+
+======================================================
+RUN [5/45]
+Model: mdg-nlp/RoBERTa-eventx-recognition-sentence
+Dataset: mdg-nlp/eventtx-recognition-sentence-vocab-substituted
+======================================================
+>>> Running inference...
