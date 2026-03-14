@@ -1,0 +1,126 @@
+======================================================
+EVENTX INFERENCE PIPELINE
+Started at: Sat Mar 14 00:15:16 CDT 2026
+======================================================
+
+Total combinations: 1
+
+
+======================================================
+RUN [1/1]
+Model: mdg-nlp/T5-eventx-sentence-recoginition
+Dataset: mdg-nlp/domain-eventx-recognition-sentence-updated
+======================================================
+>>> Running inference...
+00:15:18 | ============================================================
+00:15:18 | NER INFERENCE PIPELINE
+00:15:18 |   Model       : mdg-nlp/T5-eventx-sentence-recoginition
+00:15:18 |   Dataset     : mdg-nlp/domain-eventx-recognition-sentence-updated  (split=test)
+00:15:18 |   Task        : event
+00:15:18 |   Max samples : 400
+00:15:18 |   Gold field  : gold_event_expressions
+00:15:18 |   Pred field  : post_processed_event_expressions
+00:15:18 | ============================================================
+00:15:18 | 
+Loading dataset: mdg-nlp/domain-eventx-recognition-sentence-updated
+00:15:21 | Processing 400 rows from test split.
+00:15:21 | 
+Loading model: mdg-nlp/T5-eventx-sentence-recoginition
+00:15:21 | Using Token Classification (NER pipeline)
+00:15:21 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+00:15:22 | Loading model with NER pipeline...
+Device set to use mps
+00:15:22 | Ready on mps.
+00:15:22 | 
+Running inference on 400 texts...
+00:15:22 |   Batch 1/25 (16 texts)
+00:15:22 |   Batch 2/25 (16 texts)
+00:15:22 |   Batch 3/25 (16 texts)
+00:15:22 |   Batch 4/25 (16 texts)
+00:15:22 |   Batch 5/25 (16 texts)
+00:15:23 |   Batch 6/25 (16 texts)
+00:15:23 |   Batch 7/25 (16 texts)
+00:15:23 |   Batch 8/25 (16 texts)
+00:15:23 |   Batch 9/25 (16 texts)
+00:15:23 |   Batch 10/25 (16 texts)
+00:15:23 |   Batch 11/25 (16 texts)
+00:15:23 |   Batch 12/25 (16 texts)
+00:15:23 |   Batch 13/25 (16 texts)
+00:15:23 |   Batch 14/25 (16 texts)
+00:15:23 |   Batch 15/25 (16 texts)
+00:15:23 |   Batch 16/25 (16 texts)
+00:15:23 |   Batch 17/25 (16 texts)
+00:15:23 |   Batch 18/25 (16 texts)
+00:15:24 |   Batch 19/25 (16 texts)
+00:15:24 |   Batch 20/25 (16 texts)
+00:15:24 |   Batch 21/25 (16 texts)
+00:15:24 |   Batch 22/25 (16 texts)
+00:15:24 |   Batch 23/25 (16 texts)
+00:15:24 |   Batch 24/25 (16 texts)
+00:15:24 |   Batch 25/25 (16 texts)
+00:15:24 | 
+Evaluating...
+00:15:24 | 
+==================================================
+00:15:24 | EVALUATION RESULTS
+00:15:24 | ==================================================
+00:15:24 |   Rows evaluated : 400
+00:15:24 |   TP / FP / FN   : 91 / 611 / 1013
+00:15:24 | --------------------------------------------------
+00:15:24 |   Micro Precision : 0.1296
+00:15:24 |   Micro Recall    : 0.0824
+00:15:24 |   Micro F1        : 0.1008
+00:15:24 | --------------------------------------------------
+00:15:24 |   Macro F1        : 0.0735
+00:15:24 | ==================================================
+00:15:24 | 
+Output saved → outputs/mdg-nlp_domain-eventx-recognition-sentence-updated__mdg-nlp_T5-eventx-sentence-recoginition__predictions.jsonl
+00:15:24 |   - Rows 1-400: Individual predictions
+00:15:24 |   - Row 401: FINAL_METRICS
+00:15:24 | Metrics saved → outputs/mdg-nlp_domain-eventx-recognition-sentence-updated__mdg-nlp_T5-eventx-sentence-recoginition__predictions_metrics.json
+00:15:24 | Done.
+✓ Inference completed successfully
+>>> Running evaluation...
+Loaded 401 rows from outputs/mdg-nlp_domain-eventx-recognition-sentence-updated__mdg-nlp_T5-eventx-sentence-recoginition__predictions.jsonl
+
+==================================================
+EVALUATION RESULTS
+==================================================
+  Gold field : gold_eventx_expressions
+  Pred field : post_processed_eventx_expressions
+  Rows       : 401 evaluated / 401 total
+--------------------------------------------------
+  Micro Precision : 0.0000
+  Micro Recall    : 0.0000
+  Micro F1        : 0.0000   (TP=0  FP=0  FN=0)
+--------------------------------------------------
+  Macro F1        : 0.0000
+==================================================
+
+Results saved to: results/mdg-nlp_domain-eventx-recognition-sentence-updated__mdg-nlp_T5-eventx-sentence-recoginition__results.jsonl
+  - Rows 1-401: Individual predictions
+  - Row 402: FINAL_METRICS (Micro/Macro F1)
+Metrics saved to: results/mdg-nlp_domain-eventx-recognition-sentence-updated__mdg-nlp_T5-eventx-sentence-recoginition__results_metrics.json
+✓ Evaluation completed successfully
+  Predictions: outputs/mdg-nlp_domain-eventx-recognition-sentence-updated__mdg-nlp_T5-eventx-sentence-recoginition__predictions.jsonl
+  Results: results/mdg-nlp_domain-eventx-recognition-sentence-updated__mdg-nlp_T5-eventx-sentence-recoginition__results.jsonl
+  Metrics: results/mdg-nlp_domain-eventx-recognition-sentence-updated__mdg-nlp_T5-eventx-sentence-recoginition__results_metrics.json
+Progress: 1 successful, 0 failed
+
+======================================================
+EVENTX PIPELINE COMPLETE
+======================================================
+Finished at: Sat Mar 14 00:15:25 CDT 2026
+
+SUMMARY:
+  Total runs: 1
+  Successful: 1
+  Failed: 0
+  Success rate: %   Success rate: %
+
+Outputs: outputs/
+Results: results/
+Log: logs/eventx_pipeline_20260314_001516.log
+======================================================

@@ -1,0 +1,321 @@
+======================================================
+EVENTX INFERENCE PIPELINE
+Started at: Sat Mar 14 00:00:26 CDT 2026
+======================================================
+
+Total combinations: 3
+
+
+======================================================
+RUN [1/3]
+Model: mdg-nlp/RoBERTa-eventx-recognition-sentence
+Dataset: mdg-nlp/eventx-recognition-document
+======================================================
+>>> Running inference...
+00:00:29 | ============================================================
+00:00:29 | NER INFERENCE PIPELINE
+00:00:29 |   Model       : mdg-nlp/RoBERTa-eventx-recognition-sentence
+00:00:29 |   Dataset     : mdg-nlp/eventx-recognition-document  (split=test)
+00:00:29 |   Task        : event
+00:00:29 |   Max samples : 80
+00:00:29 |   Gold field  : gold_event_expressions
+00:00:29 |   Pred field  : post_processed_event_expressions
+00:00:29 | ============================================================
+00:00:29 | 
+Loading dataset: mdg-nlp/eventx-recognition-document
+00:00:32 | Processing 80 rows from test split.
+00:00:32 | 
+Loading model: mdg-nlp/RoBERTa-eventx-recognition-sentence
+00:00:32 | Using Token Classification (NER pipeline)
+00:00:32 | Loading tokenizer...
+00:00:33 | Loading model with NER pipeline...
+Device set to use mps
+00:00:33 | Ready on mps.
+00:00:33 | 
+Running inference on 80 texts...
+00:00:33 |   Batch 1/5 (16 texts)
+00:00:34 |   Batch 2/5 (16 texts)
+00:00:34 |   Batch 3/5 (16 texts)
+00:00:35 |   Batch 4/5 (16 texts)
+00:00:35 |   Batch 5/5 (16 texts)
+00:00:36 | 
+Evaluating...
+00:00:36 | 
+==================================================
+00:00:36 | EVALUATION RESULTS
+00:00:36 | ==================================================
+00:00:36 |   Rows evaluated : 80
+00:00:36 |   TP / FP / FN   : 1696 / 336 / 394
+00:00:36 | --------------------------------------------------
+00:00:36 |   Micro Precision : 0.8346
+00:00:36 |   Micro Recall    : 0.8115
+00:00:36 |   Micro F1        : 0.8229
+00:00:36 | --------------------------------------------------
+00:00:36 |   Macro F1        : 0.8536
+00:00:36 | ==================================================
+00:00:36 | 
+Output saved → outputs/mdg-nlp_eventx-recognition-document__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl
+00:00:36 |   - Rows 1-80: Individual predictions
+00:00:36 |   - Row 81: FINAL_METRICS
+00:00:36 | Metrics saved → outputs/mdg-nlp_eventx-recognition-document__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions_metrics.json
+00:00:36 | Done.
+✓ Inference completed successfully
+>>> Running evaluation...
+Loaded 81 rows from outputs/mdg-nlp_eventx-recognition-document__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl
+
+==================================================
+EVALUATION RESULTS
+==================================================
+  Gold field : gold_eventx_expressions
+  Pred field : post_processed_eventx_expressions
+  Rows       : 81 evaluated / 81 total
+--------------------------------------------------
+  Micro Precision : 0.0000
+  Micro Recall    : 0.0000
+  Micro F1        : 0.0000   (TP=0  FP=0  FN=0)
+--------------------------------------------------
+  Macro F1        : 0.0000
+==================================================
+
+Results saved to: results/mdg-nlp_eventx-recognition-document__mdg-nlp_RoBERTa-eventx-recognition-sentence__results.jsonl
+  - Rows 1-81: Individual predictions
+  - Row 82: FINAL_METRICS (Micro/Macro F1)
+Metrics saved to: results/mdg-nlp_eventx-recognition-document__mdg-nlp_RoBERTa-eventx-recognition-sentence__results_metrics.json
+✓ Evaluation completed successfully
+  Predictions: outputs/mdg-nlp_eventx-recognition-document__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl
+  Results: results/mdg-nlp_eventx-recognition-document__mdg-nlp_RoBERTa-eventx-recognition-sentence__results.jsonl
+  Metrics: results/mdg-nlp_eventx-recognition-document__mdg-nlp_RoBERTa-eventx-recognition-sentence__results_metrics.json
+Progress: 1 successful, 0 failed
+
+======================================================
+RUN [2/3]
+Model: mdg-nlp/T5-eventx-sentence-recognition
+Dataset: mdg-nlp/eventx-recognition-document
+======================================================
+>>> Running inference...
+00:00:39 | ============================================================
+00:00:39 | NER INFERENCE PIPELINE
+00:00:39 |   Model       : mdg-nlp/T5-eventx-sentence-recognition
+00:00:39 |   Dataset     : mdg-nlp/eventx-recognition-document  (split=test)
+00:00:39 |   Task        : event
+00:00:39 |   Max samples : 80
+00:00:39 |   Gold field  : gold_event_expressions
+00:00:39 |   Pred field  : post_processed_event_expressions
+00:00:39 | ============================================================
+00:00:39 | 
+Loading dataset: mdg-nlp/eventx-recognition-document
+00:00:41 | Processing 80 rows from test split.
+00:00:41 | 
+Loading model: mdg-nlp/T5-eventx-sentence-recognition
+00:00:41 | Using Token Classification (NER pipeline)
+00:00:41 | Loading tokenizer...
+Traceback (most recent call last):
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 403, in hf_raise_for_status
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/mdg-nlp/T5-eventx-sentence-recognition/resolve/main/tokenizer_config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/transformers/utils/hub.py", line 479, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        local_files_only=local_files_only,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 1014, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<14 lines>...
+        force_download=force_download,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 1121, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 1662, in _raise_on_head_call_error
+    raise head_call_error
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 1550, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url, proxies=proxies, timeout=etag_timeout, headers=headers, token=token, endpoint=endpoint
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 1467, in get_hf_file_metadata
+    r = _request_wrapper(
+        method="HEAD",
+    ...<5 lines>...
+        timeout=timeout,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 283, in _request_wrapper
+    response = _request_wrapper(
+        method=method,
+    ...<2 lines>...
+        **params,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 307, in _request_wrapper
+    hf_raise_for_status(response)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 453, in hf_raise_for_status
+    raise _format(RepositoryNotFoundError, message, response) from e
+huggingface_hub.errors.RepositoryNotFoundError: 404 Client Error. (Request ID: Root=1-69b4eb79-43b221652bf1c4c94f09638e;c4686060-d853-4387-a24e-cd49866c27e7)
+
+Repository Not Found for url: https://huggingface.co/mdg-nlp/T5-eventx-sentence-recognition/resolve/main/tokenizer_config.json.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated. For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 94, in main
+    inference = NERInference(
+        model_name=args.model,
+    ...<3 lines>...
+        logger=logger,
+    )
+  File "/Volumes/Github/nlppipelinecode/pipeline/inference.py", line 53, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_name, use_fast=True, add_prefix_space=True
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/transformers/models/auto/tokenization_auto.py", line 1089, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/transformers/models/auto/tokenization_auto.py", line 921, in get_tokenizer_config
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<12 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/transformers/utils/hub.py", line 322, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/transformers/utils/hub.py", line 511, in cached_files
+    raise OSError(
+    ...<4 lines>...
+    ) from e
+OSError: mdg-nlp/T5-eventx-sentence-recognition is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+✓ Inference completed successfully
+>>> Running evaluation...
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/evaluate.py", line 199, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/evaluate.py", line 162, in main
+    with open(args.input, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'outputs/mdg-nlp_eventx-recognition-document__mdg-nlp_T5-eventx-sentence-recognition__predictions.jsonl'
+✓ Evaluation completed successfully
+  Predictions: outputs/mdg-nlp_eventx-recognition-document__mdg-nlp_T5-eventx-sentence-recognition__predictions.jsonl
+  Results: results/mdg-nlp_eventx-recognition-document__mdg-nlp_T5-eventx-sentence-recognition__results.jsonl
+  Metrics: results/mdg-nlp_eventx-recognition-document__mdg-nlp_T5-eventx-sentence-recognition__results_metrics.json
+Progress: 2 successful, 0 failed
+
+======================================================
+RUN [3/3]
+Model: mdg-nlp/gpt-2-eventx-sentence-recognition
+Dataset: mdg-nlp/eventx-recognition-document
+======================================================
+>>> Running inference...
+00:00:44 | ============================================================
+00:00:44 | NER INFERENCE PIPELINE
+00:00:44 |   Model       : mdg-nlp/gpt-2-eventx-sentence-recognition
+00:00:44 |   Dataset     : mdg-nlp/eventx-recognition-document  (split=test)
+00:00:44 |   Task        : event
+00:00:44 |   Max samples : 80
+00:00:44 |   Gold field  : gold_event_expressions
+00:00:44 |   Pred field  : post_processed_event_expressions
+00:00:44 | ============================================================
+00:00:44 | 
+Loading dataset: mdg-nlp/eventx-recognition-document
+00:00:46 | Processing 80 rows from test split.
+00:00:46 | 
+Loading model: mdg-nlp/gpt-2-eventx-sentence-recognition
+00:00:46 | Using Token Classification (NER pipeline)
+00:00:46 | Loading tokenizer...
+00:00:47 | Loading model with NER pipeline...
+Device set to use mps
+00:00:47 | Ready on mps.
+00:00:47 | 
+Running inference on 80 texts...
+00:00:47 |   Batch 1/5 (16 texts)
+00:00:49 |   Batch 2/5 (16 texts)
+00:00:50 |   Batch 3/5 (16 texts)
+00:00:52 |   Batch 4/5 (16 texts)
+00:00:53 |   Batch 5/5 (16 texts)
+00:00:54 | 
+Evaluating...
+00:00:54 | 
+==================================================
+00:00:54 | EVALUATION RESULTS
+00:00:54 | ==================================================
+00:00:54 |   Rows evaluated : 80
+00:00:54 |   TP / FP / FN   : 1819 / 397 / 271
+00:00:54 | --------------------------------------------------
+00:00:54 |   Micro Precision : 0.8208
+00:00:54 |   Micro Recall    : 0.8703
+00:00:54 |   Micro F1        : 0.8449
+00:00:54 | --------------------------------------------------
+00:00:54 |   Macro F1        : 0.8436
+00:00:54 | ==================================================
+00:00:54 | 
+Output saved → outputs/mdg-nlp_eventx-recognition-document__mdg-nlp_gpt-2-eventx-sentence-recognition__predictions.jsonl
+00:00:54 |   - Rows 1-80: Individual predictions
+00:00:54 |   - Row 81: FINAL_METRICS
+00:00:54 | Metrics saved → outputs/mdg-nlp_eventx-recognition-document__mdg-nlp_gpt-2-eventx-sentence-recognition__predictions_metrics.json
+00:00:54 | Done.
+✓ Inference completed successfully
+>>> Running evaluation...
+Loaded 81 rows from outputs/mdg-nlp_eventx-recognition-document__mdg-nlp_gpt-2-eventx-sentence-recognition__predictions.jsonl
+
+==================================================
+EVALUATION RESULTS
+==================================================
+  Gold field : gold_eventx_expressions
+  Pred field : post_processed_eventx_expressions
+  Rows       : 81 evaluated / 81 total
+--------------------------------------------------
+  Micro Precision : 0.0000
+  Micro Recall    : 0.0000
+  Micro F1        : 0.0000   (TP=0  FP=0  FN=0)
+--------------------------------------------------
+  Macro F1        : 0.0000
+==================================================
+
+Results saved to: results/mdg-nlp_eventx-recognition-document__mdg-nlp_gpt-2-eventx-sentence-recognition__results.jsonl
+  - Rows 1-81: Individual predictions
+  - Row 82: FINAL_METRICS (Micro/Macro F1)
+Metrics saved to: results/mdg-nlp_eventx-recognition-document__mdg-nlp_gpt-2-eventx-sentence-recognition__results_metrics.json
+✓ Evaluation completed successfully
+  Predictions: outputs/mdg-nlp_eventx-recognition-document__mdg-nlp_gpt-2-eventx-sentence-recognition__predictions.jsonl
+  Results: results/mdg-nlp_eventx-recognition-document__mdg-nlp_gpt-2-eventx-sentence-recognition__results.jsonl
+  Metrics: results/mdg-nlp_eventx-recognition-document__mdg-nlp_gpt-2-eventx-sentence-recognition__results_metrics.json
+Progress: 3 successful, 0 failed
+
+======================================================
+EVENTX PIPELINE COMPLETE
+======================================================
+Finished at: Sat Mar 14 00:00:55 CDT 2026
+
+SUMMARY:
+  Total runs: 3
+  Successful: 3
+  Failed: 0
+  Success rate: %   Success rate: %
+
+Outputs: outputs/
+Results: results/
+Log: logs/eventx_pipeline_20260314_000026.log
+======================================================

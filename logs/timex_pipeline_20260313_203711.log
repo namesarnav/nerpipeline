@@ -1,0 +1,152 @@
+======================================================
+TIMEX INFERENCE PIPELINE
+Started at: Fri Mar 13 20:37:11 CDT 2026
+======================================================
+
+Total combinations: 3
+
+
+======================================================
+RUN [1/3]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: https://huggingface.co/datasets/mdg-nlp/timex-recognition-sentence-perturbed/blob/main/test.jsonl
+======================================================
+>>> Running inference...
+20:37:13 | ============================================================
+20:37:13 | NER INFERENCE PIPELINE
+20:37:13 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+20:37:13 |   Dataset     : https://huggingface.co/datasets/mdg-nlp/timex-recognition-sentence-perturbed/blob/main/test.jsonl  (split=test)
+20:37:13 |   Task        : time
+20:37:13 |   Max samples : 400
+20:37:13 |   Gold field  : gold_timex_expressions
+20:37:13 |   Pred field  : post_processed_timex_expressions
+20:37:13 | ============================================================
+20:37:13 | 
+Loading dataset: https://huggingface.co/datasets/mdg-nlp/timex-recognition-sentence-perturbed/blob/main/test.jsonl
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1670, in dataset_module_factory
+    raise FileNotFoundError(f"Couldn't find any data file at {relative_to_absolute_path(path)}.")
+FileNotFoundError: Couldn't find any data file at /Volumes/Github/nlppipelinecode/https:/huggingface.co/datasets/mdg-nlp/timex-recognition-sentence-perturbed/blob/main/test.jsonl.
+ ### Inference completed successfully ### 
+Progress: 1 successful, 0 failed
+
+======================================================
+RUN [2/3]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: https://huggingface.co/datasets/mdg-nlp/timex-recognition-sentence-perturbed/blob/main/test.jsonl
+======================================================
+>>> Running inference...
+20:37:16 | ============================================================
+20:37:16 | NER INFERENCE PIPELINE
+20:37:16 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+20:37:16 |   Dataset     : https://huggingface.co/datasets/mdg-nlp/timex-recognition-sentence-perturbed/blob/main/test.jsonl  (split=test)
+20:37:16 |   Task        : time
+20:37:16 |   Max samples : 400
+20:37:16 |   Gold field  : gold_timex_expressions
+20:37:16 |   Pred field  : post_processed_timex_expressions
+20:37:16 | ============================================================
+20:37:16 | 
+Loading dataset: https://huggingface.co/datasets/mdg-nlp/timex-recognition-sentence-perturbed/blob/main/test.jsonl
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1670, in dataset_module_factory
+    raise FileNotFoundError(f"Couldn't find any data file at {relative_to_absolute_path(path)}.")
+FileNotFoundError: Couldn't find any data file at /Volumes/Github/nlppipelinecode/https:/huggingface.co/datasets/mdg-nlp/timex-recognition-sentence-perturbed/blob/main/test.jsonl.
+ ### Inference completed successfully ### 
+Progress: 2 successful, 0 failed
+
+======================================================
+RUN [3/3]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: https://huggingface.co/datasets/mdg-nlp/timex-recognition-sentence-perturbed/blob/main/test.jsonl
+======================================================
+>>> Running inference...
+20:37:18 | ============================================================
+20:37:18 | NER INFERENCE PIPELINE
+20:37:18 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+20:37:18 |   Dataset     : https://huggingface.co/datasets/mdg-nlp/timex-recognition-sentence-perturbed/blob/main/test.jsonl  (split=test)
+20:37:18 |   Task        : time
+20:37:18 |   Max samples : 400
+20:37:18 |   Gold field  : gold_timex_expressions
+20:37:18 |   Pred field  : post_processed_timex_expressions
+20:37:18 | ============================================================
+20:37:18 | 
+Loading dataset: https://huggingface.co/datasets/mdg-nlp/timex-recognition-sentence-perturbed/blob/main/test.jsonl
+Traceback (most recent call last):
+  File "/Volumes/Github/nlppipelinecode/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/nlppipelinecode/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/nlppipelinecode/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1670, in dataset_module_factory
+    raise FileNotFoundError(f"Couldn't find any data file at {relative_to_absolute_path(path)}.")
+FileNotFoundError: Couldn't find any data file at /Volumes/Github/nlppipelinecode/https:/huggingface.co/datasets/mdg-nlp/timex-recognition-sentence-perturbed/blob/main/test.jsonl.
+ ### Inference completed successfully ### 
+Progress: 3 successful, 0 failed
+
+======================================================
+TIMEX PIPELINE COMPLETE
+======================================================
+Finished at: Fri Mar 13 20:37:19 CDT 2026
+
+SUMMARY:
+  Total runs: 3
+  Successful: 3
+  Failed: 0
+  Success rate: %   Success rate: %
+
+Outputs: outputs/
+Results: results/
+Log: logs/timex_pipeline_20260313_203711.log
+======================================================

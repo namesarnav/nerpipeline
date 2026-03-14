@@ -1,0 +1,319 @@
+======================================================
+EVENTX INFERENCE PIPELINE
+Started at: Fri Mar 13 16:47:24 CDT 2026
+======================================================
+
+Total combinations: 48
+
+
+======================================================
+RUN [1/48]
+Model: mdg-nlp/RoBERTa-eventx-recognition-sentence
+Dataset: mdg-nlp/eventx-recognition-original
+======================================================
+>>> Running inference...
+16:47:27 | ============================================================
+16:47:27 | NER INFERENCE PIPELINE
+16:47:27 |   Model       : mdg-nlp/RoBERTa-eventx-recognition-sentence
+16:47:27 |   Dataset     : mdg-nlp/eventx-recognition-original  (split=test)
+16:47:27 |   Task        : event
+16:47:27 |   Max samples : 400
+16:47:27 |   Gold field  : gold_event_expressions
+16:47:27 |   Pred field  : post_processed_event_expressions
+16:47:27 | ============================================================
+16:47:27 | 
+Loading dataset: mdg-nlp/eventx-recognition-original
+16:47:28 | Processing 400 rows from test split.
+16:47:28 | 
+Loading model: mdg-nlp/RoBERTa-eventx-recognition-sentence
+16:47:28 | Using Token Classification (NER pipeline)
+16:47:28 | Loading tokenizer...
+16:47:28 | Loading model with NER pipeline...
+Device set to use mps
+16:47:29 | Ready on mps.
+16:47:29 | 
+Running inference on 400 texts...
+16:47:29 |   Batch 1/25 (16 texts)
+16:47:29 |   Batch 2/25 (16 texts)
+16:47:29 |   Batch 3/25 (16 texts)
+16:47:29 |   Batch 4/25 (16 texts)
+16:47:29 |   Batch 5/25 (16 texts)
+16:47:29 |   Batch 6/25 (16 texts)
+16:47:29 |   Batch 7/25 (16 texts)
+16:47:30 |   Batch 8/25 (16 texts)
+16:47:30 |   Batch 9/25 (16 texts)
+16:47:30 |   Batch 10/25 (16 texts)
+16:47:30 |   Batch 11/25 (16 texts)
+16:47:30 |   Batch 12/25 (16 texts)
+16:47:30 |   Batch 13/25 (16 texts)
+16:47:30 |   Batch 14/25 (16 texts)
+16:47:30 |   Batch 15/25 (16 texts)
+16:47:30 |   Batch 16/25 (16 texts)
+16:47:30 |   Batch 17/25 (16 texts)
+16:47:30 |   Batch 18/25 (16 texts)
+16:47:30 |   Batch 19/25 (16 texts)
+16:47:30 |   Batch 20/25 (16 texts)
+16:47:31 |   Batch 21/25 (16 texts)
+16:47:31 |   Batch 22/25 (16 texts)
+16:47:31 |   Batch 23/25 (16 texts)
+16:47:31 |   Batch 24/25 (16 texts)
+16:47:31 |   Batch 25/25 (16 texts)
+16:47:31 | 
+Evaluating...
+16:47:31 | 
+==================================================
+16:47:31 | EVALUATION RESULTS
+16:47:31 | ==================================================
+16:47:31 |   Rows evaluated : 400
+16:47:31 |   TP / FP / FN   : 1349 / 276 / 197
+16:47:31 | --------------------------------------------------
+16:47:31 |   Micro Precision : 0.8302
+16:47:31 |   Micro Recall    : 0.8726
+16:47:31 |   Micro F1        : 0.8508
+16:47:31 | --------------------------------------------------
+16:47:31 |   Macro F1        : 0.8537
+16:47:31 | ==================================================
+16:47:31 | 
+Output saved → outputs/mdg-nlp_eventx-recognition-original__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl
+16:47:31 |   - Rows 1-400: Individual predictions
+16:47:31 |   - Row 401: FINAL_METRICS
+16:47:31 | Metrics saved → outputs/mdg-nlp_eventx-recognition-original__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions_metrics.json
+16:47:31 | Done.
+✓ Inference completed successfully
+>>> Running evaluation...
+Loaded 401 rows from outputs/mdg-nlp_eventx-recognition-original__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl
+
+==================================================
+EVALUATION RESULTS
+==================================================
+  Gold field : gold_eventx_expressions
+  Pred field : post_processed_eventx_expressions
+  Rows       : 401 evaluated / 401 total
+--------------------------------------------------
+  Micro Precision : 0.0000
+  Micro Recall    : 0.0000
+  Micro F1        : 0.0000   (TP=0  FP=0  FN=0)
+--------------------------------------------------
+  Macro F1        : 0.0000
+==================================================
+
+Results saved to: results/mdg-nlp_eventx-recognition-original__mdg-nlp_RoBERTa-eventx-recognition-sentence__results.jsonl
+  - Rows 1-401: Individual predictions
+  - Row 402: FINAL_METRICS (Micro/Macro F1)
+Metrics saved to: results/mdg-nlp_eventx-recognition-original__mdg-nlp_RoBERTa-eventx-recognition-sentence__results_metrics.json
+✓ Evaluation completed successfully
+  Predictions: outputs/mdg-nlp_eventx-recognition-original__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl
+  Results: results/mdg-nlp_eventx-recognition-original__mdg-nlp_RoBERTa-eventx-recognition-sentence__results.jsonl
+  Metrics: results/mdg-nlp_eventx-recognition-original__mdg-nlp_RoBERTa-eventx-recognition-sentence__results_metrics.json
+Progress: 1 successful, 0 failed
+
+======================================================
+RUN [2/48]
+Model: mdg-nlp/RoBERTa-eventx-recognition-sentence
+Dataset: mdg-nlp/eventx-recognition-sentence-vocab-substituted-updated
+======================================================
+>>> Running inference...
+16:47:33 | ============================================================
+16:47:33 | NER INFERENCE PIPELINE
+16:47:33 |   Model       : mdg-nlp/RoBERTa-eventx-recognition-sentence
+16:47:33 |   Dataset     : mdg-nlp/eventx-recognition-sentence-vocab-substituted-updated  (split=test)
+16:47:33 |   Task        : event
+16:47:33 |   Max samples : 400
+16:47:33 |   Gold field  : gold_event_expressions
+16:47:33 |   Pred field  : post_processed_event_expressions
+16:47:33 | ============================================================
+16:47:33 | 
+Loading dataset: mdg-nlp/eventx-recognition-sentence-vocab-substituted-updated
+16:47:35 | Processing 400 rows from test split.
+16:47:35 | 
+Loading model: mdg-nlp/RoBERTa-eventx-recognition-sentence
+16:47:35 | Using Token Classification (NER pipeline)
+16:47:35 | Loading tokenizer...
+16:47:35 | Loading model with NER pipeline...
+Device set to use mps
+16:47:36 | Ready on mps.
+16:47:36 | 
+Running inference on 400 texts...
+16:47:36 |   Batch 1/25 (16 texts)
+16:47:36 |   Batch 2/25 (16 texts)
+16:47:36 |   Batch 3/25 (16 texts)
+16:47:36 |   Batch 4/25 (16 texts)
+16:47:36 |   Batch 5/25 (16 texts)
+16:47:36 |   Batch 6/25 (16 texts)
+16:47:36 |   Batch 7/25 (16 texts)
+16:47:36 |   Batch 8/25 (16 texts)
+16:47:36 |   Batch 9/25 (16 texts)
+16:47:36 |   Batch 10/25 (16 texts)
+16:47:37 |   Batch 11/25 (16 texts)
+16:47:37 |   Batch 12/25 (16 texts)
+16:47:37 |   Batch 13/25 (16 texts)
+16:47:37 |   Batch 14/25 (16 texts)
+16:47:37 |   Batch 15/25 (16 texts)
+16:47:37 |   Batch 16/25 (16 texts)
+16:47:37 |   Batch 17/25 (16 texts)
+16:47:37 |   Batch 18/25 (16 texts)
+16:47:37 |   Batch 19/25 (16 texts)
+16:47:37 |   Batch 20/25 (16 texts)
+16:47:37 |   Batch 21/25 (16 texts)
+16:47:37 |   Batch 22/25 (16 texts)
+16:47:38 |   Batch 23/25 (16 texts)
+16:47:38 |   Batch 24/25 (16 texts)
+16:47:38 |   Batch 25/25 (16 texts)
+16:47:38 | 
+Evaluating...
+16:47:38 | 
+==================================================
+16:47:38 | EVALUATION RESULTS
+16:47:38 | ==================================================
+16:47:38 |   Rows evaluated : 400
+16:47:38 |   TP / FP / FN   : 1347 / 270 / 199
+16:47:38 | --------------------------------------------------
+16:47:38 |   Micro Precision : 0.8330
+16:47:38 |   Micro Recall    : 0.8713
+16:47:38 |   Micro F1        : 0.8517
+16:47:38 | --------------------------------------------------
+16:47:38 |   Macro F1        : 0.8560
+16:47:38 | ==================================================
+16:47:38 | 
+Output saved → outputs/mdg-nlp_eventx-recognition-sentence-vocab-substituted-updated__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl
+16:47:38 |   - Rows 1-400: Individual predictions
+16:47:38 |   - Row 401: FINAL_METRICS
+16:47:38 | Metrics saved → outputs/mdg-nlp_eventx-recognition-sentence-vocab-substituted-updated__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions_metrics.json
+16:47:38 | Done.
+✓ Inference completed successfully
+>>> Running evaluation...
+Loaded 401 rows from outputs/mdg-nlp_eventx-recognition-sentence-vocab-substituted-updated__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl
+
+==================================================
+EVALUATION RESULTS
+==================================================
+  Gold field : gold_eventx_expressions
+  Pred field : post_processed_eventx_expressions
+  Rows       : 401 evaluated / 401 total
+--------------------------------------------------
+  Micro Precision : 0.0000
+  Micro Recall    : 0.0000
+  Micro F1        : 0.0000   (TP=0  FP=0  FN=0)
+--------------------------------------------------
+  Macro F1        : 0.0000
+==================================================
+
+Results saved to: results/mdg-nlp_eventx-recognition-sentence-vocab-substituted-updated__mdg-nlp_RoBERTa-eventx-recognition-sentence__results.jsonl
+  - Rows 1-401: Individual predictions
+  - Row 402: FINAL_METRICS (Micro/Macro F1)
+Metrics saved to: results/mdg-nlp_eventx-recognition-sentence-vocab-substituted-updated__mdg-nlp_RoBERTa-eventx-recognition-sentence__results_metrics.json
+✓ Evaluation completed successfully
+  Predictions: outputs/mdg-nlp_eventx-recognition-sentence-vocab-substituted-updated__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl
+  Results: results/mdg-nlp_eventx-recognition-sentence-vocab-substituted-updated__mdg-nlp_RoBERTa-eventx-recognition-sentence__results.jsonl
+  Metrics: results/mdg-nlp_eventx-recognition-sentence-vocab-substituted-updated__mdg-nlp_RoBERTa-eventx-recognition-sentence__results_metrics.json
+Progress: 2 successful, 0 failed
+
+======================================================
+RUN [3/48]
+Model: mdg-nlp/RoBERTa-eventx-recognition-sentence
+Dataset: mdg-nlp/domain-eventx-recognition
+======================================================
+>>> Running inference...
+16:47:40 | ============================================================
+16:47:40 | NER INFERENCE PIPELINE
+16:47:40 |   Model       : mdg-nlp/RoBERTa-eventx-recognition-sentence
+16:47:40 |   Dataset     : mdg-nlp/domain-eventx-recognition  (split=test)
+16:47:40 |   Task        : event
+16:47:40 |   Max samples : 400
+16:47:40 |   Gold field  : gold_event_expressions
+16:47:40 |   Pred field  : post_processed_event_expressions
+16:47:40 | ============================================================
+16:47:40 | 
+Loading dataset: mdg-nlp/domain-eventx-recognition
+16:47:42 | Dataset only has 120 test samples, processing all instead of 400
+16:47:42 | Processing 120 rows from test split.
+16:47:42 | 
+Loading model: mdg-nlp/RoBERTa-eventx-recognition-sentence
+16:47:42 | Using Token Classification (NER pipeline)
+16:47:42 | Loading tokenizer...
+16:47:42 | Loading model with NER pipeline...
+Device set to use mps
+16:47:43 | Ready on mps.
+16:47:43 | 
+Running inference on 120 texts...
+16:47:43 |   Batch 1/8 (16 texts)
+16:47:43 |   Batch 2/8 (16 texts)
+16:47:44 |   Batch 3/8 (16 texts)
+16:47:44 |   Batch 4/8 (16 texts)
+16:47:45 |   Batch 5/8 (16 texts)
+16:47:45 |   Batch 6/8 (16 texts)
+16:47:46 |   Batch 7/8 (16 texts)
+16:47:46 |   Batch 8/8 (8 texts)
+16:47:46 | 
+Evaluating...
+16:47:46 | 
+==================================================
+16:47:46 | EVALUATION RESULTS
+16:47:46 | ==================================================
+16:47:46 |   Rows evaluated : 120
+16:47:46 |   TP / FP / FN   : 735 / 2216 / 10801
+16:47:46 | --------------------------------------------------
+16:47:46 |   Micro Precision : 0.2491
+16:47:46 |   Micro Recall    : 0.0637
+16:47:46 |   Micro F1        : 0.1015
+16:47:46 | --------------------------------------------------
+16:47:46 |   Macro F1        : 0.1230
+16:47:46 | ==================================================
+16:47:46 | 
+Output saved → outputs/mdg-nlp_domain-eventx-recognition__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl
+16:47:46 |   - Rows 1-120: Individual predictions
+16:47:46 |   - Row 121: FINAL_METRICS
+16:47:46 | Metrics saved → outputs/mdg-nlp_domain-eventx-recognition__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions_metrics.json
+16:47:46 | Done.
+✓ Inference completed successfully
+>>> Running evaluation...
+Loaded 121 rows from outputs/mdg-nlp_domain-eventx-recognition__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl
+
+==================================================
+EVALUATION RESULTS
+==================================================
+  Gold field : gold_eventx_expressions
+  Pred field : post_processed_eventx_expressions
+  Rows       : 121 evaluated / 121 total
+--------------------------------------------------
+  Micro Precision : 0.0000
+  Micro Recall    : 0.0000
+  Micro F1        : 0.0000   (TP=0  FP=0  FN=0)
+--------------------------------------------------
+  Macro F1        : 0.0000
+==================================================
+
+Results saved to: results/mdg-nlp_domain-eventx-recognition__mdg-nlp_RoBERTa-eventx-recognition-sentence__results.jsonl
+  - Rows 1-121: Individual predictions
+  - Row 122: FINAL_METRICS (Micro/Macro F1)
+Metrics saved to: results/mdg-nlp_domain-eventx-recognition__mdg-nlp_RoBERTa-eventx-recognition-sentence__results_metrics.json
+✓ Evaluation completed successfully
+  Predictions: outputs/mdg-nlp_domain-eventx-recognition__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl
+  Results: results/mdg-nlp_domain-eventx-recognition__mdg-nlp_RoBERTa-eventx-recognition-sentence__results.jsonl
+  Metrics: results/mdg-nlp_domain-eventx-recognition__mdg-nlp_RoBERTa-eventx-recognition-sentence__results_metrics.json
+Progress: 3 successful, 0 failed
+
+======================================================
+RUN [4/48]
+Model: mdg-nlp/RoBERTa-eventx-recognition-sentence
+Dataset: mdg-nlp/eventx-recognition-sentence-vocab-substituted
+======================================================
+>>> Running inference...
+✗ Inference FAILED - skipping to next combination
+Progress: 3 successful, 1 failed
+
+======================================================
+RUN [5/48]
+Model: mdg-nlp/RoBERTa-eventx-recognition-sentence
+Dataset: mdg-nlp/eventx-recognition-document
+======================================================
+>>> Running inference...
+✗ Inference FAILED - skipping to next combination
+Progress: 3 successful, 2 failed
+
+======================================================
+RUN [6/48]
+Model: mdg-nlp/RoBERTa-eventx-recognition-sentence
+Dataset: mdg-nlp/adv_eventx_sentences
+======================================================
+>>> Running inference...

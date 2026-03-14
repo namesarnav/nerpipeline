@@ -1,2 +1,0 @@
-{"text": "XIN_ENG_20051107.0034 CAIRO , Nov. 7 , 2005 ( Xinhua ) Xinhua Mideast news advisory -- Nov. 7 The following major international news stories from the Middle East region are scheduled to be covered or pursued by Xinhua News Agency on Monday .", "gold_timex_expressions": ["Nov. 7 , 2005", "Monday"], "post_processed_timex_expressions": ["Nov. 7 , 2005", "Nov. 7", "Monday"]}
-{"FINAL_METRICS": {"total_rows": 1, "micro_precision": 0.6667, "micro_recall": 1.0, "micro_f1": 0.8, "macro_f1": 0.8, "tp": 2, "fp": 1, "fn": 0}}

@@ -27,29 +27,26 @@ echo "" | tee -a "$LOG_FILE"
 
 # EVENTX Models
 EVENTX_MODELS=(
-    "mdg-nlp/RoBERTa-eventx-recognition-sentence"
-    "mdg-nlp/T5-eventx-sentence-recognition"
-    "mdg-nlp/gpt-2-eventx-sentence-recognition"
+    # "mdg-nlp/RoBERTa-eventx-recognition-sentence"
+    "mdg-nlp/T5-eventx-sentence-recoginition"
+    # "mdg-nlp/gpt-2-eventx-sentence-recognition"
+    
 )
+
+
+
+
 
 # EVENTX Datasets
 EVENTX_DATASETS=(
-    "mdg-nlp/eventx-recognition-original"
-    "mdg-nlp/eventx-recognition-sentence-vocab-substituted-updated"
-    "mdg-nlp/domain-eventx-recognition"
-    "mdg-nlp/eventx-recognition-sentence-vocab-substituted"
-    "mdg-nlp/eventx-recognition-document"
-    "mdg-nlp/adv_eventx_sentences"
-    "mdg-nlp/domain-eventx-recognition-sentence-updated"
-    "mdg-nlp/eventx-recognition-vocab-substituted"
-    "mdg-nlp/eventx-recognition-perturbed-gpt"
-    "mdg-nlp/eventx-recognition"
-    "mdg-nlp/eventx-recognition-sentence-conll"
-    "mdg-nlp/domain-eventx-clinical-base"
-    "mdg-nlp/eventx-recognition-sentence"
-    "mdg-nlp/eventx-recognition-perturbed"
-    "mdg-nlp/domain-eventx-recognition-sentence"
-    "mdg-nlp/domain-eventx-clinical"
+    # mdg-nlp/eventx-recognition-original
+    mdg-nlp/eventx-recognition-perturbed
+    # mdg-nlp/domain-eventx-recognition-sentence-updated
+    # mdg-nlp/eventx-recognition-sentence-vocab-substituted-updated
+    # mdg-nlp/eventx-recognition-document
+    # "mdg-nlp/domain-eventx-recognition-sentence-updated"
+    # "mdg-nlp/eventx-recognition-original"
+    
 )
 
 TOTAL_RUNS=$((${#EVENTX_MODELS[@]} * ${#EVENTX_DATASETS[@]}))
