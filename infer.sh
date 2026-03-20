@@ -5,8 +5,12 @@
 
 # Configuration
 
-MODEL="mdg-nlp/RoBERTa-eventx-recognition-sentence" # Change this
-DATASET="mdg-nlp/eventx-recognition-sentence-vocab-substitute"        # Change this
+#  "mdg-nlp/RoBERTa-timex-recognition-sentence"
+#     "mdg-nlp/T5-timex-recognition-sentence"
+#     "mdg-nlp/gpt-2-timex-sentence-recognition"
+
+MODEL="mdg-nlp/RoBERTa-timex-recognition-sentence"
+DATASET="namesarnav/timex-perturbed"        # Change this
 TASK="time"               # event or time
 NUM_SAMPLES=400
 BATCH_SIZE=20

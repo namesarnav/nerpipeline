@@ -176,10 +176,13 @@ def run_inference(args):
     
     # Load dataset
     logger.info(f"Loading dataset {args.dataset_id}")
+
     if args.dataset_config:
         dataset = load_dataset(args.dataset_id, args.dataset_config)
+    
     else:
         dataset = load_dataset(args.dataset_id)
+
     
     # Get test split
     if "test" not in dataset:

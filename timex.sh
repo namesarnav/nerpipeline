@@ -7,7 +7,7 @@ set +e  # Don't exit on error - continue with next combination
 
 # Configuration
 NUM_SAMPLES=80
-BATCH_SIZE=1
+BATCH_SIZE=16
 MAX_LENGTH=5000
 DEVICE="auto"
 
@@ -33,9 +33,7 @@ TIMEX_MODELS=(
 )
 
 # TIMEX Datasets
-TIMEX_DATASETS=(
-    mdg-nlp/domain-timex-recognition-sentence-updated
-)
+TIMEX_DATASETS=namesarnav/timex-perturbed
 
 TOTAL_RUNS=$((${#TIMEX_MODELS[@]} * ${#TIMEX_DATASETS[@]}))
 CURRENT_RUN=0

@@ -1,0 +1,418 @@
+======================================================
+TIMEX INFERENCE PIPELINE
+Started at: Thu Mar 19 21:48:22 CDT 2026
+======================================================
+
+Total combinations: 3
+
+
+======================================================
+RUN [1/3]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: namesarnav/timex-perturbed
+======================================================
+>>> Running inference...
+21:48:25 | ============================================================
+21:48:25 | NER INFERENCE PIPELINE
+21:48:25 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+21:48:25 |   Dataset     : namesarnav/timex-perturbed  (split=test)
+21:48:25 |   Task        : time
+21:48:25 |   Max samples : 80
+21:48:25 |   Gold field  : gold_timex_expressions
+21:48:25 |   Pred field  : post_processed_timex_expressions
+21:48:25 | ============================================================
+21:48:25 | 
+Loading dataset: namesarnav/timex-perturbed
+21:48:27 | Processing 80 rows from test split.
+21:48:27 | 
+Loading model: mdg-nlp/RoBERTa-timex-recognition-sentence
+21:48:27 | Using Token Classification (NER pipeline)
+21:48:27 | Loading tokenizer...
+21:48:27 | Loading model with NER pipeline...
+Device set to use mps
+21:48:28 | Ready on mps.
+21:48:28 | 
+Running inference on 80 texts...
+21:48:28 |   Batch 1/80 (1 texts)
+21:48:28 |   Batch 2/80 (1 texts)
+21:48:28 |   Batch 3/80 (1 texts)
+21:48:28 |   Batch 4/80 (1 texts)
+21:48:28 |   Batch 5/80 (1 texts)
+21:48:28 |   Batch 6/80 (1 texts)
+21:48:28 |   Batch 7/80 (1 texts)
+21:48:28 |   Batch 8/80 (1 texts)
+21:48:28 |   Batch 9/80 (1 texts)
+21:48:28 |   Batch 10/80 (1 texts)
+21:48:28 |   Batch 11/80 (1 texts)
+21:48:28 |   Batch 12/80 (1 texts)
+21:48:28 |   Batch 13/80 (1 texts)
+21:48:28 |   Batch 14/80 (1 texts)
+21:48:28 |   Batch 15/80 (1 texts)
+21:48:29 |   Batch 16/80 (1 texts)
+21:48:29 |   Batch 17/80 (1 texts)
+21:48:29 |   Batch 18/80 (1 texts)
+21:48:29 |   Batch 19/80 (1 texts)
+21:48:29 |   Batch 20/80 (1 texts)
+21:48:29 |   Batch 21/80 (1 texts)
+21:48:29 |   Batch 22/80 (1 texts)
+21:48:29 |   Batch 23/80 (1 texts)
+21:48:29 |   Batch 24/80 (1 texts)
+21:48:29 |   Batch 25/80 (1 texts)
+21:48:29 |   Batch 26/80 (1 texts)
+21:48:29 |   Batch 27/80 (1 texts)
+21:48:29 |   Batch 28/80 (1 texts)
+21:48:29 |   Batch 29/80 (1 texts)
+21:48:29 |   Batch 30/80 (1 texts)
+21:48:29 |   Batch 31/80 (1 texts)
+21:48:29 |   Batch 32/80 (1 texts)
+21:48:29 |   Batch 33/80 (1 texts)
+21:48:29 |   Batch 34/80 (1 texts)
+21:48:29 |   Batch 35/80 (1 texts)
+21:48:29 |   Batch 36/80 (1 texts)
+21:48:29 |   Batch 37/80 (1 texts)
+21:48:29 |   Batch 38/80 (1 texts)
+21:48:29 |   Batch 39/80 (1 texts)
+21:48:29 |   Batch 40/80 (1 texts)
+21:48:29 |   Batch 41/80 (1 texts)
+21:48:29 |   Batch 42/80 (1 texts)
+21:48:29 |   Batch 43/80 (1 texts)
+21:48:29 |   Batch 44/80 (1 texts)
+21:48:29 |   Batch 45/80 (1 texts)
+21:48:29 |   Batch 46/80 (1 texts)
+21:48:29 |   Batch 47/80 (1 texts)
+21:48:29 |   Batch 48/80 (1 texts)
+21:48:29 |   Batch 49/80 (1 texts)
+21:48:29 |   Batch 50/80 (1 texts)
+21:48:29 |   Batch 51/80 (1 texts)
+21:48:29 |   Batch 52/80 (1 texts)
+21:48:29 |   Batch 53/80 (1 texts)
+21:48:29 |   Batch 54/80 (1 texts)
+21:48:29 |   Batch 55/80 (1 texts)
+21:48:29 |   Batch 56/80 (1 texts)
+21:48:29 |   Batch 57/80 (1 texts)
+21:48:29 |   Batch 58/80 (1 texts)
+21:48:29 |   Batch 59/80 (1 texts)
+21:48:29 |   Batch 60/80 (1 texts)
+21:48:29 |   Batch 61/80 (1 texts)
+21:48:29 |   Batch 62/80 (1 texts)
+21:48:29 |   Batch 63/80 (1 texts)
+21:48:29 |   Batch 64/80 (1 texts)
+21:48:29 |   Batch 65/80 (1 texts)
+21:48:29 |   Batch 66/80 (1 texts)
+21:48:29 |   Batch 67/80 (1 texts)
+21:48:29 |   Batch 68/80 (1 texts)
+21:48:29 |   Batch 69/80 (1 texts)
+21:48:29 |   Batch 70/80 (1 texts)
+21:48:29 |   Batch 71/80 (1 texts)
+21:48:30 |   Batch 72/80 (1 texts)
+21:48:30 |   Batch 73/80 (1 texts)
+21:48:30 |   Batch 74/80 (1 texts)
+21:48:30 |   Batch 75/80 (1 texts)
+21:48:30 |   Batch 76/80 (1 texts)
+21:48:30 |   Batch 77/80 (1 texts)
+21:48:30 |   Batch 78/80 (1 texts)
+21:48:30 |   Batch 79/80 (1 texts)
+21:48:30 |   Batch 80/80 (1 texts)
+21:48:30 | 
+Evaluating...
+21:48:30 | 
+==================================================
+21:48:30 | EVALUATION RESULTS
+21:48:30 | ==================================================
+21:48:30 |   Rows evaluated : 80
+21:48:30 |   TP / FP / FN   : 0 / 38 / 0
+21:48:30 | --------------------------------------------------
+21:48:30 |   Micro Precision : 0.0000
+21:48:30 |   Micro Recall    : 0.0000
+21:48:30 |   Micro F1        : 0.0000
+21:48:30 | --------------------------------------------------
+21:48:30 |   Macro F1        : 0.0000
+21:48:30 | ==================================================
+21:48:30 | 
+Output saved → outputs/namesarnav_timex-perturbed__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions.jsonl
+21:48:30 |   - Rows 1-80: Individual predictions
+21:48:30 |   - Row 81: FINAL_METRICS
+21:48:30 | Metrics saved → outputs/namesarnav_timex-perturbed__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions_metrics.json
+21:48:30 | Done.
+ ### Inference completed successfully ### 
+Progress: 1 successful, 0 failed
+
+======================================================
+RUN [2/3]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: namesarnav/timex-perturbed
+======================================================
+>>> Running inference...
+21:48:32 | ============================================================
+21:48:32 | NER INFERENCE PIPELINE
+21:48:32 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+21:48:32 |   Dataset     : namesarnav/timex-perturbed  (split=test)
+21:48:32 |   Task        : time
+21:48:32 |   Max samples : 80
+21:48:32 |   Gold field  : gold_timex_expressions
+21:48:32 |   Pred field  : post_processed_timex_expressions
+21:48:32 | ============================================================
+21:48:32 | 
+Loading dataset: namesarnav/timex-perturbed
+21:48:34 | Processing 80 rows from test split.
+21:48:34 | 
+Loading model: mdg-nlp/T5-timex-recognition-sentence
+21:48:34 | Using Token Classification (NER pipeline)
+21:48:34 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+21:48:35 | Loading model with NER pipeline...
+Device set to use mps
+21:48:35 | Ready on mps.
+21:48:35 | 
+Running inference on 80 texts...
+21:48:35 |   Batch 1/80 (1 texts)
+21:48:35 |   Batch 2/80 (1 texts)
+21:48:35 |   Batch 3/80 (1 texts)
+21:48:35 |   Batch 4/80 (1 texts)
+21:48:35 |   Batch 5/80 (1 texts)
+21:48:35 |   Batch 6/80 (1 texts)
+21:48:35 |   Batch 7/80 (1 texts)
+21:48:35 |   Batch 8/80 (1 texts)
+21:48:35 |   Batch 9/80 (1 texts)
+21:48:35 |   Batch 10/80 (1 texts)
+21:48:36 |   Batch 11/80 (1 texts)
+21:48:36 |   Batch 12/80 (1 texts)
+21:48:36 |   Batch 13/80 (1 texts)
+21:48:36 |   Batch 14/80 (1 texts)
+21:48:36 |   Batch 15/80 (1 texts)
+21:48:36 |   Batch 16/80 (1 texts)
+21:48:36 |   Batch 17/80 (1 texts)
+21:48:36 |   Batch 18/80 (1 texts)
+21:48:36 |   Batch 19/80 (1 texts)
+21:48:36 |   Batch 20/80 (1 texts)
+21:48:36 |   Batch 21/80 (1 texts)
+21:48:36 |   Batch 22/80 (1 texts)
+21:48:36 |   Batch 23/80 (1 texts)
+21:48:36 |   Batch 24/80 (1 texts)
+21:48:36 |   Batch 25/80 (1 texts)
+21:48:36 |   Batch 26/80 (1 texts)
+21:48:36 |   Batch 27/80 (1 texts)
+21:48:36 |   Batch 28/80 (1 texts)
+21:48:36 |   Batch 29/80 (1 texts)
+21:48:36 |   Batch 30/80 (1 texts)
+21:48:36 |   Batch 31/80 (1 texts)
+21:48:36 |   Batch 32/80 (1 texts)
+21:48:36 |   Batch 33/80 (1 texts)
+21:48:36 |   Batch 34/80 (1 texts)
+21:48:36 |   Batch 35/80 (1 texts)
+21:48:36 |   Batch 36/80 (1 texts)
+21:48:36 |   Batch 37/80 (1 texts)
+21:48:36 |   Batch 38/80 (1 texts)
+21:48:36 |   Batch 39/80 (1 texts)
+21:48:36 |   Batch 40/80 (1 texts)
+21:48:36 |   Batch 41/80 (1 texts)
+21:48:36 |   Batch 42/80 (1 texts)
+21:48:36 |   Batch 43/80 (1 texts)
+21:48:36 |   Batch 44/80 (1 texts)
+21:48:36 |   Batch 45/80 (1 texts)
+21:48:36 |   Batch 46/80 (1 texts)
+21:48:36 |   Batch 47/80 (1 texts)
+21:48:36 |   Batch 48/80 (1 texts)
+21:48:37 |   Batch 49/80 (1 texts)
+21:48:37 |   Batch 50/80 (1 texts)
+21:48:37 |   Batch 51/80 (1 texts)
+21:48:37 |   Batch 52/80 (1 texts)
+21:48:37 |   Batch 53/80 (1 texts)
+21:48:37 |   Batch 54/80 (1 texts)
+21:48:37 |   Batch 55/80 (1 texts)
+21:48:37 |   Batch 56/80 (1 texts)
+21:48:37 |   Batch 57/80 (1 texts)
+21:48:37 |   Batch 58/80 (1 texts)
+21:48:37 |   Batch 59/80 (1 texts)
+21:48:37 |   Batch 60/80 (1 texts)
+21:48:37 |   Batch 61/80 (1 texts)
+21:48:37 |   Batch 62/80 (1 texts)
+21:48:37 |   Batch 63/80 (1 texts)
+21:48:37 |   Batch 64/80 (1 texts)
+21:48:37 |   Batch 65/80 (1 texts)
+21:48:37 |   Batch 66/80 (1 texts)
+21:48:37 |   Batch 67/80 (1 texts)
+21:48:37 |   Batch 68/80 (1 texts)
+21:48:37 |   Batch 69/80 (1 texts)
+21:48:37 |   Batch 70/80 (1 texts)
+21:48:37 |   Batch 71/80 (1 texts)
+21:48:37 |   Batch 72/80 (1 texts)
+21:48:37 |   Batch 73/80 (1 texts)
+21:48:37 |   Batch 74/80 (1 texts)
+21:48:37 |   Batch 75/80 (1 texts)
+21:48:37 |   Batch 76/80 (1 texts)
+21:48:37 |   Batch 77/80 (1 texts)
+21:48:37 |   Batch 78/80 (1 texts)
+21:48:37 |   Batch 79/80 (1 texts)
+21:48:37 |   Batch 80/80 (1 texts)
+21:48:37 | 
+Evaluating...
+21:48:37 | 
+==================================================
+21:48:37 | EVALUATION RESULTS
+21:48:37 | ==================================================
+21:48:37 |   Rows evaluated : 80
+21:48:37 |   TP / FP / FN   : 0 / 51 / 0
+21:48:37 | --------------------------------------------------
+21:48:37 |   Micro Precision : 0.0000
+21:48:37 |   Micro Recall    : 0.0000
+21:48:37 |   Micro F1        : 0.0000
+21:48:37 | --------------------------------------------------
+21:48:37 |   Macro F1        : 0.0000
+21:48:37 | ==================================================
+21:48:37 | 
+Output saved → outputs/namesarnav_timex-perturbed__mdg-nlp_T5-timex-recognition-sentence__predictions.jsonl
+21:48:37 |   - Rows 1-80: Individual predictions
+21:48:37 |   - Row 81: FINAL_METRICS
+21:48:37 | Metrics saved → outputs/namesarnav_timex-perturbed__mdg-nlp_T5-timex-recognition-sentence__predictions_metrics.json
+21:48:37 | Done.
+ ### Inference completed successfully ### 
+Progress: 2 successful, 0 failed
+
+======================================================
+RUN [3/3]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: namesarnav/timex-perturbed
+======================================================
+>>> Running inference...
+21:48:41 | ============================================================
+21:48:41 | NER INFERENCE PIPELINE
+21:48:41 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+21:48:41 |   Dataset     : namesarnav/timex-perturbed  (split=test)
+21:48:41 |   Task        : time
+21:48:41 |   Max samples : 80
+21:48:41 |   Gold field  : gold_timex_expressions
+21:48:41 |   Pred field  : post_processed_timex_expressions
+21:48:41 | ============================================================
+21:48:41 | 
+Loading dataset: namesarnav/timex-perturbed
+21:48:42 | Processing 80 rows from test split.
+21:48:42 | 
+Loading model: mdg-nlp/gpt-2-timex-sentence-recognition
+21:48:42 | Using Token Classification (NER pipeline)
+21:48:42 | Loading tokenizer...
+21:48:43 | Loading model with NER pipeline...
+Device set to use mps
+21:48:44 | Ready on mps.
+21:48:44 | 
+Running inference on 80 texts...
+21:48:44 |   Batch 1/80 (1 texts)
+21:48:44 |   Batch 2/80 (1 texts)
+21:48:44 |   Batch 3/80 (1 texts)
+21:48:44 |   Batch 4/80 (1 texts)
+21:48:44 |   Batch 5/80 (1 texts)
+21:48:44 |   Batch 6/80 (1 texts)
+21:48:44 |   Batch 7/80 (1 texts)
+21:48:44 |   Batch 8/80 (1 texts)
+21:48:44 |   Batch 9/80 (1 texts)
+21:48:44 |   Batch 10/80 (1 texts)
+21:48:44 |   Batch 11/80 (1 texts)
+21:48:44 |   Batch 12/80 (1 texts)
+21:48:44 |   Batch 13/80 (1 texts)
+21:48:44 |   Batch 14/80 (1 texts)
+21:48:44 |   Batch 15/80 (1 texts)
+21:48:44 |   Batch 16/80 (1 texts)
+21:48:44 |   Batch 17/80 (1 texts)
+21:48:44 |   Batch 18/80 (1 texts)
+21:48:44 |   Batch 19/80 (1 texts)
+21:48:44 |   Batch 20/80 (1 texts)
+21:48:44 |   Batch 21/80 (1 texts)
+21:48:44 |   Batch 22/80 (1 texts)
+21:48:44 |   Batch 23/80 (1 texts)
+21:48:44 |   Batch 24/80 (1 texts)
+21:48:44 |   Batch 25/80 (1 texts)
+21:48:44 |   Batch 26/80 (1 texts)
+21:48:44 |   Batch 27/80 (1 texts)
+21:48:44 |   Batch 28/80 (1 texts)
+21:48:44 |   Batch 29/80 (1 texts)
+21:48:44 |   Batch 30/80 (1 texts)
+21:48:44 |   Batch 31/80 (1 texts)
+21:48:44 |   Batch 32/80 (1 texts)
+21:48:44 |   Batch 33/80 (1 texts)
+21:48:44 |   Batch 34/80 (1 texts)
+21:48:44 |   Batch 35/80 (1 texts)
+21:48:45 |   Batch 36/80 (1 texts)
+21:48:45 |   Batch 37/80 (1 texts)
+21:48:45 |   Batch 38/80 (1 texts)
+21:48:45 |   Batch 39/80 (1 texts)
+21:48:45 |   Batch 40/80 (1 texts)
+21:48:45 |   Batch 41/80 (1 texts)
+21:48:45 |   Batch 42/80 (1 texts)
+21:48:45 |   Batch 43/80 (1 texts)
+21:48:45 |   Batch 44/80 (1 texts)
+21:48:45 |   Batch 45/80 (1 texts)
+21:48:45 |   Batch 46/80 (1 texts)
+21:48:45 |   Batch 47/80 (1 texts)
+21:48:45 |   Batch 48/80 (1 texts)
+21:48:45 |   Batch 49/80 (1 texts)
+21:48:45 |   Batch 50/80 (1 texts)
+21:48:45 |   Batch 51/80 (1 texts)
+21:48:45 |   Batch 52/80 (1 texts)
+21:48:45 |   Batch 53/80 (1 texts)
+21:48:45 |   Batch 54/80 (1 texts)
+21:48:45 |   Batch 55/80 (1 texts)
+21:48:45 |   Batch 56/80 (1 texts)
+21:48:45 |   Batch 57/80 (1 texts)
+21:48:45 |   Batch 58/80 (1 texts)
+21:48:45 |   Batch 59/80 (1 texts)
+21:48:45 |   Batch 60/80 (1 texts)
+21:48:45 |   Batch 61/80 (1 texts)
+21:48:45 |   Batch 62/80 (1 texts)
+21:48:45 |   Batch 63/80 (1 texts)
+21:48:45 |   Batch 64/80 (1 texts)
+21:48:45 |   Batch 65/80 (1 texts)
+21:48:45 |   Batch 66/80 (1 texts)
+21:48:45 |   Batch 67/80 (1 texts)
+21:48:45 |   Batch 68/80 (1 texts)
+21:48:45 |   Batch 69/80 (1 texts)
+21:48:45 |   Batch 70/80 (1 texts)
+21:48:45 |   Batch 71/80 (1 texts)
+21:48:45 |   Batch 72/80 (1 texts)
+21:48:45 |   Batch 73/80 (1 texts)
+21:48:45 |   Batch 74/80 (1 texts)
+21:48:45 |   Batch 75/80 (1 texts)
+21:48:45 |   Batch 76/80 (1 texts)
+21:48:45 |   Batch 77/80 (1 texts)
+21:48:45 |   Batch 78/80 (1 texts)
+21:48:45 |   Batch 79/80 (1 texts)
+21:48:45 |   Batch 80/80 (1 texts)
+21:48:45 | 
+Evaluating...
+21:48:45 | 
+==================================================
+21:48:45 | EVALUATION RESULTS
+21:48:45 | ==================================================
+21:48:45 |   Rows evaluated : 80
+21:48:45 |   TP / FP / FN   : 0 / 48 / 0
+21:48:45 | --------------------------------------------------
+21:48:45 |   Micro Precision : 0.0000
+21:48:45 |   Micro Recall    : 0.0000
+21:48:45 |   Micro F1        : 0.0000
+21:48:45 | --------------------------------------------------
+21:48:45 |   Macro F1        : 0.0000
+21:48:45 | ==================================================
+21:48:45 | 
+Output saved → outputs/namesarnav_timex-perturbed__mdg-nlp_gpt-2-timex-sentence-recognition__predictions.jsonl
+21:48:45 |   - Rows 1-80: Individual predictions
+21:48:45 |   - Row 81: FINAL_METRICS
+21:48:45 | Metrics saved → outputs/namesarnav_timex-perturbed__mdg-nlp_gpt-2-timex-sentence-recognition__predictions_metrics.json
+21:48:45 | Done.
+ ### Inference completed successfully ### 
+Progress: 3 successful, 0 failed
+
+======================================================
+TIMEX PIPELINE COMPLETE
+======================================================
+Finished at: Thu Mar 19 21:48:46 CDT 2026
+
+SUMMARY:
+  Total runs: 3
+  Successful: 3
+  Failed: 0
+  Success rate: %   Success rate: %
+
+Outputs: outputs/
+Results: results/
+Log: logs/timex_pipeline_20260319_214822.log
+======================================================

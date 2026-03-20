@@ -1,0 +1,328 @@
+======================================================
+EVENTX INFERENCE PIPELINE
+Started at: Thu Mar 19 21:49:19 CDT 2026
+======================================================
+
+Total combinations: 3
+
+
+======================================================
+RUN [1/3]
+Model: mdg-nlp/RoBERTa-eventx-recognition-sentence
+Dataset: mdg-nlp/eventx-recognition-perturbed-gpt
+======================================================
+>>> Running inference...
+21:49:21 | ============================================================
+21:49:21 | NER INFERENCE PIPELINE
+21:49:21 |   Model       : mdg-nlp/RoBERTa-eventx-recognition-sentence
+21:49:21 |   Dataset     : mdg-nlp/eventx-recognition-perturbed-gpt  (split=test)
+21:49:21 |   Task        : event
+21:49:21 |   Max samples : 400
+21:49:21 |   Gold field  : gold_event_expressions
+21:49:21 |   Pred field  : post_processed_event_expressions
+21:49:21 | ============================================================
+21:49:21 | 
+Loading dataset: mdg-nlp/eventx-recognition-perturbed-gpt
+21:49:23 | Processing 400 rows from test split.
+21:49:23 | 
+Loading model: mdg-nlp/RoBERTa-eventx-recognition-sentence
+21:49:23 | Using Token Classification (NER pipeline)
+21:49:23 | Loading tokenizer...
+21:49:23 | Loading model with NER pipeline...
+Device set to use mps
+21:49:24 | Ready on mps.
+21:49:24 | 
+Running inference on 400 texts...
+21:49:24 |   Batch 1/25 (16 texts)
+21:49:24 |   Batch 2/25 (16 texts)
+21:49:24 |   Batch 3/25 (16 texts)
+21:49:24 |   Batch 4/25 (16 texts)
+21:49:24 |   Batch 5/25 (16 texts)
+21:49:24 |   Batch 6/25 (16 texts)
+21:49:24 |   Batch 7/25 (16 texts)
+21:49:24 |   Batch 8/25 (16 texts)
+21:49:24 |   Batch 9/25 (16 texts)
+21:49:25 |   Batch 10/25 (16 texts)
+21:49:25 |   Batch 11/25 (16 texts)
+21:49:25 |   Batch 12/25 (16 texts)
+21:49:25 |   Batch 13/25 (16 texts)
+21:49:25 |   Batch 14/25 (16 texts)
+21:49:25 |   Batch 15/25 (16 texts)
+21:49:25 |   Batch 16/25 (16 texts)
+21:49:25 |   Batch 17/25 (16 texts)
+21:49:25 |   Batch 18/25 (16 texts)
+21:49:25 |   Batch 19/25 (16 texts)
+21:49:26 |   Batch 20/25 (16 texts)
+21:49:26 |   Batch 21/25 (16 texts)
+21:49:26 |   Batch 22/25 (16 texts)
+21:49:26 |   Batch 23/25 (16 texts)
+21:49:26 |   Batch 24/25 (16 texts)
+21:49:26 |   Batch 25/25 (16 texts)
+21:49:26 | 
+Evaluating...
+21:49:26 | 
+==================================================
+21:49:26 | EVALUATION RESULTS
+21:49:26 | ==================================================
+21:49:26 |   Rows evaluated : 400
+21:49:26 |   TP / FP / FN   : 1143 / 1923 / 361
+21:49:26 | --------------------------------------------------
+21:49:26 |   Micro Precision : 0.3728
+21:49:26 |   Micro Recall    : 0.7600
+21:49:26 |   Micro F1        : 0.5002
+21:49:26 | --------------------------------------------------
+21:49:26 |   Macro F1        : 0.4931
+21:49:26 | ==================================================
+21:49:26 | 
+Output saved → outputs/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl
+21:49:26 |   - Rows 1-400: Individual predictions
+21:49:26 |   - Row 401: FINAL_METRICS
+21:49:26 | Metrics saved → outputs/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions_metrics.json
+21:49:26 | Done.
+✓ Inference completed successfully
+>>> Running evaluation...
+Loaded 401 rows from outputs/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl
+
+==================================================
+EVALUATION RESULTS
+==================================================
+  Gold field : gold_eventx_expressions
+  Pred field : post_processed_eventx_expressions
+  Rows       : 401 evaluated / 401 total
+--------------------------------------------------
+  Micro Precision : 0.0000
+  Micro Recall    : 0.0000
+  Micro F1        : 0.0000   (TP=0  FP=0  FN=0)
+--------------------------------------------------
+  Macro F1        : 0.0000
+==================================================
+
+Results saved to: results/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_RoBERTa-eventx-recognition-sentence__results.jsonl
+  - Rows 1-401: Individual predictions
+  - Row 402: FINAL_METRICS (Micro/Macro F1)
+Metrics saved to: results/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_RoBERTa-eventx-recognition-sentence__results_metrics.json
+✓ Evaluation completed successfully
+  Predictions: outputs/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_RoBERTa-eventx-recognition-sentence__predictions.jsonl
+  Results: results/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_RoBERTa-eventx-recognition-sentence__results.jsonl
+  Metrics: results/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_RoBERTa-eventx-recognition-sentence__results_metrics.json
+Progress: 1 successful, 0 failed
+
+======================================================
+RUN [2/3]
+Model: mdg-nlp/T5-eventx-sentence-recoginition
+Dataset: mdg-nlp/eventx-recognition-perturbed-gpt
+======================================================
+>>> Running inference...
+21:49:29 | ============================================================
+21:49:29 | NER INFERENCE PIPELINE
+21:49:29 |   Model       : mdg-nlp/T5-eventx-sentence-recoginition
+21:49:29 |   Dataset     : mdg-nlp/eventx-recognition-perturbed-gpt  (split=test)
+21:49:29 |   Task        : event
+21:49:29 |   Max samples : 400
+21:49:29 |   Gold field  : gold_event_expressions
+21:49:29 |   Pred field  : post_processed_event_expressions
+21:49:29 | ============================================================
+21:49:29 | 
+Loading dataset: mdg-nlp/eventx-recognition-perturbed-gpt
+21:49:30 | Processing 400 rows from test split.
+21:49:30 | 
+Loading model: mdg-nlp/T5-eventx-sentence-recoginition
+21:49:30 | Using Token Classification (NER pipeline)
+21:49:30 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+21:49:30 | Loading model with NER pipeline...
+Device set to use mps
+21:49:31 | Ready on mps.
+21:49:31 | 
+Running inference on 400 texts...
+21:49:31 |   Batch 1/25 (16 texts)
+21:49:31 |   Batch 2/25 (16 texts)
+21:49:31 |   Batch 3/25 (16 texts)
+21:49:32 |   Batch 4/25 (16 texts)
+21:49:32 |   Batch 5/25 (16 texts)
+21:49:32 |   Batch 6/25 (16 texts)
+21:49:32 |   Batch 7/25 (16 texts)
+21:49:32 |   Batch 8/25 (16 texts)
+21:49:32 |   Batch 9/25 (16 texts)
+21:49:32 |   Batch 10/25 (16 texts)
+21:49:32 |   Batch 11/25 (16 texts)
+21:49:33 |   Batch 12/25 (16 texts)
+21:49:33 |   Batch 13/25 (16 texts)
+21:49:33 |   Batch 14/25 (16 texts)
+21:49:33 |   Batch 15/25 (16 texts)
+21:49:33 |   Batch 16/25 (16 texts)
+21:49:33 |   Batch 17/25 (16 texts)
+21:49:33 |   Batch 18/25 (16 texts)
+21:49:34 |   Batch 19/25 (16 texts)
+21:49:34 |   Batch 20/25 (16 texts)
+21:49:34 |   Batch 21/25 (16 texts)
+21:49:34 |   Batch 22/25 (16 texts)
+21:49:34 |   Batch 23/25 (16 texts)
+21:49:34 |   Batch 24/25 (16 texts)
+21:49:34 |   Batch 25/25 (16 texts)
+21:49:34 | 
+Evaluating...
+21:49:34 | 
+==================================================
+21:49:34 | EVALUATION RESULTS
+21:49:34 | ==================================================
+21:49:34 |   Rows evaluated : 400
+21:49:34 |   TP / FP / FN   : 824 / 1796 / 680
+21:49:34 | --------------------------------------------------
+21:49:34 |   Micro Precision : 0.3145
+21:49:34 |   Micro Recall    : 0.5479
+21:49:34 |   Micro F1        : 0.3996
+21:49:34 | --------------------------------------------------
+21:49:34 |   Macro F1        : 0.3774
+21:49:34 | ==================================================
+21:49:34 | 
+Output saved → outputs/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_T5-eventx-sentence-recoginition__predictions.jsonl
+21:49:34 |   - Rows 1-400: Individual predictions
+21:49:34 |   - Row 401: FINAL_METRICS
+21:49:34 | Metrics saved → outputs/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_T5-eventx-sentence-recoginition__predictions_metrics.json
+21:49:34 | Done.
+✓ Inference completed successfully
+>>> Running evaluation...
+Loaded 401 rows from outputs/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_T5-eventx-sentence-recoginition__predictions.jsonl
+
+==================================================
+EVALUATION RESULTS
+==================================================
+  Gold field : gold_eventx_expressions
+  Pred field : post_processed_eventx_expressions
+  Rows       : 401 evaluated / 401 total
+--------------------------------------------------
+  Micro Precision : 0.0000
+  Micro Recall    : 0.0000
+  Micro F1        : 0.0000   (TP=0  FP=0  FN=0)
+--------------------------------------------------
+  Macro F1        : 0.0000
+==================================================
+
+Results saved to: results/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_T5-eventx-sentence-recoginition__results.jsonl
+  - Rows 1-401: Individual predictions
+  - Row 402: FINAL_METRICS (Micro/Macro F1)
+Metrics saved to: results/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_T5-eventx-sentence-recoginition__results_metrics.json
+✓ Evaluation completed successfully
+  Predictions: outputs/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_T5-eventx-sentence-recoginition__predictions.jsonl
+  Results: results/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_T5-eventx-sentence-recoginition__results.jsonl
+  Metrics: results/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_T5-eventx-sentence-recoginition__results_metrics.json
+Progress: 2 successful, 0 failed
+
+======================================================
+RUN [3/3]
+Model: mdg-nlp/gpt-2-eventx-sentence-recognition
+Dataset: mdg-nlp/eventx-recognition-perturbed-gpt
+======================================================
+>>> Running inference...
+21:49:37 | ============================================================
+21:49:37 | NER INFERENCE PIPELINE
+21:49:37 |   Model       : mdg-nlp/gpt-2-eventx-sentence-recognition
+21:49:37 |   Dataset     : mdg-nlp/eventx-recognition-perturbed-gpt  (split=test)
+21:49:37 |   Task        : event
+21:49:37 |   Max samples : 400
+21:49:37 |   Gold field  : gold_event_expressions
+21:49:37 |   Pred field  : post_processed_event_expressions
+21:49:37 | ============================================================
+21:49:37 | 
+Loading dataset: mdg-nlp/eventx-recognition-perturbed-gpt
+21:49:38 | Processing 400 rows from test split.
+21:49:38 | 
+Loading model: mdg-nlp/gpt-2-eventx-sentence-recognition
+21:49:38 | Using Token Classification (NER pipeline)
+21:49:38 | Loading tokenizer...
+21:49:39 | Loading model with NER pipeline...
+Device set to use mps
+21:49:39 | Ready on mps.
+21:49:39 | 
+Running inference on 400 texts...
+21:49:39 |   Batch 1/25 (16 texts)
+21:49:39 |   Batch 2/25 (16 texts)
+21:49:40 |   Batch 3/25 (16 texts)
+21:49:40 |   Batch 4/25 (16 texts)
+21:49:40 |   Batch 5/25 (16 texts)
+21:49:40 |   Batch 6/25 (16 texts)
+21:49:40 |   Batch 7/25 (16 texts)
+21:49:40 |   Batch 8/25 (16 texts)
+21:49:40 |   Batch 9/25 (16 texts)
+21:49:41 |   Batch 10/25 (16 texts)
+21:49:41 |   Batch 11/25 (16 texts)
+21:49:41 |   Batch 12/25 (16 texts)
+21:49:41 |   Batch 13/25 (16 texts)
+21:49:41 |   Batch 14/25 (16 texts)
+21:49:41 |   Batch 15/25 (16 texts)
+21:49:41 |   Batch 16/25 (16 texts)
+21:49:42 |   Batch 17/25 (16 texts)
+21:49:42 |   Batch 18/25 (16 texts)
+21:49:42 |   Batch 19/25 (16 texts)
+21:49:42 |   Batch 20/25 (16 texts)
+21:49:42 |   Batch 21/25 (16 texts)
+21:49:42 |   Batch 22/25 (16 texts)
+21:49:42 |   Batch 23/25 (16 texts)
+21:49:43 |   Batch 24/25 (16 texts)
+21:49:43 |   Batch 25/25 (16 texts)
+21:49:43 | 
+Evaluating...
+21:49:43 | 
+==================================================
+21:49:43 | EVALUATION RESULTS
+21:49:43 | ==================================================
+21:49:43 |   Rows evaluated : 400
+21:49:43 |   TP / FP / FN   : 1171 / 1976 / 333
+21:49:43 | --------------------------------------------------
+21:49:43 |   Micro Precision : 0.3721
+21:49:43 |   Micro Recall    : 0.7786
+21:49:43 |   Micro F1        : 0.5035
+21:49:43 | --------------------------------------------------
+21:49:43 |   Macro F1        : 0.4935
+21:49:43 | ==================================================
+21:49:43 | 
+Output saved → outputs/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_gpt-2-eventx-sentence-recognition__predictions.jsonl
+21:49:43 |   - Rows 1-400: Individual predictions
+21:49:43 |   - Row 401: FINAL_METRICS
+21:49:43 | Metrics saved → outputs/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_gpt-2-eventx-sentence-recognition__predictions_metrics.json
+21:49:43 | Done.
+✓ Inference completed successfully
+>>> Running evaluation...
+Loaded 401 rows from outputs/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_gpt-2-eventx-sentence-recognition__predictions.jsonl
+
+==================================================
+EVALUATION RESULTS
+==================================================
+  Gold field : gold_eventx_expressions
+  Pred field : post_processed_eventx_expressions
+  Rows       : 401 evaluated / 401 total
+--------------------------------------------------
+  Micro Precision : 0.0000
+  Micro Recall    : 0.0000
+  Micro F1        : 0.0000   (TP=0  FP=0  FN=0)
+--------------------------------------------------
+  Macro F1        : 0.0000
+==================================================
+
+Results saved to: results/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_gpt-2-eventx-sentence-recognition__results.jsonl
+  - Rows 1-401: Individual predictions
+  - Row 402: FINAL_METRICS (Micro/Macro F1)
+Metrics saved to: results/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_gpt-2-eventx-sentence-recognition__results_metrics.json
+✓ Evaluation completed successfully
+  Predictions: outputs/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_gpt-2-eventx-sentence-recognition__predictions.jsonl
+  Results: results/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_gpt-2-eventx-sentence-recognition__results.jsonl
+  Metrics: results/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_gpt-2-eventx-sentence-recognition__results_metrics.json
+Progress: 3 successful, 0 failed
+
+======================================================
+EVENTX PIPELINE COMPLETE
+======================================================
+Finished at: Thu Mar 19 21:49:44 CDT 2026
+
+SUMMARY:
+  Total runs: 3
+  Successful: 3
+  Failed: 0
+  Success rate: %   Success rate: %
+
+Outputs: outputs/
+Results: results/
+Log: logs/eventx_pipeline_20260319_214919.log
+======================================================

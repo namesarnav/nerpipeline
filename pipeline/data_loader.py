@@ -8,6 +8,13 @@ def load_hf_dataset(dataset_name: str) -> List[dict]:
     ds = load_dataset(dataset_name, split="test")
     return [dict(row) for row in ds]
 
+def load_from_jsonl(filepath: str) -> List[dict]
+    with open(filepath, 'r') as f:
+        ds = f.readlines()
+
+    ds = json.loads(ds)
+    return [dict(row) for row in ds]
+
 
 def save_jsonl(rows: List[dict], path: str):
     os.makedirs(os.path.dirname(path) if os.path.dirname(path) else ".", exist_ok=True)

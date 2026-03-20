@@ -1,0 +1,200 @@
+======================================================
+TIMEX INFERENCE PIPELINE
+Started at: Thu Mar 19 16:56:54 CDT 2026
+======================================================
+
+Total combinations: 3
+
+
+======================================================
+RUN [1/3]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-perturbed
+======================================================
+>>> Running inference...
+16:56:57 | ============================================================
+16:56:57 | NER INFERENCE PIPELINE
+16:56:57 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+16:56:57 |   Dataset     : mdg-nlp/timex-recognition-sentence-perturbed  (split=test)
+16:56:57 |   Task        : time
+16:56:57 |   Max samples : 80
+16:56:57 |   Gold field  : gold_timex_expressions
+16:56:57 |   Pred field  : post_processed_timex_expressions
+16:56:57 | ============================================================
+16:56:57 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-perturbed
+Traceback (most recent call last):
+  File "/Volumes/Github/ner/nerpipeline/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/ner/nerpipeline/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/ner/nerpipeline/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1652, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1629, in dataset_module_factory
+    ).get_module()
+      ~~~~~~~~~~^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1025, in get_module
+    module_name, default_builder_kwargs = infer_module_for_data_files(
+                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        data_files=data_files,
+        ^^^^^^^^^^^^^^^^^^^^^^
+        path=self.name,
+        ^^^^^^^^^^^^^^^
+        download_config=self.download_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 602, in infer_module_for_data_files
+    raise DataFilesNotFoundError("No (supported) data files found" + (f" in {path}" if path else ""))
+datasets.exceptions.DataFilesNotFoundError: No (supported) data files found in mdg-nlp/timex-recognition-sentence-perturbed
+ ### Inference completed successfully ### 
+Progress: 1 successful, 0 failed
+
+======================================================
+RUN [2/3]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-perturbed
+======================================================
+>>> Running inference...
+16:57:00 | ============================================================
+16:57:00 | NER INFERENCE PIPELINE
+16:57:00 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+16:57:00 |   Dataset     : mdg-nlp/timex-recognition-sentence-perturbed  (split=test)
+16:57:00 |   Task        : time
+16:57:00 |   Max samples : 80
+16:57:00 |   Gold field  : gold_timex_expressions
+16:57:00 |   Pred field  : post_processed_timex_expressions
+16:57:00 | ============================================================
+16:57:00 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-perturbed
+Traceback (most recent call last):
+  File "/Volumes/Github/ner/nerpipeline/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/ner/nerpipeline/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/ner/nerpipeline/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1652, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1629, in dataset_module_factory
+    ).get_module()
+      ~~~~~~~~~~^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1025, in get_module
+    module_name, default_builder_kwargs = infer_module_for_data_files(
+                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        data_files=data_files,
+        ^^^^^^^^^^^^^^^^^^^^^^
+        path=self.name,
+        ^^^^^^^^^^^^^^^
+        download_config=self.download_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 602, in infer_module_for_data_files
+    raise DataFilesNotFoundError("No (supported) data files found" + (f" in {path}" if path else ""))
+datasets.exceptions.DataFilesNotFoundError: No (supported) data files found in mdg-nlp/timex-recognition-sentence-perturbed
+ ### Inference completed successfully ### 
+Progress: 2 successful, 0 failed
+
+======================================================
+RUN [3/3]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/timex-recognition-sentence-perturbed
+======================================================
+>>> Running inference...
+16:57:04 | ============================================================
+16:57:04 | NER INFERENCE PIPELINE
+16:57:04 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+16:57:04 |   Dataset     : mdg-nlp/timex-recognition-sentence-perturbed  (split=test)
+16:57:04 |   Task        : time
+16:57:04 |   Max samples : 80
+16:57:04 |   Gold field  : gold_timex_expressions
+16:57:04 |   Pred field  : post_processed_timex_expressions
+16:57:04 | ============================================================
+16:57:04 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-perturbed
+Traceback (most recent call last):
+  File "/Volumes/Github/ner/nerpipeline/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/ner/nerpipeline/run.py", line 81, in main
+    rows = load_hf_dataset(args.dataset)
+  File "/Volumes/Github/ner/nerpipeline/pipeline/loader.py", line 18, in load_hf_dataset
+    ds = load_dataset(dataset_name, split="test")
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<12 lines>...
+        **config_kwargs,
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<8 lines>...
+        _require_custom_configs=bool(config_kwargs),
+    )
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1652, in dataset_module_factory
+    raise e1 from None
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1629, in dataset_module_factory
+    ).get_module()
+      ~~~~~~~~~~^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 1025, in get_module
+    module_name, default_builder_kwargs = infer_module_for_data_files(
+                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        data_files=data_files,
+        ^^^^^^^^^^^^^^^^^^^^^^
+        path=self.name,
+        ^^^^^^^^^^^^^^^
+        download_config=self.download_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/datasets/load.py", line 602, in infer_module_for_data_files
+    raise DataFilesNotFoundError("No (supported) data files found" + (f" in {path}" if path else ""))
+datasets.exceptions.DataFilesNotFoundError: No (supported) data files found in mdg-nlp/timex-recognition-sentence-perturbed
+ ### Inference completed successfully ### 
+Progress: 3 successful, 0 failed
+
+======================================================
+TIMEX PIPELINE COMPLETE
+======================================================
+Finished at: Thu Mar 19 16:57:05 CDT 2026
+
+SUMMARY:
+  Total runs: 3
+  Successful: 3
+  Failed: 0
+  Success rate: %   Success rate: %
+
+Outputs: outputs/
+Results: results/
+Log: logs/timex_pipeline_20260319_165654.log
+======================================================
