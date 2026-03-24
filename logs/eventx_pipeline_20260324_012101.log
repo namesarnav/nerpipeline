@@ -1,0 +1,115 @@
+======================================================
+EVENTX INFERENCE PIPELINE
+Started at: Tue Mar 24 01:21:01 CDT 2026
+======================================================
+
+Total combinations: 6
+
+
+======================================================
+RUN [1/6]
+Model: mdg-nlp/T5-eventx-sentence-recoginition
+Dataset: mdg-nlp/eventx-recognition-perturbed-gpt
+======================================================
+>>> Running inference...
+01:21:03 | ============================================================
+01:21:03 | NER INFERENCE PIPELINE
+01:21:03 |   Model       : mdg-nlp/T5-eventx-sentence-recoginition
+01:21:03 |   Dataset     : mdg-nlp/eventx-recognition-perturbed-gpt  (split=test)
+01:21:03 |   Task        : event
+01:21:03 |   Max samples : 400
+01:21:03 |   Gold field  : gold_event_expressions
+01:21:03 |   Pred field  : post_processed_event_expressions
+01:21:03 | ============================================================
+01:21:03 | 
+Loading dataset: mdg-nlp/eventx-recognition-perturbed-gpt
+01:21:06 | Processing 400 rows from test split.
+01:21:06 | 
+Loading model: mdg-nlp/T5-eventx-sentence-recoginition
+01:21:06 | Using Token Classification (NER pipeline)
+01:21:06 | Loading tokenizer...
+Traceback (most recent call last):
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 403, in hf_raise_for_status
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/api/models/mdg-nlp/T5-eventx-sentence-recoginition/tree/main/additional_chat_templates?recursive=False&expand=False
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Volumes/Github/ner/nerpipeline/run.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/ner/nerpipeline/run.py", line 94, in main
+    inference = NERInference(
+        model_name=args.model,
+    ...<3 lines>...
+        logger=logger,
+    )
+  File "/Volumes/Github/ner/nerpipeline/pipeline/inference.py", line 53, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_name, use_fast=True, add_prefix_space=True
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/transformers/models/auto/tokenization_auto.py", line 1156, in from_pretrained
+    return tokenizer_class.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/transformers/tokenization_utils_base.py", line 2039, in from_pretrained
+    for template in list_repo_templates(
+                    ~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        token=token,
+        ^^^^^^^^^^^^
+    ):
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/transformers/utils/hub.py", line 169, in list_repo_templates
+    for entry in list_repo_tree(
+                 ~~~~~~~~~~~~~~^
+        repo_id=repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        token=token,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/huggingface_hub/hf_api.py", line 3191, in list_repo_tree
+    for path_info in paginate(path=tree_url, headers=headers, params={"recursive": recursive, "expand": expand}):
+                     ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/huggingface_hub/utils/_pagination.py", line 37, in paginate
+    hf_raise_for_status(r)
+    ~~~~~~~~~~~~~~~~~~~^^^
+  File "/Users/arnav/.pyenv/versions/3.13.7/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 453, in hf_raise_for_status
+    raise _format(RepositoryNotFoundError, message, response) from e
+huggingface_hub.errors.RepositoryNotFoundError: 404 Client Error. (Request ID: Root=1-69c22d52-5295012f4226139d200adc83;b2a9bc05-fd84-41c5-9c49-d69bd774bce1)
+
+Repository Not Found for url: https://huggingface.co/api/models/mdg-nlp/T5-eventx-sentence-recoginition/tree/main/additional_chat_templates?recursive=False&expand=False.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated. For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+✓ Inference completed successfully
+>>> Running evaluation...
+Traceback (most recent call last):
+  File "/Volumes/Github/ner/nerpipeline/evaluate.py", line 199, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Github/ner/nerpipeline/evaluate.py", line 162, in main
+    with open(args.input, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'outputs/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_T5-eventx-sentence-recoginition__predictions.jsonl'
+✓ Evaluation completed successfully
+  Predictions: outputs/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_T5-eventx-sentence-recoginition__predictions.jsonl
+  Results: results/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_T5-eventx-sentence-recoginition__results.jsonl
+  Metrics: results/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_T5-eventx-sentence-recoginition__results_metrics.json
+Progress: 1 successful, 0 failed
+
+======================================================
+RUN [2/6]
+Model: mdg-nlp/T5-eventx-sentence-recoginition
+Dataset: mdg-nlp/eventx-recognition-original
+======================================================
+>>> Running inference...

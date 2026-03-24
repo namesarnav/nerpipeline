@@ -1,0 +1,413 @@
+======================================================
+eventx INFERENCE PIPELINE
+Started at: Tue Mar 24 01:24:32 CDT 2026
+======================================================
+
+Total combinations: 5
+
+
+======================================================
+RUN [1/5]
+Model: mdg-nlp/T5-eventx-recognition-sentence
+Dataset: mdg-nlp/eventx-recognition-original
+======================================================
+>>> Running inference...
+01:24:34 | ============================================================
+01:24:34 | NER INFERENCE PIPELINE
+01:24:34 |   Model       : mdg-nlp/T5-eventx-recognition-sentence
+01:24:34 |   Dataset     : mdg-nlp/eventx-recognition-original  (split=test)
+01:24:34 |   Task        : event
+01:24:34 |   Max samples : 400
+01:24:34 |   Gold field  : gold_event_expressions
+01:24:34 |   Pred field  : post_processed_event_expressions
+01:24:34 | ============================================================
+01:24:34 | 
+Loading dataset: mdg-nlp/eventx-recognition-original
+01:24:36 | Processing 400 rows from test split.
+01:24:36 | 
+Loading model: mdg-nlp/T5-eventx-recognition-sentence
+01:24:36 | Using Token Classification (NER pipeline)
+01:24:36 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+01:24:36 | Loading model with NER pipeline...
+Device set to use mps
+01:24:36 | Ready on mps.
+01:24:36 | 
+Running inference on 400 texts...
+01:24:36 |   Batch 1/25 (16 texts)
+01:24:36 |   Batch 2/25 (16 texts)
+01:24:36 |   Batch 3/25 (16 texts)
+01:24:37 |   Batch 4/25 (16 texts)
+01:24:37 |   Batch 5/25 (16 texts)
+01:24:37 |   Batch 6/25 (16 texts)
+01:24:37 |   Batch 7/25 (16 texts)
+01:24:37 |   Batch 8/25 (16 texts)
+01:24:37 |   Batch 9/25 (16 texts)
+01:24:37 |   Batch 10/25 (16 texts)
+01:24:37 |   Batch 11/25 (16 texts)
+01:24:37 |   Batch 12/25 (16 texts)
+01:24:37 |   Batch 13/25 (16 texts)
+01:24:37 |   Batch 14/25 (16 texts)
+01:24:37 |   Batch 15/25 (16 texts)
+01:24:37 |   Batch 16/25 (16 texts)
+01:24:37 |   Batch 17/25 (16 texts)
+01:24:37 |   Batch 18/25 (16 texts)
+01:24:37 |   Batch 19/25 (16 texts)
+01:24:37 |   Batch 20/25 (16 texts)
+01:24:37 |   Batch 21/25 (16 texts)
+01:24:37 |   Batch 22/25 (16 texts)
+01:24:37 |   Batch 23/25 (16 texts)
+01:24:38 |   Batch 24/25 (16 texts)
+01:24:38 |   Batch 25/25 (16 texts)
+01:24:38 | 
+Evaluating...
+01:24:38 | 
+==================================================
+01:24:38 | EVALUATION RESULTS
+01:24:38 | ==================================================
+01:24:38 |   Rows evaluated : 400
+01:24:38 |   TP / FP / FN   : 1197 / 639 / 349
+01:24:38 | --------------------------------------------------
+01:24:38 |   Micro Precision : 0.6520
+01:24:38 |   Micro Recall    : 0.7743
+01:24:38 |   Micro F1        : 0.7079
+01:24:38 | --------------------------------------------------
+01:24:38 |   Macro F1        : 0.7225
+01:24:38 | ==================================================
+01:24:38 | 
+Output saved → outputs/mdg-nlp_eventx-recognition-original__mdg-nlp_T5-eventx-recognition-sentence__predictions.jsonl
+01:24:38 |   - Rows 1-400: Individual predictions
+01:24:38 |   - Row 401: FINAL_METRICS
+01:24:38 | Metrics saved → outputs/mdg-nlp_eventx-recognition-original__mdg-nlp_T5-eventx-recognition-sentence__predictions_metrics.json
+01:24:38 | Done.
+ ### Inference completed successfully ### 
+Progress: 1 successful, 0 failed
+
+======================================================
+RUN [2/5]
+Model: mdg-nlp/T5-eventx-recognition-sentence
+Dataset: mdg-nlp/eventx-recognition-perturbed
+======================================================
+>>> Running inference...
+01:24:40 | ============================================================
+01:24:40 | NER INFERENCE PIPELINE
+01:24:40 |   Model       : mdg-nlp/T5-eventx-recognition-sentence
+01:24:40 |   Dataset     : mdg-nlp/eventx-recognition-perturbed  (split=test)
+01:24:40 |   Task        : event
+01:24:40 |   Max samples : 400
+01:24:40 |   Gold field  : gold_event_expressions
+01:24:40 |   Pred field  : post_processed_event_expressions
+01:24:40 | ============================================================
+01:24:40 | 
+Loading dataset: mdg-nlp/eventx-recognition-perturbed
+01:24:42 | Processing 400 rows from test split.
+01:24:42 | 
+Loading model: mdg-nlp/T5-eventx-recognition-sentence
+01:24:42 | Using Token Classification (NER pipeline)
+01:24:42 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+01:24:42 | Loading model with NER pipeline...
+Device set to use mps
+01:24:42 | Ready on mps.
+01:24:42 | 
+Running inference on 400 texts...
+01:24:42 |   Batch 1/25 (16 texts)
+01:24:42 |   Batch 2/25 (16 texts)
+01:24:42 |   Batch 3/25 (16 texts)
+01:24:42 |   Batch 4/25 (16 texts)
+01:24:42 |   Batch 5/25 (16 texts)
+01:24:43 |   Batch 6/25 (16 texts)
+01:24:43 |   Batch 7/25 (16 texts)
+01:24:43 |   Batch 8/25 (16 texts)
+01:24:43 |   Batch 9/25 (16 texts)
+01:24:43 |   Batch 10/25 (16 texts)
+01:24:43 |   Batch 11/25 (16 texts)
+01:24:43 |   Batch 12/25 (16 texts)
+01:24:43 |   Batch 13/25 (16 texts)
+01:24:43 |   Batch 14/25 (16 texts)
+01:24:43 |   Batch 15/25 (16 texts)
+01:24:43 |   Batch 16/25 (16 texts)
+01:24:43 |   Batch 17/25 (16 texts)
+01:24:43 |   Batch 18/25 (16 texts)
+01:24:43 |   Batch 19/25 (16 texts)
+01:24:43 |   Batch 20/25 (16 texts)
+01:24:43 |   Batch 21/25 (16 texts)
+01:24:43 |   Batch 22/25 (16 texts)
+01:24:43 |   Batch 23/25 (16 texts)
+01:24:43 |   Batch 24/25 (16 texts)
+01:24:43 |   Batch 25/25 (16 texts)
+01:24:44 | 
+Evaluating...
+01:24:44 | 
+==================================================
+01:24:44 | EVALUATION RESULTS
+01:24:44 | ==================================================
+01:24:44 |   Rows evaluated : 400
+01:24:44 |   TP / FP / FN   : 1148 / 667 / 398
+01:24:44 | --------------------------------------------------
+01:24:44 |   Micro Precision : 0.6325
+01:24:44 |   Micro Recall    : 0.7426
+01:24:44 |   Micro F1        : 0.6831
+01:24:44 | --------------------------------------------------
+01:24:44 |   Macro F1        : 0.6924
+01:24:44 | ==================================================
+01:24:44 | 
+Output saved → outputs/mdg-nlp_eventx-recognition-perturbed__mdg-nlp_T5-eventx-recognition-sentence__predictions.jsonl
+01:24:44 |   - Rows 1-400: Individual predictions
+01:24:44 |   - Row 401: FINAL_METRICS
+01:24:44 | Metrics saved → outputs/mdg-nlp_eventx-recognition-perturbed__mdg-nlp_T5-eventx-recognition-sentence__predictions_metrics.json
+01:24:44 | Done.
+ ### Inference completed successfully ### 
+Progress: 2 successful, 0 failed
+
+======================================================
+RUN [3/5]
+Model: mdg-nlp/T5-eventx-recognition-sentence
+Dataset: mdg-nlp/domain-eventx-recognition-sentence-updated
+======================================================
+>>> Running inference...
+01:24:46 | ============================================================
+01:24:46 | NER INFERENCE PIPELINE
+01:24:46 |   Model       : mdg-nlp/T5-eventx-recognition-sentence
+01:24:46 |   Dataset     : mdg-nlp/domain-eventx-recognition-sentence-updated  (split=test)
+01:24:46 |   Task        : event
+01:24:46 |   Max samples : 400
+01:24:46 |   Gold field  : gold_event_expressions
+01:24:46 |   Pred field  : post_processed_event_expressions
+01:24:46 | ============================================================
+01:24:46 | 
+Loading dataset: mdg-nlp/domain-eventx-recognition-sentence-updated
+01:24:48 | Processing 400 rows from test split.
+01:24:48 | 
+Loading model: mdg-nlp/T5-eventx-recognition-sentence
+01:24:48 | Using Token Classification (NER pipeline)
+01:24:48 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+01:24:48 | Loading model with NER pipeline...
+Device set to use mps
+01:24:48 | Ready on mps.
+01:24:48 | 
+Running inference on 400 texts...
+01:24:48 |   Batch 1/25 (16 texts)
+01:24:48 |   Batch 2/25 (16 texts)
+01:24:48 |   Batch 3/25 (16 texts)
+01:24:48 |   Batch 4/25 (16 texts)
+01:24:49 |   Batch 5/25 (16 texts)
+01:24:49 |   Batch 6/25 (16 texts)
+01:24:49 |   Batch 7/25 (16 texts)
+01:24:49 |   Batch 8/25 (16 texts)
+01:24:49 |   Batch 9/25 (16 texts)
+01:24:49 |   Batch 10/25 (16 texts)
+01:24:49 |   Batch 11/25 (16 texts)
+01:24:49 |   Batch 12/25 (16 texts)
+01:24:49 |   Batch 13/25 (16 texts)
+01:24:49 |   Batch 14/25 (16 texts)
+01:24:49 |   Batch 15/25 (16 texts)
+01:24:49 |   Batch 16/25 (16 texts)
+01:24:49 |   Batch 17/25 (16 texts)
+01:24:49 |   Batch 18/25 (16 texts)
+01:24:49 |   Batch 19/25 (16 texts)
+01:24:49 |   Batch 20/25 (16 texts)
+01:24:49 |   Batch 21/25 (16 texts)
+01:24:49 |   Batch 22/25 (16 texts)
+01:24:49 |   Batch 23/25 (16 texts)
+01:24:49 |   Batch 24/25 (16 texts)
+01:24:49 |   Batch 25/25 (16 texts)
+01:24:49 | 
+Evaluating...
+01:24:49 | 
+==================================================
+01:24:49 | EVALUATION RESULTS
+01:24:49 | ==================================================
+01:24:49 |   Rows evaluated : 400
+01:24:49 |   TP / FP / FN   : 110 / 641 / 994
+01:24:49 | --------------------------------------------------
+01:24:49 |   Micro Precision : 0.1465
+01:24:49 |   Micro Recall    : 0.0996
+01:24:49 |   Micro F1        : 0.1186
+01:24:49 | --------------------------------------------------
+01:24:49 |   Macro F1        : 0.0868
+01:24:49 | ==================================================
+01:24:49 | 
+Output saved → outputs/mdg-nlp_domain-eventx-recognition-sentence-updated__mdg-nlp_T5-eventx-recognition-sentence__predictions.jsonl
+01:24:49 |   - Rows 1-400: Individual predictions
+01:24:49 |   - Row 401: FINAL_METRICS
+01:24:49 | Metrics saved → outputs/mdg-nlp_domain-eventx-recognition-sentence-updated__mdg-nlp_T5-eventx-recognition-sentence__predictions_metrics.json
+01:24:49 | Done.
+ ### Inference completed successfully ### 
+Progress: 3 successful, 0 failed
+
+======================================================
+RUN [4/5]
+Model: mdg-nlp/T5-eventx-recognition-sentence
+Dataset: mdg-nlp/eventx-recognition-sentence-vocab-substituted-updated
+======================================================
+>>> Running inference...
+01:24:52 | ============================================================
+01:24:52 | NER INFERENCE PIPELINE
+01:24:52 |   Model       : mdg-nlp/T5-eventx-recognition-sentence
+01:24:52 |   Dataset     : mdg-nlp/eventx-recognition-sentence-vocab-substituted-updated  (split=test)
+01:24:52 |   Task        : event
+01:24:52 |   Max samples : 400
+01:24:52 |   Gold field  : gold_event_expressions
+01:24:52 |   Pred field  : post_processed_event_expressions
+01:24:52 | ============================================================
+01:24:52 | 
+Loading dataset: mdg-nlp/eventx-recognition-sentence-vocab-substituted-updated
+01:24:54 | Processing 400 rows from test split.
+01:24:54 | 
+Loading model: mdg-nlp/T5-eventx-recognition-sentence
+01:24:54 | Using Token Classification (NER pipeline)
+01:24:54 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+01:24:54 | Loading model with NER pipeline...
+Device set to use mps
+01:24:54 | Ready on mps.
+01:24:54 | 
+Running inference on 400 texts...
+01:24:54 |   Batch 1/25 (16 texts)
+01:24:54 |   Batch 2/25 (16 texts)
+01:24:54 |   Batch 3/25 (16 texts)
+01:24:54 |   Batch 4/25 (16 texts)
+01:24:54 |   Batch 5/25 (16 texts)
+01:24:54 |   Batch 6/25 (16 texts)
+01:24:55 |   Batch 7/25 (16 texts)
+01:24:55 |   Batch 8/25 (16 texts)
+01:24:55 |   Batch 9/25 (16 texts)
+01:24:55 |   Batch 10/25 (16 texts)
+01:24:55 |   Batch 11/25 (16 texts)
+01:24:55 |   Batch 12/25 (16 texts)
+01:24:55 |   Batch 13/25 (16 texts)
+01:24:55 |   Batch 14/25 (16 texts)
+01:24:55 |   Batch 15/25 (16 texts)
+01:24:55 |   Batch 16/25 (16 texts)
+01:24:55 |   Batch 17/25 (16 texts)
+01:24:55 |   Batch 18/25 (16 texts)
+01:24:55 |   Batch 19/25 (16 texts)
+01:24:55 |   Batch 20/25 (16 texts)
+01:24:55 |   Batch 21/25 (16 texts)
+01:24:55 |   Batch 22/25 (16 texts)
+01:24:55 |   Batch 23/25 (16 texts)
+01:24:55 |   Batch 24/25 (16 texts)
+01:24:56 |   Batch 25/25 (16 texts)
+01:24:56 | 
+Evaluating...
+01:24:56 | 
+==================================================
+01:24:56 | EVALUATION RESULTS
+01:24:56 | ==================================================
+01:24:56 |   Rows evaluated : 400
+01:24:56 |   TP / FP / FN   : 1194 / 634 / 352
+01:24:56 | --------------------------------------------------
+01:24:56 |   Micro Precision : 0.6532
+01:24:56 |   Micro Recall    : 0.7723
+01:24:56 |   Micro F1        : 0.7078
+01:24:56 | --------------------------------------------------
+01:24:56 |   Macro F1        : 0.7213
+01:24:56 | ==================================================
+01:24:56 | 
+Output saved → outputs/mdg-nlp_eventx-recognition-sentence-vocab-substituted-updated__mdg-nlp_T5-eventx-recognition-sentence__predictions.jsonl
+01:24:56 |   - Rows 1-400: Individual predictions
+01:24:56 |   - Row 401: FINAL_METRICS
+01:24:56 | Metrics saved → outputs/mdg-nlp_eventx-recognition-sentence-vocab-substituted-updated__mdg-nlp_T5-eventx-recognition-sentence__predictions_metrics.json
+01:24:56 | Done.
+ ### Inference completed successfully ### 
+Progress: 4 successful, 0 failed
+
+======================================================
+RUN [5/5]
+Model: mdg-nlp/T5-eventx-recognition-sentence
+Dataset: mdg-nlp/eventx-recognition-perturbed-gpt
+======================================================
+>>> Running inference...
+01:24:58 | ============================================================
+01:24:58 | NER INFERENCE PIPELINE
+01:24:58 |   Model       : mdg-nlp/T5-eventx-recognition-sentence
+01:24:58 |   Dataset     : mdg-nlp/eventx-recognition-perturbed-gpt  (split=test)
+01:24:58 |   Task        : event
+01:24:58 |   Max samples : 400
+01:24:58 |   Gold field  : gold_event_expressions
+01:24:58 |   Pred field  : post_processed_event_expressions
+01:24:58 | ============================================================
+01:24:58 | 
+Loading dataset: mdg-nlp/eventx-recognition-perturbed-gpt
+01:25:00 | Processing 400 rows from test split.
+01:25:00 | 
+Loading model: mdg-nlp/T5-eventx-recognition-sentence
+01:25:00 | Using Token Classification (NER pipeline)
+01:25:00 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+01:25:00 | Loading model with NER pipeline...
+Device set to use mps
+01:25:00 | Ready on mps.
+01:25:00 | 
+Running inference on 400 texts...
+01:25:00 |   Batch 1/25 (16 texts)
+01:25:00 |   Batch 2/25 (16 texts)
+01:25:00 |   Batch 3/25 (16 texts)
+01:25:01 |   Batch 4/25 (16 texts)
+01:25:01 |   Batch 5/25 (16 texts)
+01:25:01 |   Batch 6/25 (16 texts)
+01:25:01 |   Batch 7/25 (16 texts)
+01:25:01 |   Batch 8/25 (16 texts)
+01:25:01 |   Batch 9/25 (16 texts)
+01:25:01 |   Batch 10/25 (16 texts)
+01:25:01 |   Batch 11/25 (16 texts)
+01:25:01 |   Batch 12/25 (16 texts)
+01:25:01 |   Batch 13/25 (16 texts)
+01:25:01 |   Batch 14/25 (16 texts)
+01:25:01 |   Batch 15/25 (16 texts)
+01:25:01 |   Batch 16/25 (16 texts)
+01:25:01 |   Batch 17/25 (16 texts)
+01:25:01 |   Batch 18/25 (16 texts)
+01:25:02 |   Batch 19/25 (16 texts)
+01:25:02 |   Batch 20/25 (16 texts)
+01:25:02 |   Batch 21/25 (16 texts)
+01:25:02 |   Batch 22/25 (16 texts)
+01:25:02 |   Batch 23/25 (16 texts)
+01:25:02 |   Batch 24/25 (16 texts)
+01:25:02 |   Batch 25/25 (16 texts)
+01:25:02 | 
+Evaluating...
+01:25:02 | 
+==================================================
+01:25:02 | EVALUATION RESULTS
+01:25:02 | ==================================================
+01:25:02 |   Rows evaluated : 400
+01:25:02 |   TP / FP / FN   : 1024 / 2674 / 480
+01:25:02 | --------------------------------------------------
+01:25:02 |   Micro Precision : 0.2769
+01:25:02 |   Micro Recall    : 0.6809
+01:25:02 |   Micro F1        : 0.3937
+01:25:02 | --------------------------------------------------
+01:25:02 |   Macro F1        : 0.3994
+01:25:02 | ==================================================
+01:25:02 | 
+Output saved → outputs/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_T5-eventx-recognition-sentence__predictions.jsonl
+01:25:02 |   - Rows 1-400: Individual predictions
+01:25:02 |   - Row 401: FINAL_METRICS
+01:25:02 | Metrics saved → outputs/mdg-nlp_eventx-recognition-perturbed-gpt__mdg-nlp_T5-eventx-recognition-sentence__predictions_metrics.json
+01:25:02 | Done.
+ ### Inference completed successfully ### 
+Progress: 5 successful, 0 failed
+
+======================================================
+eventx PIPELINE COMPLETE
+======================================================
+Finished at: Tue Mar 24 01:25:02 CDT 2026
+
+SUMMARY:
+  Total runs: 5
+  Successful: 5
+  Failed: 0
+  Success rate: %   Success rate: %
+
+Outputs: outputs/
+Results: results/
+Log: logs/eventx_pipeline_20260324_012432.log
+======================================================

@@ -1,0 +1,196 @@
+======================================================
+TIMEX INFERENCE PIPELINE
+Started at: Sat Mar 21 20:36:55 CDT 2026
+======================================================
+
+Total combinations: 3
+
+
+======================================================
+RUN [1/3]
+Model: mdg-nlp/RoBERTa-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-perturbed-gpt
+======================================================
+>>> Running inference...
+20:36:59 | ============================================================
+20:36:59 | NER INFERENCE PIPELINE
+20:36:59 |   Model       : mdg-nlp/RoBERTa-timex-recognition-sentence
+20:36:59 |   Dataset     : mdg-nlp/timex-recognition-sentence-perturbed-gpt  (split=test)
+20:36:59 |   Task        : time
+20:36:59 |   Max samples : 80
+20:36:59 |   Gold field  : gold_timex_expressions
+20:36:59 |   Pred field  : post_processed_timex_expressions
+20:36:59 | ============================================================
+20:36:59 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-perturbed-gpt
+Generating train split:   0%|          | 0/22742 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 22742/22742 [00:00<00:00, 771407.58 examples/s]
+Generating validation split:   0%|          | 0/2674 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2674/2674 [00:00<00:00, 771041.45 examples/s]
+Generating test split:   0%|          | 0/317 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 317/317 [00:00<00:00, 52709.39 examples/s]
+20:37:05 | Processing 80 rows from test split.
+20:37:05 | 
+Loading model: mdg-nlp/RoBERTa-timex-recognition-sentence
+20:37:05 | Using Token Classification (NER pipeline)
+20:37:05 | Loading tokenizer...
+20:37:06 | Loading model with NER pipeline...
+Device set to use mps
+20:37:07 | Ready on mps.
+20:37:07 | 
+Running inference on 80 texts...
+20:37:07 |   Batch 1/5 (16 texts)
+20:37:07 |   Batch 2/5 (16 texts)
+20:37:07 |   Batch 3/5 (16 texts)
+20:37:07 |   Batch 4/5 (16 texts)
+20:37:07 |   Batch 5/5 (16 texts)
+20:37:07 | 
+Evaluating...
+20:37:07 | 
+==================================================
+20:37:07 | EVALUATION RESULTS
+20:37:07 | ==================================================
+20:37:07 |   Rows evaluated : 80
+20:37:07 |   TP / FP / FN   : 81 / 34 / 34
+20:37:07 | --------------------------------------------------
+20:37:07 |   Micro Precision : 0.7043
+20:37:07 |   Micro Recall    : 0.7043
+20:37:07 |   Micro F1        : 0.7043
+20:37:07 | --------------------------------------------------
+20:37:07 |   Macro F1        : 0.6912
+20:37:07 | ==================================================
+20:37:07 | 
+Output saved → outputs/mdg-nlp_timex-recognition-sentence-perturbed-gpt__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions.jsonl
+20:37:07 |   - Rows 1-80: Individual predictions
+20:37:07 |   - Row 81: FINAL_METRICS
+20:37:07 | Metrics saved → outputs/mdg-nlp_timex-recognition-sentence-perturbed-gpt__mdg-nlp_RoBERTa-timex-recognition-sentence__predictions_metrics.json
+20:37:07 | Done.
+ ### Inference completed successfully ### 
+Progress: 1 successful, 0 failed
+
+======================================================
+RUN [2/3]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-perturbed-gpt
+======================================================
+>>> Running inference...
+20:37:11 | ============================================================
+20:37:11 | NER INFERENCE PIPELINE
+20:37:11 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+20:37:11 |   Dataset     : mdg-nlp/timex-recognition-sentence-perturbed-gpt  (split=test)
+20:37:11 |   Task        : time
+20:37:11 |   Max samples : 80
+20:37:11 |   Gold field  : gold_timex_expressions
+20:37:11 |   Pred field  : post_processed_timex_expressions
+20:37:11 | ============================================================
+20:37:11 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-perturbed-gpt
+20:37:13 | Processing 80 rows from test split.
+20:37:13 | 
+Loading model: mdg-nlp/T5-timex-recognition-sentence
+20:37:13 | Using Token Classification (NER pipeline)
+20:37:13 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+20:37:14 | Loading model with NER pipeline...
+Device set to use mps
+20:37:15 | Ready on mps.
+20:37:15 | 
+Running inference on 80 texts...
+20:37:15 |   Batch 1/5 (16 texts)
+20:37:15 |   Batch 2/5 (16 texts)
+20:37:15 |   Batch 3/5 (16 texts)
+20:37:15 |   Batch 4/5 (16 texts)
+20:37:16 |   Batch 5/5 (16 texts)
+20:37:16 | 
+Evaluating...
+20:37:16 | 
+==================================================
+20:37:16 | EVALUATION RESULTS
+20:37:16 | ==================================================
+20:37:16 |   Rows evaluated : 80
+20:37:16 |   TP / FP / FN   : 44 / 72 / 71
+20:37:16 | --------------------------------------------------
+20:37:16 |   Micro Precision : 0.3793
+20:37:16 |   Micro Recall    : 0.3826
+20:37:16 |   Micro F1        : 0.3810
+20:37:16 | --------------------------------------------------
+20:37:16 |   Macro F1        : 0.3594
+20:37:16 | ==================================================
+20:37:16 | 
+Output saved → outputs/mdg-nlp_timex-recognition-sentence-perturbed-gpt__mdg-nlp_T5-timex-recognition-sentence__predictions.jsonl
+20:37:16 |   - Rows 1-80: Individual predictions
+20:37:16 |   - Row 81: FINAL_METRICS
+20:37:16 | Metrics saved → outputs/mdg-nlp_timex-recognition-sentence-perturbed-gpt__mdg-nlp_T5-timex-recognition-sentence__predictions_metrics.json
+20:37:16 | Done.
+ ### Inference completed successfully ### 
+Progress: 2 successful, 0 failed
+
+======================================================
+RUN [3/3]
+Model: mdg-nlp/gpt-2-timex-sentence-recognition
+Dataset: mdg-nlp/timex-recognition-sentence-perturbed-gpt
+======================================================
+>>> Running inference...
+20:37:19 | ============================================================
+20:37:19 | NER INFERENCE PIPELINE
+20:37:19 |   Model       : mdg-nlp/gpt-2-timex-sentence-recognition
+20:37:19 |   Dataset     : mdg-nlp/timex-recognition-sentence-perturbed-gpt  (split=test)
+20:37:19 |   Task        : time
+20:37:19 |   Max samples : 80
+20:37:19 |   Gold field  : gold_timex_expressions
+20:37:19 |   Pred field  : post_processed_timex_expressions
+20:37:19 | ============================================================
+20:37:19 | 
+Loading dataset: mdg-nlp/timex-recognition-sentence-perturbed-gpt
+20:37:22 | Processing 80 rows from test split.
+20:37:22 | 
+Loading model: mdg-nlp/gpt-2-timex-sentence-recognition
+20:37:22 | Using Token Classification (NER pipeline)
+20:37:22 | Loading tokenizer...
+20:37:23 | Loading model with NER pipeline...
+Device set to use mps
+20:37:23 | Ready on mps.
+20:37:23 | 
+Running inference on 80 texts...
+20:37:23 |   Batch 1/5 (16 texts)
+20:37:23 |   Batch 2/5 (16 texts)
+20:37:24 |   Batch 3/5 (16 texts)
+20:37:24 |   Batch 4/5 (16 texts)
+20:37:24 |   Batch 5/5 (16 texts)
+20:37:24 | 
+Evaluating...
+20:37:24 | 
+==================================================
+20:37:24 | EVALUATION RESULTS
+20:37:24 | ==================================================
+20:37:24 |   Rows evaluated : 80
+20:37:24 |   TP / FP / FN   : 75 / 57 / 40
+20:37:24 | --------------------------------------------------
+20:37:24 |   Micro Precision : 0.5682
+20:37:24 |   Micro Recall    : 0.6522
+20:37:24 |   Micro F1        : 0.6073
+20:37:24 | --------------------------------------------------
+20:37:24 |   Macro F1        : 0.5824
+20:37:24 | ==================================================
+20:37:24 | 
+Output saved → outputs/mdg-nlp_timex-recognition-sentence-perturbed-gpt__mdg-nlp_gpt-2-timex-sentence-recognition__predictions.jsonl
+20:37:24 |   - Rows 1-80: Individual predictions
+20:37:24 |   - Row 81: FINAL_METRICS
+20:37:24 | Metrics saved → outputs/mdg-nlp_timex-recognition-sentence-perturbed-gpt__mdg-nlp_gpt-2-timex-sentence-recognition__predictions_metrics.json
+20:37:24 | Done.
+ ### Inference completed successfully ### 
+Progress: 3 successful, 0 failed
+
+======================================================
+TIMEX PIPELINE COMPLETE
+======================================================
+Finished at: Sat Mar 21 20:37:25 CDT 2026
+
+SUMMARY:
+  Total runs: 3
+  Successful: 3
+  Failed: 0
+  Success rate: %   Success rate: %
+
+Outputs: outputs/
+Results: results/
+Log: logs/timex_pipeline_20260321_203655.log
+======================================================

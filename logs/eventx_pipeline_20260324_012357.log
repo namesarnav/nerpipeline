@@ -1,0 +1,25 @@
+======================================================
+eventx INFERENCE PIPELINE
+Started at: Tue Mar 24 01:23:57 CDT 2026
+======================================================
+
+Total combinations: 1
+
+
+======================================================
+RUN [1/1]
+Model: mdg-nlp/T5-eventx-recognition-sentence
+Dataset: mdg-nlp/eventx-recognition-document
+======================================================
+>>> Running inference...
+01:24:00 | ============================================================
+01:24:00 | NER INFERENCE PIPELINE
+01:24:00 |   Model       : mdg-nlp/T5-eventx-recognition-sentence
+01:24:00 |   Dataset     : mdg-nlp/eventx-recognition-document  (split=test)
+01:24:00 |   Task        : event
+01:24:00 |   Max samples : 400
+01:24:00 |   Gold field  : gold_event_expressions
+01:24:00 |   Pred field  : post_processed_event_expressions
+01:24:00 | ============================================================
+01:24:00 | 
+Loading dataset: mdg-nlp/eventx-recognition-document

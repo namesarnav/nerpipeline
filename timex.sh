@@ -27,13 +27,35 @@ echo "" | tee -a "$LOG_FILE"
 
 # TIMEX Models
 TIMEX_MODELS=(
-    "mdg-nlp/RoBERTa-timex-recognition-sentence"
     "mdg-nlp/T5-timex-recognition-sentence"
-    "mdg-nlp/gpt-2-timex-sentence-recognition"
 )
 
+# mdg-nlp/timex-recognition-sentence-original
+# mdg-nlp/timex-recognition-sentence-adversarial
+
+
+
+# 
+# mdg-nlp/eventx-recognition-document (80)
+# mdg-nlp/eventx-recognition-original
+# mdg-nlp/eventx-recognition-perturbed
+# mdg-nlp/domain-eventx-recognition-sentence-updated
+# mdg-nlp/eventx-recognition-sentence-vocab-substituted-updated
+# 
+# 
+# mdg-nlp/eventx-recognition-perturbed-gpt
+ 
+
 # TIMEX Datasets
-TIMEX_DATASETS=namesarnav/timex-perturbed
+TIMEX_DATASETS=(
+    mdg-nlp/timex-recognition-document
+    # mdg-nlp/timex-recognition-sentence-perturbed-gpt
+    # mdg-nlp/timex-recognition-sentence-original
+    # mdg-nlp/timex-recognition-sentence-adversarial
+    # mdg-nlp/domain-timex-recognition-sentence-updated
+    # mdg-nlp/timex-recognition-sentence-vocab-substituted-updated
+    # mdg-nlp/timex-recognition-sentence-perturbed
+)
 
 TOTAL_RUNS=$((${#TIMEX_MODELS[@]} * ${#TIMEX_DATASETS[@]}))
 CURRENT_RUN=0

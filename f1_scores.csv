@@ -14,6 +14,9 @@ mdg-nlp/gpt-2-eventx-sentence-recognition-,mdg-nlp/eventx-recognition-perturbed,
 mdg-nlp/RoBERTa-eventx-recognition-sentence-,mdg-nlp/eventx-recognition-sentence-vocab-substituted-updated,eventx,0.8517,0.856
 mdg-nlp/T5-eventx-sentence-recoginition-,mdg-nlp/eventx-recognition-sentence-vocab-substituted-updated,eventx,0.6683,0.6432
 mdg-nlp/gpt-2-eventx-sentence-recognition-,mdg-nlp/eventx-recognition-sentence-vocab-substituted-updated,eventx,0.8447,0.8319
+mdg-nlp/RoBERTa-timex-recognition-sentence-,mdg-nlp/domain-timex-recognition-sentence-updated,timex,0.6277,0.5726
+mdg-nlp/T5-timex-recognition-sentence-,mdg-nlp/domain-timex-recognition-sentence-updated,timex,0.1006,0.0813
+mdg-nlp/gpt-2-timex-sentence-recognition-,mdg-nlp/domain-timex-recognition-sentence-updated,timex,0.328,0.319
 mdg-nlp/RoBERTa-timex-recognition-sentence-,mdg-nlp/timex-recognition-document,timex,0.8491,0.8804
 mdg-nlp/T5-timex-recognition-sentence-,mdg-nlp/timex-recognition-document,timex,0.6239,0.6652
 mdg-nlp/gpt-2-timex-sentence-recognition-,mdg-nlp/timex-recognition-document,timex,0.7295,0.7524

@@ -1,44 +1,47 @@
 #!/bin/bash
 
-# EVENTX Inference Pipeline
-# Runs all EVENTX models on EVENTX datasets with error handling
+# eventx Inference Pipeline
+# Runs all eventx models on eventx datasets with error handling
 
 set +e  # Don't exit on error - continue with next combination
 
 # Configuration
 NUM_SAMPLES=400
 BATCH_SIZE=16
-MAX_LENGTH=512
+MAX_LENGTH=5000
 DEVICE="auto"
 
 # Create output directories
-mkdir -p outputs
-mkdir -p results
-mkdir -p logs
+mkdir -p outputs/eventx
+mkdir -p results/eventx
+mkdir -p logs/eventx
 
 # Log file
 LOG_FILE="logs/eventx_pipeline_$(date +%Y%m%d_%H%M%S).log"
 
 echo "======================================================" | tee -a "$LOG_FILE"
-echo "EVENTX INFERENCE PIPELINE" | tee -a "$LOG_FILE"
+echo "eventx INFERENCE PIPELINE" | tee -a "$LOG_FILE"
 echo "Started at: $(date)" | tee -a "$LOG_FILE"
 echo "======================================================" | tee -a "$LOG_FILE"
 echo "" | tee -a "$LOG_FILE"
 
-# EVENTX Models
-EVENTX_MODELS=(
-    mdg-nlp/RoBERTa-eventx-recognition-sentence
-    mdg-nlp/T5-eventx-sentence-recoginition
-    mdg-nlp/gpt-2-eventx-sentence-recognition
-    
+# eventx Models
+eventx_MODELS=(
+    "mdg-nlp/T5-eventx-recognition-sentence"
 )
 
-# EVENTX Datasets
-EVENTX_DATASETS=(
-    mdg-nlp/eventx-recognition-perturbed-gpt
+eventx_DATASETS=(
+    #  mdg-nlp/eventx-recognition-document
+mdg-nlp/eventx-recognition-original
+mdg-nlp/eventx-recognition-perturbed
+mdg-nlp/domain-eventx-recognition-sentence-updated
+mdg-nlp/eventx-recognition-sentence-vocab-substituted-updated
+
+
+mdg-nlp/eventx-recognition-perturbed-gpt
 )
 
-TOTAL_RUNS=$((${#EVENTX_MODELS[@]} * ${#EVENTX_DATASETS[@]}))
+TOTAL_RUNS=$((${#eventx_MODELS[@]} * ${#eventx_DATASETS[@]}))
 CURRENT_RUN=0
 SUCCESSFUL_RUNS=0
 FAILED_RUNS=0
@@ -49,8 +52,8 @@ echo "" | tee -a "$LOG_FILE"
 # Track failures
 FAILED_COMBINATIONS=()
 
-for model in "${EVENTX_MODELS[@]}"; do
-    for dataset in "${EVENTX_DATASETS[@]}"; do
+for model in "${eventx_MODELS[@]}"; do
+    for dataset in "${eventx_DATASETS[@]}"; do
         CURRENT_RUN=$((CURRENT_RUN + 1))
         
         echo "" | tee -a "$LOG_FILE"
@@ -80,24 +83,9 @@ for model in "${EVENTX_MODELS[@]}"; do
             --max_length $MAX_LENGTH \
             --device $DEVICE \
             --output "$OUTPUT_FILE" 2>&1 | tee -a "$LOG_FILE"; then
+
+            echo " ### Inference completed successfully ### " | tee -a "$LOG_FILE"
             
-            echo "✓ Inference completed successfully" | tee -a "$LOG_FILE"
-            
-            # Run evaluation
-            echo ">>> Running evaluation..." | tee -a "$LOG_FILE"
-            if python evaluate.py \
-                --input "$OUTPUT_FILE" \
-                --task event \
-                --output "$RESULT_FILE" 2>&1 | tee -a "$LOG_FILE"; then
-                
-                echo "✓ Evaluation completed successfully" | tee -a "$LOG_FILE"
-                echo "  Predictions: $OUTPUT_FILE" | tee -a "$LOG_FILE"
-                echo "  Results: $RESULT_FILE" | tee -a "$LOG_FILE"
-                echo "  Metrics: ${RESULT_FILE/.jsonl/_metrics.json}" | tee -a "$LOG_FILE"
-            else
-                echo "✗ Evaluation FAILED - skipping" | tee -a "$LOG_FILE"
-                RUN_SUCCESS=false
-            fi
         else
             echo "✗ Inference FAILED - skipping to next combination" | tee -a "$LOG_FILE"
             RUN_SUCCESS=false
@@ -121,7 +109,7 @@ done
 
 echo "" | tee -a "$LOG_FILE"
 echo "======================================================" | tee -a "$LOG_FILE"
-echo "EVENTX PIPELINE COMPLETE" | tee -a "$LOG_FILE"
+echo "eventx PIPELINE COMPLETE" | tee -a "$LOG_FILE"
 echo "======================================================" | tee -a "$LOG_FILE"
 echo "Finished at: $(date)" | tee -a "$LOG_FILE"
 echo "" | tee -a "$LOG_FILE"
