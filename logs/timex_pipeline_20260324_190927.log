@@ -1,0 +1,113 @@
+======================================================
+TIMEX INFERENCE PIPELINE
+Started at: Tue Mar 24 19:09:27 CDT 2026
+======================================================
+
+Total combinations: 6
+
+
+======================================================
+RUN [1/6]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-perturbed-gpt
+======================================================
+>>> Running inference...
+Traceback (most recent call last):
+  File "/Volumes/Github/ner/nerpipeline/run.py", line 22, in <module>
+    from pipeline.inference import NERInference
+  File "/Volumes/Github/ner/nerpipeline/pipeline/inference.py", line 6, in <module>
+    from datasets import load_dataset
+ImportError: cannot import name 'load_dataset' from 'datasets' (unknown location)
+ ### Inference completed successfully ### 
+Progress: 1 successful, 0 failed
+
+======================================================
+RUN [2/6]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-original
+======================================================
+>>> Running inference...
+Traceback (most recent call last):
+  File "/Volumes/Github/ner/nerpipeline/run.py", line 22, in <module>
+    from pipeline.inference import NERInference
+  File "/Volumes/Github/ner/nerpipeline/pipeline/inference.py", line 6, in <module>
+    from datasets import load_dataset
+ImportError: cannot import name 'load_dataset' from 'datasets' (unknown location)
+ ### Inference completed successfully ### 
+Progress: 2 successful, 0 failed
+
+======================================================
+RUN [3/6]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-adversarial
+======================================================
+>>> Running inference...
+Traceback (most recent call last):
+  File "/Volumes/Github/ner/nerpipeline/run.py", line 22, in <module>
+    from pipeline.inference import NERInference
+  File "/Volumes/Github/ner/nerpipeline/pipeline/inference.py", line 6, in <module>
+    from datasets import load_dataset
+ImportError: cannot import name 'load_dataset' from 'datasets' (unknown location)
+ ### Inference completed successfully ### 
+Progress: 3 successful, 0 failed
+
+======================================================
+RUN [4/6]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/domain-timex-recognition-sentence-updated
+======================================================
+>>> Running inference...
+Traceback (most recent call last):
+  File "/Volumes/Github/ner/nerpipeline/run.py", line 22, in <module>
+    from pipeline.inference import NERInference
+  File "/Volumes/Github/ner/nerpipeline/pipeline/inference.py", line 6, in <module>
+    from datasets import load_dataset
+ImportError: cannot import name 'load_dataset' from 'datasets' (unknown location)
+ ### Inference completed successfully ### 
+Progress: 4 successful, 0 failed
+
+======================================================
+RUN [5/6]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-vocab-substituted-updated
+======================================================
+>>> Running inference...
+Traceback (most recent call last):
+  File "/Volumes/Github/ner/nerpipeline/run.py", line 22, in <module>
+    from pipeline.inference import NERInference
+  File "/Volumes/Github/ner/nerpipeline/pipeline/inference.py", line 6, in <module>
+    from datasets import load_dataset
+ImportError: cannot import name 'load_dataset' from 'datasets' (unknown location)
+ ### Inference completed successfully ### 
+Progress: 5 successful, 0 failed
+
+======================================================
+RUN [6/6]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-sentence-perturbed
+======================================================
+>>> Running inference...
+Traceback (most recent call last):
+  File "/Volumes/Github/ner/nerpipeline/run.py", line 22, in <module>
+    from pipeline.inference import NERInference
+  File "/Volumes/Github/ner/nerpipeline/pipeline/inference.py", line 6, in <module>
+    from datasets import load_dataset
+ImportError: cannot import name 'load_dataset' from 'datasets' (unknown location)
+ ### Inference completed successfully ### 
+Progress: 6 successful, 0 failed
+
+======================================================
+TIMEX PIPELINE COMPLETE
+======================================================
+Finished at: Tue Mar 24 19:09:27 CDT 2026
+
+SUMMARY:
+  Total runs: 6
+  Successful: 6
+  Failed: 0
+  Success rate: %   Success rate: %
+
+Outputs: outputs/
+Results: results/
+Log: logs/timex_pipeline_20260324_190927.log
+======================================================

@@ -36,25 +36,19 @@ TIMEX_MODELS=(
 
 
 # 
-# mdg-nlp/eventx-recognition-document (80)
-# mdg-nlp/eventx-recognition-original
-# mdg-nlp/eventx-recognition-perturbed
-# mdg-nlp/domain-eventx-recognition-sentence-updated
-# mdg-nlp/eventx-recognition-sentence-vocab-substituted-updated
-# 
-# 
-# mdg-nlp/eventx-recognition-perturbed-gpt
+
  
 
 # TIMEX Datasets
 TIMEX_DATASETS=(
-    mdg-nlp/timex-recognition-document
-    # mdg-nlp/timex-recognition-sentence-perturbed-gpt
-    # mdg-nlp/timex-recognition-sentence-original
-    # mdg-nlp/timex-recognition-sentence-adversarial
-    # mdg-nlp/domain-timex-recognition-sentence-updated
-    # mdg-nlp/timex-recognition-sentence-vocab-substituted-updated
-    # mdg-nlp/timex-recognition-sentence-perturbed
+    mdg-nlp/timex-recognition-document # length
+    
+    # mdg-nlp/timex-recognition-sentence-vocab-substituted-updated # timex-domain-vocab-t5
+    # mdg-nlp/timex-recognition-sentence-perturbed # adversarial-prompt-based-t5
+    # mdg-nlp/timex-recognition-sentence-perturbed-gpt # timex-prompt-based-t5
+    # mdg-nlp/timex-recognition-sentence-original # timex-base-t5
+    # mdg-nlp/timex-recognition-sentence-adversarial # timex-adversarial-t5
+    # mdg-nlp/domain-timex-recognition-sentence-updated # timex-domain-t5
 )
 
 TOTAL_RUNS=$((${#TIMEX_MODELS[@]} * ${#TIMEX_DATASETS[@]}))

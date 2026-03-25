@@ -1,0 +1,16 @@
+{
+  "num_rows": 401,
+  "skipped_rows": 0,
+  "evaluated_rows": 401,
+  "micro": {
+    "precision": 0.4621,
+    "recall": 0.375,
+    "f1": 0.414,
+    "tp": 195,
+    "fp": 227,
+    "fn": 325
+  },
+  "macro": {
+    "f1": 0.3906
+  }
+}

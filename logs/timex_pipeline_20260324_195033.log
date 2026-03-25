@@ -1,0 +1,81 @@
+======================================================
+TIMEX INFERENCE PIPELINE
+Started at: Tue Mar 24 19:50:33 CDT 2026
+======================================================
+
+Total combinations: 1
+
+
+======================================================
+RUN [1/1]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-document
+======================================================
+>>> Running inference...
+19:50:36 | ============================================================
+19:50:36 | NER INFERENCE PIPELINE
+19:50:36 |   Model       : mdg-nlp/T5-timex-recognition-sentence
+19:50:36 |   Dataset     : mdg-nlp/timex-recognition-document  (split=test)
+19:50:36 |   Task        : time
+19:50:36 |   Max samples : 80
+19:50:36 |   Gold field  : gold_timex_expressions
+19:50:36 |   Pred field  : post_processed_timex_expressions
+19:50:36 | ============================================================
+19:50:36 | 
+Loading dataset: mdg-nlp/timex-recognition-document
+19:50:38 | Processing 80 rows from test split.
+19:50:38 | 
+Loading model: mdg-nlp/T5-timex-recognition-sentence
+19:50:38 | Using Token Classification (NER pipeline)
+19:50:38 | Loading tokenizer...
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+19:50:39 | Loading model with NER pipeline...
+Device set to use mps
+19:50:39 | Ready on mps.
+19:50:39 | 
+Running inference on 80 texts...
+19:50:39 |   Batch 1/5 (16 texts)
+19:50:39 |   Batch 2/5 (16 texts)
+19:50:40 |   Batch 3/5 (16 texts)
+19:50:40 |   Batch 4/5 (16 texts)
+19:50:40 |   Batch 5/5 (16 texts)
+19:50:40 | 
+Evaluating...
+19:50:40 | 
+==================================================
+19:50:40 | EVALUATION RESULTS
+19:50:40 | ==================================================
+19:50:40 |   Rows evaluated : 80
+19:50:40 |   TP / FP / FN   : 312 / 106 / 109
+19:50:40 | --------------------------------------------------
+19:50:40 |   Micro Precision : 0.7464
+19:50:40 |   Micro Recall    : 0.7411
+19:50:40 |   Micro F1        : 0.7437
+19:50:40 | --------------------------------------------------
+19:50:40 |   Macro F1        : 0.7637
+19:50:40 | ==================================================
+19:50:40 | 
+Output saved → outputs/mdg-nlp_timex-recognition-document__mdg-nlp_T5-timex-recognition-sentence__predictions.jsonl
+19:50:40 |   - Rows 1-80: Individual predictions
+19:50:40 |   - Row 81: FINAL_METRICS
+19:50:40 | Metrics saved → outputs/mdg-nlp_timex-recognition-document__mdg-nlp_T5-timex-recognition-sentence__predictions_metrics.json
+19:50:40 | Done.
+ ### Inference completed successfully ### 
+Progress: 1 successful, 0 failed
+
+======================================================
+TIMEX PIPELINE COMPLETE
+======================================================
+Finished at: Tue Mar 24 19:50:41 CDT 2026
+
+SUMMARY:
+  Total runs: 1
+  Successful: 1
+  Failed: 0
+  Success rate: %   Success rate: %
+
+Outputs: outputs/
+Results: results/
+Log: logs/timex_pipeline_20260324_195033.log
+======================================================

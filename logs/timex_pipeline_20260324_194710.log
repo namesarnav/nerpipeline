@@ -1,0 +1,38 @@
+======================================================
+TIMEX INFERENCE PIPELINE
+Started at: Tue Mar 24 19:47:10 CDT 2026
+======================================================
+
+Total combinations: 1
+
+
+======================================================
+RUN [1/1]
+Model: mdg-nlp/T5-timex-recognition-sentence
+Dataset: mdg-nlp/timex-recognition-document
+======================================================
+>>> Running inference...
+Traceback (most recent call last):
+  File "/Volumes/Github/ner/nerpipeline/run.py", line 22, in <module>
+    from pipeline.inference import NERInference
+  File "/Volumes/Github/ner/nerpipeline/pipeline/inference.py", line 6, in <module>
+    from datasets import load_dataset
+ImportError: cannot import name 'load_dataset' from 'datasets' (unknown location)
+ ### Inference completed successfully ### 
+Progress: 1 successful, 0 failed
+
+======================================================
+TIMEX PIPELINE COMPLETE
+======================================================
+Finished at: Tue Mar 24 19:47:10 CDT 2026
+
+SUMMARY:
+  Total runs: 1
+  Successful: 1
+  Failed: 0
+  Success rate: %   Success rate: %
+
+Outputs: outputs/
+Results: results/
+Log: logs/timex_pipeline_20260324_194710.log
+======================================================

@@ -9,8 +9,8 @@
 #     "mdg-nlp/T5-timex-recognition-sentence"
 #     "mdg-nlp/gpt-2-timex-sentence-recognition"
 
-MODEL="mdg-nlp/RoBERTa-timex-recognition-sentence"
-DATASET="namesarnav/timex-perturbed"        # Change this
+MODEL=mdg-nlp/T5-timex-recognition-sentence
+DATASET=mdg-nlp/domain-timex-recognition-sentence-updated
 TASK="time"               # event or time
 NUM_SAMPLES=400
 BATCH_SIZE=20

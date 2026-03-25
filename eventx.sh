@@ -6,7 +6,7 @@
 set +e  # Don't exit on error - continue with next combination
 
 # Configuration
-NUM_SAMPLES=400
+NUM_SAMPLES=80
 BATCH_SIZE=16
 MAX_LENGTH=5000
 DEVICE="auto"
@@ -31,14 +31,12 @@ eventx_MODELS=(
 )
 
 eventx_DATASETS=(
-    #  mdg-nlp/eventx-recognition-document
-mdg-nlp/eventx-recognition-original
-mdg-nlp/eventx-recognition-perturbed
-mdg-nlp/domain-eventx-recognition-sentence-updated
-mdg-nlp/eventx-recognition-sentence-vocab-substituted-updated
-
-
-mdg-nlp/eventx-recognition-perturbed-gpt
+    mdg-nlp/eventx-recognition-document # --> length 80
+    # mdg-nlp/eventx-recognition-original # --> base
+    # mdg-nlp/eventx-recognition-perturbed #  --> adversarial-prompt-based
+    # mdg-nlp/domain-eventx-recognition-sentence-updated # --> eventx-domain
+    # mdg-nlp/eventx-recognition-sentence-vocab-substituted-updated # --> eventx-domain-vocab
+    # mdg-nlp/eventx-recognition-perturbed-gpt #-->  eventx-adversarial-prompt-based
 )
 
 TOTAL_RUNS=$((${#eventx_MODELS[@]} * ${#eventx_DATASETS[@]}))
